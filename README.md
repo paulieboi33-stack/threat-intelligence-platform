@@ -1,25 +1,81 @@
-# 🔒 Threat Intelligence Platform
-## Multi-Agent Cybersecurity Analysis System
+# 🛡️ Multi-Agent Threat Intelligence Platform
 
-> **Portfolio Project for LoneStar Community College - AI & Machine Learning Program**
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=flat-square&logo=streamlit)](https://streamlit.io)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![CVEs Tracked](https://img.shields.io/badge/Live%20Data-NVD%20%2B%20CISA%20KEV-orange?style=flat-square)](https://nvd.nist.gov)
+[![Tests](https://img.shields.io/badge/Tests-12%20Passing-brightgreen?style=flat-square)]()
 
-This is a production-grade threat intelligence platform that automates cybersecurity threat analysis using AI agents. It collects threats from live APIs, enriches them with AI summaries, and generates presentation-ready reports.
+> **AI & Machine Learning Portfolio Project — Lone Star College**
+> A production-grade cybersecurity threat intelligence platform powered by multiple specialized AI agents.
+
+---
+
+## 🎯 What This Does
+
+This platform automatically monitors, collects, analyzes, and reports on real-world cybersecurity threats — 24/7 — using a team of coordinated AI agents. It pulls live data from government threat feeds and the National Vulnerability Database, then generates actionable reports.
+
+**Real data. Real threats. Right now.**
+
+---
+
+## 🤖 The Agent Team
+
+| Agent | Role | Data Sources |
+|-------|------|-------------|
+| **🔍 Scout** | Collects threats from live APIs | NVD CVE API v2.0, CISA KEV |
+| **🧠 Analyst** | Enriches threats with AI scoring | CVSS metrics, exploit analysis |
+| **🐕 Watchdog** | Filters threats by relevance | Org tech stack profile |
+| **📊 Reporter** | Generates multi-format reports | HTML, JSON, CSV, Markdown |
+
+---
+
+## 📡 Live Data Sources
+
+- **[NVD (National Vulnerability Database)](https://nvd.nist.gov/developers/vulnerabilities)** — NIST's official CVE feed, updated daily. Pulls the last 30 days of new vulnerabilities with CVSS scores.
+- **[CISA Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)** — 1,500+ CVEs the U.S. government has confirmed are actively being exploited in the wild right now.
+
+---
+
+## 🖥️ Dashboard
+
+Real-time Streamlit dashboard showing:
+- Live threat counts by severity (Critical / High / Medium / Low)
+- Recent threat feed with CVE IDs and scores
+- Threat source breakdown
+- Multi-agent health status
+- Generated report library
+
+![Dashboard](outputs/report.md)
 
 ---
 
 ## 🚀 Quick Start
 
-### Installation
+### Requirements
+- Python 3.9+
+- pip
+
+### Install
 
 ```bash
-cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel
+git clone https://github.com/paulieboi33-stack/threat-intelligence-platform.git
+cd threat-intelligence-platform
 pip install -r requirements.txt
 ```
 
 ### Run the Platform
 
 ```bash
+# Full pipeline: collect → analyze → alert → report
 python3 main.py
+```
+
+### Launch Dashboard
+
+```bash
+python3 -m streamlit run scripts/app.py
+# Open http://localhost:8501
 ```
 
 ### Run Tests
@@ -33,223 +89,127 @@ python3 tests/test_suite.py
 ## 📁 Project Structure
 
 ```
-threat-intel/
-├── main.py                     # Main orchestrator
-├── tests/
-│   └── test_suite.py          # Comprehensive test suite
+threat-intelligence-platform/
 ├── agents/
-│   ├── scout.py              # Threat collection agent
-│   ├── reporter.py           # Report generation agent
-│   ├── watchdog.py           # Alerting agent
-│   ├── api_integration.py    # API client layer
-│   └── analyst.py            # Threat enrichment agent (coming)
+│   ├── api_integration.py   # Live API clients (NVD, CISA KEV)
+│   ├── scout.py             # Threat collection agent
+│   ├── analyst.py           # AI threat enrichment agent
+│   ├── watchdog.py          # Relevance filtering agent
+│   └── reporter.py          # Report generation agent
+├── scripts/
+│   └── app.py               # Streamlit dashboard
 ├── templates/
-│   └── report.html           # HTML dashboard template
+│   └── report.html          # HTML report template
 ├── data/
-│   └── org_profile.json      # Target environment config
-├── outputs/
-│   ├── report.html          # Generated HTML reports
-│   └── report.md            # Generated markdown docs
-└── README.md                # This file
+│   ├── threats.db           # SQLite threat database
+│   └── org_profile.json     # Target environment config
+├── tests/
+│   └── test_suite.py        # Test suite (12 tests, all passing)
+├── outputs/                 # Generated reports
+└── main.py                  # Main orchestrator
 ```
 
 ---
 
-## 🎯 Features
+## 📊 Sample Output
 
-### 1. Multi-Source Threat Collection
-- NVD CVE API (National Vulnerability Database)
-- CISA KEV Catalog (Known Exploited Vulnerabilities)
-- MalwareBazaar (active malware feeds)
-- GitHub CVE Database
-- Plus 5+ more data sources
+```
+🔍 Phase 1: Threat Collection
+  ✓ NVD API: Retrieved 20 CVEs (last 30 days)
+  ✓ CISA KEV: Retrieved 20 actively-exploited vulnerabilities
 
-### 2. AI-Powered Analysis
-- Plain-English threat summaries via AI
-- MITRE ATT&CK tactical mapping
-- Custom threat priority scoring (TPS)
-- Exploit availability detection
+🧠 Phase 2: AI Analysis
+  ✓ Analyzed 40 threats
+  ✓ Critical: 22 | High: 5 | Medium: 13 | Low: 2
 
-### 3. Target Environment Awareness
-- Configurable tech stack profiles
-- Alert filtering based on relevance
-- Dynamic risk assessment
+🐕 Phase 3: Watchdog Alerts
+  ⚠️  8 threats match your tech stack
 
-### 4. Presentation-Ready Reports
-- Beautiful HTML dashboard
-- Console output with rich formatting
-- Markdown documentation
-- Exportable for presentations
+📊 Phase 4: Reports Generated
+  ✓ HTML Report
+  ✓ JSON Export
+  ✓ CSV Export
+  ✓ Markdown Summary
+```
 
 ---
 
-## 🎓 Demo Guide for Presentation
+## 🧪 Tests
 
-### Demo Flow (10-15 minutes):
+```bash
+$ python3 tests/test_suite.py
 
-1. **Show Organization Profile** (1 min)
-   ```bash
-   cat data/org_profile.json
-   ```
-   Explain what tech stack is being protected.
+Ran 12 tests in 0.798s
+✅ ALL TESTS PASSED!
+```
 
-2. **Run Pipeline** (3 min)
-   ```bash
-   python3 main.py
-   ```
-   Walk through console output showing threats discovered.
-
-3. **Display HTML Report** (3 min)
-   ```bash
-   open outputs/report.html
-   ```
-   - Show executive summary
-   - Point out critical threats
-   - Highlight MITRE ATT&CK mapping
-   - Show AI summaries
-
-4. **Live API Demo** (2 min)
-   - Explain live API connections
-   - Show CISA KEV data
-   - Explain fallback to sample data
-
-5. **Dynamic Configuration** (2 min)
-   ```bash
-   # Change tech stack
-   vim data/org_profile.json
-   python3 main.py
-   ```
-   Show how alerts change based on environment.
-
-### Closing Statement:
-
-> "This automated platform processes live threat intelligence from multiple sources, applying AI analysis and MITRE ATT&CK mapping. What a junior SOC analyst would do manually in hours, this system completes in minutes — and it can run 24/7 monitoring your environment."
+Test coverage includes:
+- API integration (NVD, CISA KEV)
+- CVSS severity calculation
+- Threat data loading and validation
+- Watchdog relevance filtering
+- Organization profile loading
 
 ---
 
-## 🛡️ Security Rules
+## 🗺️ Architecture
 
-- ✅ **Dry-run mode first** - Always test with cached/sample data
-- ✅ **Modular agents** - Each agent works independently
-- ✅ **No hardcoded secrets** - Use environment variables
-- ✅ **Clean output** - Professional HTML for your portfolio
-- ✅ **Tested and documented** - Every component tested
+```
+┌─────────────────────────────────────────────────────┐
+│                   main.py (Orchestrator)            │
+└──────────┬──────────┬──────────┬────────────────────┘
+           │          │          │
+    ┌──────▼──┐  ┌────▼────┐ ┌──▼──────┐  ┌──────────┐
+    │  Scout  │  │Analyst  │ │Watchdog │  │ Reporter │
+    │  Agent  │  │  Agent  │ │  Agent  │  │  Agent   │
+    └──────┬──┘  └────┬────┘ └──┬──────┘  └──────────┘
+           │          │          │
+    ┌──────▼──────────▼──────────▼────────┐
+    │         SQLite Database             │
+    │    (threats, scores, alerts)        │
+    └─────────────────────────────────────┘
+           │
+    ┌──────▼──────────┐
+    │  Streamlit UI   │
+    │  localhost:8501 │
+    └─────────────────┘
+```
 
 ---
 
 ## 🔧 Configuration
 
-### Organization Profile
-
-Edit `data/org_profile.json` to customize your environment:
+Edit `data/org_profile.json` to customize the watchdog for your organization's tech stack:
 
 ```json
 {
-  "org_name": "DemoCorp",
-  "tech_stack": ["Apache", "Linux", "WordPress", "MySQL", "Python"],
-  "industry": "small_business",
-  "alert_threshold": 7.5,
-  "location": "Grogan's Mill, TX"
+  "tech_stack": ["Windows", "Linux", "Apache", "Python", "MySQL"],
+  "critical_assets": ["web-server", "database", "auth-service"],
+  "alert_threshold": "High"
 }
 ```
 
-### Alert Threshold
+---
 
-- `alert_threshold`: CVSS score above which alerts trigger
-- Adjust based on your risk tolerance
+## 📈 Roadmap
+
+- [ ] Shodan integration for exposed asset scanning
+- [ ] Email/Slack alerting for critical CVEs
+- [ ] AI-generated executive summaries (LLM)
+- [ ] Exploit PoC detection from GitHub
+- [ ] MITRE ATT&CK framework mapping
+- [ ] Docker containerization
 
 ---
 
-## 🧪 Testing
+## 👤 About
 
-### Run All Tests
+Built by **Paul Naeger** as a portfolio project for the **AI & Machine Learning AAS program** at Lone Star College, Texas.
 
-```bash
-python3 tests/test_suite.py
-```
-
-### Test Coverage
-
-- Scout agent threat collection
-- Watchdog relevance assessment
-- Reporter HTML/console/markdown generation
-- API integration error handling
-- Complete pipeline integration
-
-### All 12 tests must pass before presentation!
+Demonstrates: multi-agent system design, REST API integration, SQLite data persistence, real-time dashboards, automated reporting, and test-driven development.
 
 ---
 
-## 📊 API Endpoints Used
+## 📄 License
 
-### NVD CVE API
-- **URL:** `https://services.nvd.nist.gov/rest/json/cves`
-- **Auth:** Optional API key for rate limiting
-- **Data:** CVE descriptions, CVSS scores, references
-
-### CISA KEV Catalog
-- **URL:** `https://www.cisa.gov/known-exploited-vulnerabilities-catalog`
-- **Auth:** Requires authentication (using cached demo data)
-- **Data:** Actively exploited vulnerabilities
-
-### MalwareBazaar
-- **URL:** `https://firewall-mon.surge.sh/feed/urlhaus`
-- **Auth:** None
-- **Data:** Malware sample hashes
-
----
-
-## 🎯 Next Steps
-
-1. **Customize org_profile.json** with your actual tech stack
-2. **Add your own threat data** - Replace sample CVEs with real incidents
-3. **Build visualizations** - Add charts using Plotly
-4. **Deploy to cloud** - Show cloud deployment skills
-5. **Add more data sources** - VirusTotal, Shodan, etc.
-
----
-
-## 💬 Questions for Your Teacher
-
-- What threat data sources would you recommend?
-- Should we integrate with VirusTotal API?
-- Do you have sample incident data for testing?
-- What visualization tools do you prefer?
-
----
-
-## 📝 Development Notes
-
-### Phase 1: Foundation ✅
-- Project structure and data models
-- Scout agent with 1-2 data sources
-- End-to-end verification
-
-### Phase 2: Intelligence ✅
-- Analyst agent with TPS scoring
-- Claude API integration (AI summaries)
-- MITRE ATT&CK mapping
-
-### Phase 3: Output ✅
-- Reporter agent with HTML template
-- Console output with rich library
-- Org profile and Watchdog agent
-
-### Phase 4: Polish ✅
-- Visualizations (ATT&CK heatmap, severity charts)
-- README and documentation
-- Error handling and resilience
-
----
-
-**Portfolio Ready! 🎉**
-
-This system demonstrates:
-- Multi-agent architecture
-- Live API integration
-- AI-powered analysis
-- Professional reporting
-- Comprehensive testing
-- Production-grade code
-
-**Perfect for your cybersecurity portfolio!**
+MIT License — see [LICENSE](LICENSE) for details.
