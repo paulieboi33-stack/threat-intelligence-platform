@@ -23,6 +23,7 @@ try:
     from additional_feeds import AdditionalThreatFeeds
     from reporter import ReporterAgent
     from watchdog import WatchdogAgent
+    from analyst import AnalystAgent
     from data.persistence import ThreatDatabase
     from data.export import DataExporter
 except ImportError as e:
@@ -31,6 +32,7 @@ except ImportError as e:
     from scout import load_sample_threats
     ThreatDatabase = None
     DataExporter = None
+    AnalystAgent = None
 
 class ThreatIntelPipeline:
     """Main threat intelligence pipeline orchestrator with database & retention"""
@@ -40,6 +42,7 @@ class ThreatIntelPipeline:
         self.additional_feeds = AdditionalThreatFeeds()
         self.reporter = ReporterAgent()
         self.watchdog = WatchdogAgent()
+        self.analyst = AnalystAgent() if AnalystAgent else None
         self.db = ThreatDatabase() if ThreatDatabase else None
         self.exporter = DataExporter(self.db) if DataExporter else None
         
@@ -81,17 +84,25 @@ class ThreatIntelPipeline:
             threats = load_sample_threats()
             all_threats = threats
         
-        # Phase 2: Analyze threats
-        console.print("\n[blue]🧠 Phase 2: Analysis (Analyst Agent)[/blue]")
-        enriched_threats = []
-        for threat in all_threats:
-            enriched_threat = {
-                **threat,
-                'analyzed_at': datetime.now().isoformat(),
-                'ai_summary': self._generate_ai_summary(threat)
-            }
-            enriched_threats.append(enriched_threat)
-        
+        # Phase 2: AI Analysis
+        console.print("\n[blue]🧠 Phase 2: AI Analysis (Analyst Agent — powered by qwen2.5:32b)[/blue]")
+        if self.analyst and self.analyst.available:
+            enriched_threats = self.analyst.analyze_batch(all_threats, limit=20)
+            self.analyst.save_analysis_to_db(enriched_threats)
+            # Print sample of first critical threat
+            criticals = [t for t in enriched_threats if t.get('severity') == 'Critical']
+            if criticals:
+                self.analyst.print_sample_analysis(criticals[0])
+        else:
+            enriched_threats = []
+            for threat in all_threats:
+                enriched_threat = {
+                    **threat,
+                    'analyzed_at': datetime.now().isoformat(),
+                    'ai_summary': f"CVSS {threat.get('cvss_score', 'N/A')} {threat.get('severity', '')} vulnerability."
+                }
+                enriched_threats.append(enriched_threat)
+
         console.print(f"[green]✓ Analyzed {len(enriched_threats)} threats[/green]")
         
         # Save to database
