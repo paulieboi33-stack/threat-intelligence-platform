@@ -16,14 +16,22 @@ st.set_page_config(
 # Add CSS for better styling
 st.markdown("""
 <style>
-    .metric-card {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        padding: 20px;
+    [data-testid="stMetric"] {
+        background-color: #1e3a5f;
         border-radius: 10px;
-        color: white;
-        margin: 10px 0;
+        padding: 15px;
+        border: 1px solid #2e5a8f;
     }
-    .stMetric { background: #0f3460; border-radius: 8px; padding: 10px; }
+    [data-testid="stMetricLabel"] {
+        color: #ffffff !important;
+        font-size: 0.85rem !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stMetricValue"] {
+        color: #ffffff !important;
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
