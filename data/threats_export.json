@@ -812,5 +812,23 @@
       "source": "unknown",
       "count": 42
     }
+  ],
+  "trend": [
+    {
+      "date": "2026-04-17",
+      "critical": 1,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "total": 2
+    },
+    {
+      "date": "2026-04-20",
+      "critical": 21,
+      "high": 4,
+      "medium": 13,
+      "low": 2,
+      "total": 40
+    }
   ]
 }

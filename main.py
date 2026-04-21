@@ -24,6 +24,7 @@ try:
     from reporter import ReporterAgent
     from watchdog import WatchdogAgent
     from analyst import AnalystAgent
+    from alerter import run_alerts
     from data.persistence import ThreatDatabase
     from data.export import DataExporter
 except ImportError as e:
@@ -33,6 +34,7 @@ except ImportError as e:
     ThreatDatabase = None
     DataExporter = None
     AnalystAgent = None
+    run_alerts = None
 
 class ThreatIntelPipeline:
     """Main threat intelligence pipeline orchestrator with database & retention"""
@@ -148,6 +150,15 @@ class ThreatIntelPipeline:
             trend_analysis = self._generate_trend_analysis()
             console.print(trend_analysis)
         
+        # Email alerts for critical threats
+        console.print("\n[blue]📧 Phase 7: Email Alerts[/blue]")
+        if run_alerts:
+            alerted = run_alerts()
+            if alerted:
+                console.print(f"[green]✓ Sent alert for {alerted} critical threat(s) → paulnaeger@protonmail.com[/green]")
+            else:
+                console.print("[green]✓ No new critical threats to alert[/green]")
+
         console.print("\n[green]✓ Reports generated![/green]")
         console.print(f"[cyan]📂 HTML Report: {html_path}[/cyan]")
         

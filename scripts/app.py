@@ -3,7 +3,7 @@ import pandas as pd
 import sqlite3
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 st.set_page_config(
     page_title="🛡️ Threat Intelligence Dashboard",
@@ -44,7 +44,7 @@ st.markdown("Real-time monitoring powered by **NVD CVE API** & **CISA Known Expl
 def load_from_sqlite():
     db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats.db'))
     if not os.path.exists(db_path):
-        return None, None, None
+        return None, None, None, None
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     cursor.execute("""
@@ -68,13 +68,25 @@ def load_from_sqlite():
     threats = cursor.fetchall()
     cursor.execute("SELECT source, COUNT(*) FROM threats GROUP BY source ORDER BY COUNT(*) DESC")
     sources = cursor.fetchall()
+    # Trend data - threats by day and severity
+    cursor.execute("""
+        SELECT DATE(collected_at) as day,
+            SUM(CASE WHEN severity='Critical' THEN 1 ELSE 0 END) as critical,
+            SUM(CASE WHEN severity='High' THEN 1 ELSE 0 END) as high,
+            SUM(CASE WHEN severity='Medium' THEN 1 ELSE 0 END) as medium,
+            SUM(CASE WHEN severity='Low' THEN 1 ELSE 0 END) as low,
+            COUNT(*) as total
+        FROM threats
+        GROUP BY day ORDER BY day DESC LIMIT 30
+    """)
+    trend = cursor.fetchall()
     conn.close()
-    return stats, threats, sources
+    return stats, threats, sources, trend
 
 def load_from_json():
     json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats_export.json'))
     if not os.path.exists(json_path):
-        return None, None, None
+        return None, None, None, None
     with open(json_path) as f:
         data = json.load(f)
     s = data['stats']
@@ -86,12 +98,23 @@ def load_from_json():
         for t in data['threats']
     ]
     sources = [(s['source'], s['count']) for s in data['sources']]
-    return stats, threats, sources
+    # Build trend from threats data
+    from collections import defaultdict
+    day_map = defaultdict(lambda: {'critical':0,'high':0,'medium':0,'low':0,'total':0})
+    for t in data['threats']:
+        day = (t.get('collected_at') or '')[:10]
+        sev = (t.get('severity') or '').lower()
+        if day:
+            day_map[day]['total'] += 1
+            if sev in day_map[day]: day_map[day][sev] += 1
+    trend = [(d, v['critical'], v['high'], v['medium'], v['low'], v['total'])
+             for d, v in sorted(day_map.items(), reverse=True)]
+    return stats, threats, sources, trend
 
-stats, threats, source_data = load_from_sqlite()
+stats, threats, source_data, trend_data = load_from_sqlite()
 using_live_db = stats is not None
 if not using_live_db:
-    stats, threats, source_data = load_from_json()
+    stats, threats, source_data, trend_data = load_from_json()
     st.info("📦 Showing snapshot data. Run `python3 main.py` locally for live AI analysis.")
 if stats is None:
     st.error("⚠️ No data found. Run `python3 main.py` first.")
@@ -108,6 +131,29 @@ with col3: st.metric("⚠️ High", stats[2])
 with col4: st.metric("🟠 Medium", stats[3])
 with col5: st.metric("🟢 Low", stats[4])
 with col6: st.metric("🕐 Last Run", (stats[5] or "")[:16])
+
+st.markdown("---")
+
+# ─── Trend Chart ──────────────────────────────────────────────────────────────
+st.subheader("📈 Threat Trend — Last 30 Days")
+
+if trend_data:
+    trend_df = pd.DataFrame(trend_data, columns=["Date", "Critical", "High", "Medium", "Low", "Total"])
+    trend_df = trend_df.sort_values("Date")
+    trend_df = trend_df.set_index("Date")
+
+    col_trend, col_summary = st.columns([3, 1])
+    with col_trend:
+        st.line_chart(trend_df[["Critical", "High", "Medium", "Low"]])
+    with col_summary:
+        st.markdown("**Peak Day**")
+        peak = trend_df["Total"].idxmax()
+        st.metric("📅 Date", peak)
+        st.metric("🔢 Threats", int(trend_df.loc[peak, "Total"]))
+        st.metric("🚨 Critical", int(trend_df["Critical"].sum()))
+        st.metric("📊 Days Tracked", len(trend_df))
+else:
+    st.info("Run the pipeline a few more times to build trend data.")
 
 st.markdown("---")
 
