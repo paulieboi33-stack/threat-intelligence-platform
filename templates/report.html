@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Intelligence Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #007bff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .executive-summary {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .summary-title {
+            color: #0056b3;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .threat-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .threat-table th {
+            background: #007bff;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .threat-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .threat-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .severity-critical {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .severity-high {
+            color: #fd7e14;
+            font-weight: bold;
+        }
+        
+        .severity-medium {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .severity-low {
+            color: #28a745;
+        }
+        
+        .ai-summary {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border-left: 4px solid #ffc107;
+            font-style: italic;
+        }
+        
+        .tactic-badge {
+            display: inline-block;
+            background: #6c757d;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 2px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 Security Threat Intelligence Report</h1>
+            <p>Automated AI-powered threat analysis dashboard</p>
+        </header>
+        
+        <div class="executive-summary">
+            <div class="summary-title">📊 Executive Summary</div>
+            <p>AI-powered threat intelligence pipeline has analyzed <strong>{{ total_threats }}</strong> vulnerabilities and identified <strong>{{ critical_count }}</strong> critical threats requiring immediate attention.</p>
+            <p>Top threat: <strong>{{ highest_threat.cve_id }}</strong> with threat score <strong>{{ highest_threat.score }}</strong></p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">{{ total_threats }}</span>
+                <span class="stat-label">Total Threats</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ critical_count }}</span>
+                <span class="stat-label">Critical Severity</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ high_count }}</span>
+                <span class="stat-label">High Severity</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ avg_score }}</span>
+                <span class="stat-label">Average Score</span>
+            </div>
+        </div>
+        
+        <table class="threat-table">
+            <thead>
+                <tr>
+                    <th>CVE ID</th>
+                    <th>Vulnerability</th>
+                    <th>Severity</th>
+                    <th>Threat Score</th>
+                    <th>ATT&CK Tactic</th>
+                    <th>AI Summary</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for threat in threats %}
+                <tr>
+                    <td>{{ threat.cve_id }}</td>
+                    <td>{{ threat.title }}</td>
+                    <td class="severity-{{ threat.severity.lower() }}">{{ threat.severity }}</td>
+                    <td><strong>{{ "%.1f"|format(threat.score) }}</strong></td>
+                    <td>
+                        {% for tactic in threat.tactics %}
+                        <span class="tactic-badge">{{ tactic }}</span>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        <div class="ai-summary">
+                            <strong>🤖 AI Analysis:</strong> {{ threat.summary }}
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>Generated by Security Threat Intelligence Pipeline | {{ now }}</p>
+            <p>MITRE ATT&CK Mapping Enabled • AI Summaries Active • Custom Scoring Algorithm</p>
+        </footer>
+    </div>
+</body>
+</html>

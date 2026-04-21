@@ -1,0 +1,7 @@
+{
+  "org_name": "DemoCorp",
+  "tech_stack": ["Apache", "Linux", "WordPress", "MySQL", "Python"],
+  "industry": "small_business",
+  "alert_threshold": 7.5,
+  "location": "Grogan's Mill, TX"
+}

@@ -1,0 +1,5 @@
+# Enhanced collection every 4 hours for more data
+0 */4 * * * cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/max_collection.py >> /Users/paulnaeger/.openclaw/workspace/logs/threat-intel.log 2>&1
+0 8 * * 0 cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 2 >> /Users/paulnaeger/.openclaw/workspace/logs/threat-intel.log 2>&1
+0 6 1 * * cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 3 >> /Users/paulnaeger/.openclaw/workspace/logs/threat-intel.log 2>&1
+0 3 * * 6 cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 4 >> /Users/paulnaeger/.openclaw/workspace/logs/threat-intel.log 2>&1

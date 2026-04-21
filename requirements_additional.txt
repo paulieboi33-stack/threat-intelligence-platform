@@ -1,0 +1,77 @@
+# Additional dependencies for Threat Intelligence Platform
+# Install with: pip3 install -r requirements_additional.txt
+
+# Visualization
+plotly>=5.20.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+polars>=0.19.0  # Faster than pandas
+
+# HTML/Report generation
+jinja2>=3.1.0
+weasyprint>=58.0  # PDF generation
+reportlab>=4.0.0  # PDF reports
+
+# Machine Learning for threat scoring
+scikit-learn>=1.3.0
+xgboost>=1.7.0  # Gradient boosting for prediction
+
+# API rate limiting & management
+ratelimit>=2.2.0
+backoff>=2.2.0
+
+# Authentication (for APIs that require it)
+requests-oauthlib>=1.3.0
+keyring>=24.0.0  # Secure API key storage
+
+# Monitoring & logging
+logging  # Built-in Python module, no install needed
+structlog>=23.0.0  # Structured logging
+sentry-sdk>=1.26.0  # Error tracking
+
+# Async processing
+asyncio>=3.4.3
+aiohttp>=3.8.0  # Async HTTP requests
+
+# Natural Language Processing
+spacy>=3.6.0  # NLP for threat descriptions
+nltk>=3.8.0  # Text processing
+
+# Database connectivity
+sqlite3  # Built-in
+psycopg2-binary>=2.9.0  # PostgreSQL (optional)
+pymysql>=1.0.0  # MySQL (optional)
+
+# Web dashboard (optional)
+streamlit>=1.28.0  # Simple web UI
+dash>=2.8.0  # Advanced web app
+
+# Security scanning
+bandit>=1.7.0  # Security auditing
+pyjwt>=2.8.0  # JWT tokens
+cryptography>=41.0.0  # Encryption
+
+# Cloud integration (optional)
+boto3>=1.28.0  # AWS SDK
+google-cloud-core>=2.0.0  # GCP SDK
+
+# Testing enhancements
+pytest>=7.4.0
+pytest-cov>=4.1.0  # Test coverage
+mock>=5.0.0  # Mock objects
+
+# API documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.0.0  # Beautiful documentation
+redoc>=2.0.0  # API docs
+
+# Performance monitoring
+psutil>=5.9.0  # System monitoring
+py-spy>=0.3.0  # Performance profiling
+
+# Git integration
+gitpython>=3.1.0  # Git operations in Python

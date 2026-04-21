@@ -1,0 +1,29 @@
+# Scheduled Tasks for Threat Intelligence Platform
+# =========================================
+# Copy this to your crontab for automated reporting
+# 
+# Usage: crontab -e
+# Then paste these lines
+
+# Daily report at 9 AM
+# 0 9 * * * cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 1 >> /Users/paulnaeger/.openclaw/workspace/agents/threat-intel/logs/daily_export.log 2>&1
+
+# Weekly summary on Sunday at 8 AM
+# 0 8 * * 0 cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 2 >> /Users/paulnaeger/.openclaw/workspace/agents/threat-intel/logs/weekly_export.log 2>&1
+
+# Monthly summary on 1st of month at 6 AM
+# 0 6 1 * * cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 3 >> /Users/paulnaeger/.openclaw/workspace/agents/threat-intel/logs/monthly_export.log 2>&1
+
+# Maintenance every Saturday at 3 AM
+# 0 3 * * 6 cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 4 >> /Users/paulnaeger/.openclaw/workspace/agents/threat-intel/logs/maintenance.log 2>&1
+
+# Run all reports on Friday at 5 PM
+# 0 17 * * 5 cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 scripts/scheduled_exports.py 5 >> /Users/paulnaeger/.openclaw/workspace/agents/threat-intel/logs/all_reports.log 2>&1
+
+# Or use the enhanced main.py which includes all features
+# Run enhanced pipeline daily at 6 AM:
+# 0 6 * * * cd /Users/paulnaeger/.openclaw/workspace/agents/threat-intel && python3 main.py >> /Users/paulnaeger/.openclaw/workspace/agents/threat-intel/logs/main_pipeline.log 2>&1
+
+# Alternative: Use Python scheduler module
+# Install: pip3 install schedule
+# Create schedule.py file

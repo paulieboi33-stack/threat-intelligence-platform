@@ -1,0 +1,2 @@
+# Keep outputs directory in git
+# This prevents git from removing empty directories

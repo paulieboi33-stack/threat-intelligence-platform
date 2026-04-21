@@ -1,0 +1,10 @@
+data/threats.db
+logs/
+outputs/*.html
+outputs/*.csv
+outputs/*.json
+__pycache__/
+*.pyc
+.env
+API_KEYS.md
+*.log
