@@ -322,6 +322,116 @@ else:
 
 st.markdown("---")
 
+# ─── MITRE ATT&CK Section ─────────────────────────────────────────────────────
+st.markdown("### 🎯 MITRE ATT&CK Framework Mapping")
+st.caption("Each threat is mapped to the ATT&CK Enterprise framework — the industry standard for classifying cyberattack techniques.")
+
+# Load MITRE data from DB or JSON
+mitre_threats = []
+try:
+    if using_live_db:
+        db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats.db'))
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        cursor.execute("SELECT cve_id, severity, mitre_tactics, mitre_techniques, mitre_mappings FROM threats WHERE mitre_tactics IS NOT NULL")
+        mitre_threats = cursor.fetchall()
+        conn.close()
+    else:
+        for t in threats:
+            if t[9] if len(t) > 9 else None:
+                mitre_threats.append(t)
+except:
+    pass
+
+if mitre_threats:
+    # Tactic distribution
+    tactic_counts = {}
+    tactic_ids = {
+        "Initial Access": "TA0001", "Execution": "TA0002", "Persistence": "TA0003",
+        "Privilege Escalation": "TA0004", "Defense Evasion": "TA0005",
+        "Credential Access": "TA0006", "Discovery": "TA0007", "Lateral Movement": "TA0008",
+        "Collection": "TA0009", "Exfiltration": "TA0010", "Command and Control": "TA0011",
+        "Impact": "TA0040", "Exploitation": "TA0000"
+    }
+
+    for row in mitre_threats:
+        try:
+            tactics = json.loads(row[2]) if row[2] else []
+            for t in tactics:
+                tactic_counts[t] = tactic_counts.get(t, 0) + 1
+        except:
+            pass
+
+    if tactic_counts:
+        col_chart, col_table = st.columns([2, 1])
+
+        with col_chart:
+            tactic_df = pd.DataFrame({
+                "Tactic": list(tactic_counts.keys()),
+                "Threats": list(tactic_counts.values())
+            }).sort_values("Threats", ascending=False).set_index("Tactic")
+            st.bar_chart(tactic_df, height=280)
+
+        with col_table:
+            st.markdown("**Top Tactics**")
+            for tactic, count in sorted(tactic_counts.items(), key=lambda x: x[1], reverse=True)[:8]:
+                tid = tactic_ids.get(tactic, "")
+                st.markdown(f"[`{tid}`](https://attack.mitre.org/tactics/{tid}/) **{tactic}** — {count} threats")
+
+    # Sample threat mappings
+    st.markdown("**Sample ATT&CK Mappings**")
+    shown = 0
+    for row in mitre_threats[:15]:
+        try:
+            cve_id = row[0]
+            severity = row[1]
+            mappings = json.loads(row[4]) if row[4] else []
+            if not mappings:
+                continue
+            sev_icon = {"Critical":"🔴","High":"🟠","Medium":"🟡","Low":"🟢"}.get(severity,"⚪")
+            techniques = " · ".join([f"[`{m['technique_id']}`]({m['url']}) {m['technique']}" for m in mappings[:2]])
+            tactic = mappings[0]['tactic'] if mappings else ""
+            st.markdown(f"{sev_icon} **{cve_id}** → `{tactic}` — {techniques}")
+            shown += 1
+            if shown >= 8:
+                break
+        except:
+            continue
+else:
+    st.info("MITRE mappings will appear after the next pipeline run (`python3 main.py`).")
+
+    # Show what the mapping covers as a preview
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("""
+        **Tactics Covered:**
+        - TA0001 Initial Access
+        - TA0002 Execution
+        - TA0003 Persistence
+        - TA0004 Privilege Escalation
+        - TA0005 Defense Evasion
+        """)
+    with col2:
+        st.markdown("""
+        **More Tactics:**
+        - TA0006 Credential Access
+        - TA0007 Discovery
+        - TA0008 Lateral Movement
+        - TA0009 Collection
+        - TA0010 Exfiltration
+        """)
+    with col3:
+        st.markdown("""
+        **Framework:**
+        - TA0011 Command & Control
+        - TA0040 Impact
+        - 14 tactics total
+        - 200+ techniques
+        - [attack.mitre.org](https://attack.mitre.org)
+        """)
+
+st.markdown("---")
+
 # ─── How It Works ─────────────────────────────────────────────────────────────
 st.markdown("### 🤖 How It Works — Multi-Agent Architecture")
 

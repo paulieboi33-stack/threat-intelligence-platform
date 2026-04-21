@@ -25,6 +25,7 @@ try:
     from watchdog import WatchdogAgent
     from analyst import AnalystAgent
     from alerter import run_alerts
+    from mitre_mapper import MitreMapper
     from data.persistence import ThreatDatabase
     from data.export import DataExporter
 except ImportError as e:
@@ -35,6 +36,7 @@ except ImportError as e:
     DataExporter = None
     AnalystAgent = None
     run_alerts = None
+    MitreMapper = None
 
 class ThreatIntelPipeline:
     """Main threat intelligence pipeline orchestrator with database & retention"""
@@ -45,6 +47,7 @@ class ThreatIntelPipeline:
         self.reporter = ReporterAgent()
         self.watchdog = WatchdogAgent()
         self.analyst = AnalystAgent() if AnalystAgent else None
+        self.mitre = MitreMapper() if MitreMapper else None
         self.db = ThreatDatabase() if ThreatDatabase else None
         self.exporter = DataExporter(self.db) if DataExporter else None
         
@@ -150,6 +153,13 @@ class ThreatIntelPipeline:
             trend_analysis = self._generate_trend_analysis()
             console.print(trend_analysis)
         
+        # MITRE ATT&CK Mapping
+        console.print("\n[blue]🎯 Phase 6b: MITRE ATT&CK Mapping[/blue]")
+        if self.mitre:
+            mitre_enriched = self.mitre.map_all_threats(enriched_threats)
+            self.mitre.save_to_db(mitre_enriched)
+            self.mitre.print_summary(mitre_enriched)
+
         # Email alerts for critical threats
         console.print("\n[blue]📧 Phase 7: Email Alerts[/blue]")
         if run_alerts:
