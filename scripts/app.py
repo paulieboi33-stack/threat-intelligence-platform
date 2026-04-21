@@ -207,6 +207,39 @@ st.markdown("""
 # Load MITRE data
 mitre_data = []
 tactic_counts = {}
+
+# Load MITRE data — SQLite if local, JSON threats if on Streamlit Cloud
+try:
+    if using_live_db:
+        db_path_m = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats.db'))
+        conn_m = sqlite3.connect(db_path_m)
+        cursor_m = conn_m.cursor()
+        cursor_m.execute("SELECT cve_id, severity, cvss_score, title, mitre_tactics, mitre_techniques, mitre_mappings FROM threats WHERE mitre_tactics IS NOT NULL AND mitre_tactics != '' AND mitre_tactics != '[]' ORDER BY CASE severity WHEN 'Critical' THEN 1 WHEN 'High' THEN 2 WHEN 'Medium' THEN 3 ELSE 4 END, cvss_score DESC")
+        mitre_data = cursor_m.fetchall()
+        conn_m.close()
+    else:
+        # Build from JSON export threats
+        for t in threats:
+            cve_id, severity, cvss, title, desc, ai_sum, priority, actor, collected = t
+            # mitre fields stored in the full JSON
+            pass
+        # Load directly from JSON file for MITRE fields
+        json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats_export.json'))
+        if os.path.exists(json_path):
+            with open(json_path) as f:
+                jdata = json.load(f)
+            for t in jdata.get('threats', []):
+                mt = t.get('mitre_tactics')
+                mm = t.get('mitre_mappings')
+                if mt and mm:
+                    mitre_data.append((
+                        t.get('cve_id'), t.get('severity'), t.get('cvss_score'),
+                        t.get('title'), mt if isinstance(mt, str) else json.dumps(mt),
+                        t.get('mitre_techniques',''), mm if isinstance(mm, str) else json.dumps(mm)
+                    ))
+except Exception as e:
+    pass
+
 tactic_ids = {
     "Initial Access":"TA0001","Execution":"TA0002","Persistence":"TA0003",
     "Privilege Escalation":"TA0004","Defense Evasion":"TA0005","Credential Access":"TA0006",
@@ -219,17 +252,6 @@ tactic_colors = {
     "Discovery":"#2ecc71","Lateral Movement":"#16a085","Collection":"#8e44ad",
     "Exfiltration":"#c0392b","Command and Control":"#d35400","Impact":"#e74c3c","Exploitation":"#e74c3c"
 }
-
-try:
-    if using_live_db:
-        db_path_m = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats.db'))
-        conn_m = sqlite3.connect(db_path_m)
-        cursor_m = conn_m.cursor()
-        cursor_m.execute("SELECT cve_id, severity, cvss_score, title, mitre_tactics, mitre_techniques, mitre_mappings FROM threats WHERE mitre_tactics IS NOT NULL AND mitre_tactics != '' AND mitre_tactics != '[]' ORDER BY CASE severity WHEN 'Critical' THEN 1 WHEN 'High' THEN 2 WHEN 'Medium' THEN 3 ELSE 4 END, cvss_score DESC")
-        mitre_data = cursor_m.fetchall()
-        conn_m.close()
-except:
-    pass
 
 if mitre_data:
     for row in mitre_data:
