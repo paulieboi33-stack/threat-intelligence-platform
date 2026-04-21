@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ Threat Intel Control Panel</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f6f8fa;
+            color: #1a1a2e;
+            padding: 20px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a56db, #1e40af);
+            color: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .header h1 { font-size: 1.4rem; margin-bottom: 4px; }
+        .header p { font-size: 0.85rem; opacity: 0.85; }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 1px solid #d0d7de;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .card h2 { font-size: 1rem; color: #1a56db; margin-bottom: 12px; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 0;
+        }
+        .stat {
+            background: #f6f8fa;
+            border-radius: 10px;
+            padding: 12px 8px;
+            text-align: center;
+            border: 1px solid #d0d7de;
+        }
+        .stat .num { font-size: 1.8rem; font-weight: 700; }
+        .stat .label { font-size: 0.7rem; color: #666; margin-top: 2px; }
+        .stat.critical .num { color: #dc2626; }
+        .stat.high .num { color: #ea580c; }
+        .stat.total .num { color: #1a56db; }
+
+        .btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .btn:active { transform: scale(0.97); }
+
+        .btn-run {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            color: white;
+            box-shadow: 0 4px 14px rgba(22,163,74,0.35);
+        }
+        .btn-run:disabled {
+            background: #6b7280;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+        .btn-dashboard {
+            background: linear-gradient(135deg, #1a56db, #1e40af);
+            color: white;
+            box-shadow: 0 4px 14px rgba(26,86,219,0.3);
+            text-decoration: none;
+        }
+        .btn-github {
+            background: white;
+            color: #1a1a2e;
+            border: 2px solid #d0d7de;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            text-decoration: none;
+        }
+
+        .status-box {
+            border-radius: 10px;
+            padding: 14px;
+            font-size: 0.88rem;
+            margin-top: 8px;
+            display: none;
+        }
+        .status-box.running {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            color: #92400e;
+            display: block;
+        }
+        .status-box.success {
+            background: #f0fdf4;
+            border: 1px solid #16a34a;
+            color: #15803d;
+            display: block;
+        }
+        .status-box.error {
+            background: #fef2f2;
+            border: 1px solid #dc2626;
+            color: #991b1b;
+            display: block;
+        }
+
+        .threat-list { list-style: none; }
+        .threat-item {
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border-left: 4px solid;
+            background: #f6f8fa;
+            font-size: 0.85rem;
+        }
+        .threat-item.Critical { border-color: #dc2626; }
+        .threat-item.High { border-color: #ea580c; }
+
+        .threat-cve { font-weight: 700; font-size: 0.9rem; }
+        .threat-title { color: #444; margin-top: 2px; }
+        .threat-ai { color: #555; font-size: 0.8rem; margin-top: 4px; font-style: italic; }
+        .threat-cvss { float: right; background: #1a56db; color: white; padding: 2px 8px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+
+        .last-run { color: #666; font-size: 0.8rem; margin-top: 8px; text-align: center; }
+        .spinner { animation: spin 1s linear infinite; display: inline-block; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        .mitre-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+        .mitre-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🛡️ Threat Intel Control</h1>
+        <p>Paul Naeger · Lone Star College AI & ML</p>
+    </div>
+
+    <!-- Stats Card -->
+    <div class="card">
+        <h2>📊 Platform Status</h2>
+        <div class="stats-grid">
+            <div class="stat total">
+                <div class="num" id="stat-total">—</div>
+                <div class="label">Total</div>
+            </div>
+            <div class="stat critical">
+                <div class="num" id="stat-critical">—</div>
+                <div class="label">Critical</div>
+            </div>
+            <div class="stat high">
+                <div class="num" id="stat-high">—</div>
+                <div class="label">High</div>
+            </div>
+        </div>
+        <div class="last-run" id="last-run-time">Loading...</div>
+    </div>
+
+    <!-- Run Button Card -->
+    <div class="card">
+        <h2>⚡ Pipeline Control</h2>
+        <button class="btn btn-run" id="run-btn" onclick="triggerRun()">
+            <span id="run-icon">▶️</span>
+            <span id="run-text">Run Collection Now</span>
+        </button>
+        <div class="status-box" id="status-box"></div>
+    </div>
+
+    <!-- Critical Threats Card -->
+    <div class="card">
+        <h2>🚨 Critical Threats</h2>
+        <ul class="threat-list" id="threat-list">
+            <li style="color:#666; font-size:0.85rem;">Loading...</li>
+        </ul>
+    </div>
+
+    <!-- MITRE Card -->
+    <div class="card">
+        <h2>🎯 MITRE ATT&CK Tactics</h2>
+        <div class="mitre-grid" id="mitre-grid">
+            <span style="color:#666; font-size:0.85rem;">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Links -->
+    <a href="https://threat-intelligence-platform-hwlwosewldz68jyv8f8wbn.streamlit.app" target="_blank" class="btn btn-dashboard">
+        🖥️ Open Full Dashboard
+    </a>
+    <a href="https://github.com/paulieboi33-stack/threat-intelligence-platform" target="_blank" class="btn btn-github">
+        📂 GitHub Repository
+    </a>
+
+<script>
+    const BASE = '';  // same origin
+
+    const TACTIC_COLORS = {
+        'Initial Access': '#dc2626', 'Execution': '#ea580c', 'Persistence': '#9333ea',
+        'Privilege Escalation': '#d97706', 'Defense Evasion': '#0891b2',
+        'Credential Access': '#2563eb', 'Discovery': '#16a34a',
+        'Lateral Movement': '#0d9488', 'Collection': '#7c3aed',
+        'Exfiltration': '#b91c1c', 'Command and Control': '#c2410c',
+        'Impact': '#dc2626', 'Exploitation': '#dc2626'
+    };
+
+    async function loadStatus() {
+        try {
+            const r = await fetch('/api/status');
+            const d = await r.json();
+            document.getElementById('stat-total').textContent = d.threats.total || 0;
+            document.getElementById('stat-critical').textContent = d.threats.critical || 0;
+            document.getElementById('stat-high').textContent = d.threats.high || 0;
+            const last = d.threats.last_collection;
+            document.getElementById('last-run-time').textContent = last
+                ? 'Last collection: ' + last.substring(0,16).replace('T',' ')
+                : 'No collection yet';
+
+            if (d.pipeline.running) {
+                document.getElementById('run-btn').disabled = true;
+                document.getElementById('run-icon').textContent = '⏳';
+                document.getElementById('run-text').textContent = 'Pipeline Running...';
+                showStatus('running', '⏳ Collection in progress... This takes 2-3 minutes. Page will update when done.');
+                setTimeout(loadStatus, 10000);
+            }
+        } catch(e) {
+            document.getElementById('last-run-time').textContent = 'API offline — start api.py on Mac';
+        }
+    }
+
+    async function loadCritical() {
+        try {
+            const r = await fetch('/api/critical');
+            const d = await r.json();
+            const list = document.getElementById('threat-list');
+            if (!d.threats || d.threats.length === 0) {
+                list.innerHTML = '<li style="color:#666;font-size:0.85rem;">No critical threats found</li>';
+                return;
+            }
+            list.innerHTML = d.threats.slice(0,6).map(t => `
+                <li class="threat-item ${t.severity}">
+                    <span class="threat-cvss">CVSS ${t.cvss_score}</span>
+                    <div class="threat-cve">${t.cve_id}</div>
+                    <div class="threat-title">${(t.title || '').substring(0,55)}</div>
+                    ${t.ai_summary ? `<div class="threat-ai">${t.ai_summary.substring(0,90)}...</div>` : ''}
+                </li>
+            `).join('');
+        } catch(e) {
+            document.getElementById('threat-list').innerHTML = '<li style="color:#666;font-size:0.85rem;">Could not load threats</li>';
+        }
+    }
+
+    async function loadMitre() {
+        try {
+            const r = await fetch('/api/mitre');
+            const d = await r.json();
+            const grid = document.getElementById('mitre-grid');
+            if (!d.tactic_distribution || d.tactic_distribution.length === 0) {
+                grid.innerHTML = '<span style="color:#666;font-size:0.85rem;">No MITRE data</span>';
+                return;
+            }
+            grid.innerHTML = d.tactic_distribution.map(t => {
+                const color = TACTIC_COLORS[t.tactic] || '#1a56db';
+                return `<span class="mitre-badge" style="color:${color};border-color:${color};background:${color}18">
+                    ${t.tactic_id} ${t.tactic} <strong>${t.count}</strong>
+                </span>`;
+            }).join('');
+        } catch(e) {}
+    }
+
+    async function triggerRun() {
+        const btn = document.getElementById('run-btn');
+        btn.disabled = true;
+        document.getElementById('run-icon').textContent = '⏳';
+        document.getElementById('run-text').textContent = 'Starting...';
+        showStatus('running', '⏳ Pipeline started! Collecting threats, running AI analysis... Check back in 2-3 minutes.');
+
+        try {
+            const r = await fetch('/api/run', { method: 'POST' });
+            const d = await r.json();
+            if (d.status === 'already_running') {
+                showStatus('running', '⏳ Already running! ' + d.message);
+            } else {
+                showStatus('running', '✅ Pipeline is running! Collecting from NVD + CISA KEV, running AI analysis. Takes ~2-3 min.');
+                pollRunStatus();
+            }
+        } catch(e) {
+            btn.disabled = false;
+            document.getElementById('run-icon').textContent = '▶️';
+            document.getElementById('run-text').textContent = 'Run Collection Now';
+            showStatus('error', '❌ Could not reach API. Make sure api.py is running on your Mac.');
+        }
+    }
+
+    async function pollRunStatus() {
+        try {
+            const r = await fetch('/api/run/status');
+            const d = await r.json();
+            if (d.running) {
+                setTimeout(pollRunStatus, 8000);
+            } else {
+                const btn = document.getElementById('run-btn');
+                btn.disabled = false;
+                document.getElementById('run-icon').textContent = '▶️';
+                document.getElementById('run-text').textContent = 'Run Collection Now';
+                if (d.last_result && d.last_result.success) {
+                    showStatus('success', '✅ Collection complete! Dashboard and data have been updated.');
+                } else {
+                    showStatus('success', '✅ Pipeline finished. Refresh to see updated data.');
+                }
+                loadStatus();
+                loadCritical();
+                loadMitre();
+            }
+        } catch(e) {
+            setTimeout(pollRunStatus, 10000);
+        }
+    }
+
+    function showStatus(type, msg) {
+        const box = document.getElementById('status-box');
+        box.className = 'status-box ' + type;
+        box.textContent = msg;
+    }
+
+    // Load everything on page open
+    loadStatus();
+    loadCritical();
+    loadMitre();
+</script>
+
+</body>
+</html>

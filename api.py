@@ -7,7 +7,7 @@ Run: python3 api.py
 Access from phone: http://10.0.0.60:5001/api/threats
 """
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 import sqlite3
 import json
 import os
@@ -35,6 +35,14 @@ def get_db():
 
 
 # ─── Routes ───────────────────────────────────────────────────────────────────
+
+@app.route('/control')
+def control_panel():
+    """Mobile control panel"""
+    return send_from_directory(
+        os.path.join(BASE_DIR, 'templates'),
+        'control.html'
+    )
 
 @app.route('/')
 def index():
