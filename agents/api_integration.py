@@ -85,10 +85,15 @@ class ThreatAPI:
                     # Determine severity
                     severity = self._calculate_severity(cvss_score)
                     
+                    # Build title from description if no shortName
+                    raw_title = cve_data.get('shortName', '')
+                    if not raw_title or raw_title == 'Unknown':
+                        raw_title = description_text[:80] if description_text else cve_data.get('id', 'Unknown')
+
                     threat = {
                         'id': f"SCOUT-{len(threats)+1:04d}",
                         'cve_id': cve_data.get('id'),
-                        'title': cve_data.get('shortName', 'Unknown'),
+                        'title': raw_title,
                         'description': description_text[:200] + '...' if len(description_text) > 200 else description_text,
                         'cvss_score': cvss_score,
                         'published': cve_data.get('published'),
