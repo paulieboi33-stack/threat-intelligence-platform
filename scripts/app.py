@@ -193,6 +193,145 @@ with col6: st.metric("🕐 Last Run", last_run)
 
 st.markdown("---")
 
+# ─── MITRE ATT&CK HERO SECTION ────────────────────────────────────────────────
+st.markdown("""
+<div style="background:linear-gradient(135deg,#0d1f0d,#0d1a2e); border:2px solid #238636; border-radius:12px; padding:20px 28px; margin-bottom:8px;">
+    <h2 style="color:#3fb950; margin:0 0 4px 0; font-size:1.5rem;">🎯 MITRE ATT&CK® Framework Mapping</h2>
+    <p style="color:#8b949e; margin:0; font-size:0.9rem;">
+        Every threat is automatically mapped to the <strong style="color:#58a6ff;">MITRE ATT&CK Enterprise framework</strong> — 
+        the global standard used by the NSA, CISA, and every major cybersecurity vendor to classify attack techniques.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
+# Load MITRE data
+mitre_data = []
+tactic_counts = {}
+tactic_ids = {
+    "Initial Access":"TA0001","Execution":"TA0002","Persistence":"TA0003",
+    "Privilege Escalation":"TA0004","Defense Evasion":"TA0005","Credential Access":"TA0006",
+    "Discovery":"TA0007","Lateral Movement":"TA0008","Collection":"TA0009",
+    "Exfiltration":"TA0010","Command and Control":"TA0011","Impact":"TA0040","Exploitation":"TA0000"
+}
+tactic_colors = {
+    "Initial Access":"#e74c3c","Execution":"#e67e22","Persistence":"#9b59b6",
+    "Privilege Escalation":"#f39c12","Defense Evasion":"#1abc9c","Credential Access":"#3498db",
+    "Discovery":"#2ecc71","Lateral Movement":"#16a085","Collection":"#8e44ad",
+    "Exfiltration":"#c0392b","Command and Control":"#d35400","Impact":"#e74c3c","Exploitation":"#e74c3c"
+}
+
+try:
+    if using_live_db:
+        db_path_m = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats.db'))
+        conn_m = sqlite3.connect(db_path_m)
+        cursor_m = conn_m.cursor()
+        cursor_m.execute("SELECT cve_id, severity, cvss_score, title, mitre_tactics, mitre_techniques, mitre_mappings FROM threats WHERE mitre_tactics IS NOT NULL AND mitre_tactics != '' AND mitre_tactics != '[]' ORDER BY CASE severity WHEN 'Critical' THEN 1 WHEN 'High' THEN 2 WHEN 'Medium' THEN 3 ELSE 4 END, cvss_score DESC")
+        mitre_data = cursor_m.fetchall()
+        conn_m.close()
+except:
+    pass
+
+if mitre_data:
+    for row in mitre_data:
+        try:
+            tactics = json.loads(row[4]) if row[4] else []
+            for t in tactics:
+                tactic_counts[t] = tactic_counts.get(t, 0) + 1
+        except: pass
+
+if tactic_counts:
+    # Tactic metric cards
+    sorted_tactics = sorted(tactic_counts.items(), key=lambda x: x[1], reverse=True)
+    cols = st.columns(min(len(sorted_tactics), 6))
+    for i, (tactic, count) in enumerate(sorted_tactics[:6]):
+        tid = tactic_ids.get(tactic, "")
+        color = tactic_colors.get(tactic, "#58a6ff")
+        with cols[i]:
+            st.markdown(f"""
+            <div style="background:#161b22; border:1px solid {color}; border-radius:10px; padding:12px; text-align:center; margin-bottom:8px;">
+                <div style="color:{color}; font-size:1.6rem; font-weight:700;">{count}</div>
+                <div style="color:#e6edf3; font-size:0.75rem; font-weight:600; margin:2px 0;">{tactic}</div>
+                <div style="color:#555; font-size:0.7rem;">{tid}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    # Chart + ATT&CK Matrix
+    col_chart, col_matrix = st.columns([2, 1])
+
+    with col_chart:
+        st.markdown("**📊 Threat Count by ATT&CK Tactic**")
+        tactic_df = pd.DataFrame({
+            "Tactic": [t[0] for t in sorted_tactics],
+            "Threats": [t[1] for t in sorted_tactics]
+        }).set_index("Tactic")
+        st.bar_chart(tactic_df, height=260)
+
+    with col_matrix:
+        st.markdown("**🔗 ATT&CK Tactic Reference**")
+        for tactic, count in sorted_tactics:
+            tid = tactic_ids.get(tactic, "")
+            color = tactic_colors.get(tactic, "#58a6ff")
+            bar = "▓" * count + "░" * max(0, 10 - count)
+            st.markdown(
+                f'<div style="margin:3px 0; padding:5px 8px; background:#161b22; border-left:3px solid {color}; border-radius:4px; font-size:0.82rem;">'
+                f'<a href="https://attack.mitre.org/tactics/{tid}/" target="_blank" style="color:{color}; text-decoration:none; font-weight:600;">{tid}</a>'
+                f' <span style="color:#e6edf3;">{tactic}</span>'
+                f' <span style="color:#555; font-size:0.75rem; float:right;">{count} threats</span>'
+                f'</div>',
+                unsafe_allow_html=True
+            )
+
+    # CVE to Technique mapping table
+    st.markdown("**🗺️ CVE → ATT&CK Technique Mapping**")
+    st.caption("Click any technique ID to view full details on attack.mitre.org")
+
+    shown = 0
+    for row in mitre_data:
+        if shown >= 12: break
+        try:
+            cve_id, severity, cvss, title, tactics_raw, techniques_raw, mappings_raw = row
+            mappings = json.loads(mappings_raw) if mappings_raw else []
+            if not mappings: continue
+
+            sev_icon = {"Critical":"🔴","High":"🟠","Medium":"🟡","Low":"🟢"}.get(severity,"⚪")
+            display_title = (title or cve_id)[:55]
+            cvss_str = f"{float(cvss):.1f}" if cvss else "N/A"
+
+            technique_badges = ""
+            for m in mappings[:3]:
+                color = tactic_colors.get(m.get('tactic',''), '#58a6ff')
+                tid = m.get('technique_id','')
+                tname = m.get('technique','')[:28]
+                tac = m.get('tactic','')
+                url = m.get('url', f"https://attack.mitre.org/techniques/{tid}/")
+                technique_badges += f'<a href="{url}" target="_blank" style="background:{color}22; border:1px solid {color}; color:{color}; padding:2px 8px; border-radius:12px; font-size:0.72rem; margin-right:4px; text-decoration:none;"><strong>{tid}</strong> {tname}</a>'
+
+            st.markdown(
+                f'<div style="background:#161b22; border:1px solid #30363d; border-radius:8px; padding:10px 14px; margin:4px 0;">'
+                f'{sev_icon} <strong style="color:#e6edf3;">{cve_id}</strong> <span style="color:#555;">|</span> '
+                f'<span style="color:#8b949e; font-size:0.85rem;">{display_title}</span> '
+                f'<span style="color:#555; font-size:0.8rem;">CVSS {cvss_str}</span><br/>'
+                f'<div style="margin-top:6px;">{technique_badges}</div>'
+                f'</div>',
+                unsafe_allow_html=True
+            )
+            shown += 1
+        except: continue
+
+    st.markdown(f'<p style="color:#555; font-size:0.8rem; margin-top:8px;">Showing {shown} of {len(mitre_data)} mapped threats · <a href="https://attack.mitre.org" target="_blank" style="color:#58a6ff;">MITRE ATT&CK®</a></p>', unsafe_allow_html=True)
+
+else:
+    st.warning("⚠️ MITRE mappings loading... refresh in a moment or run `python3 main.py` to generate mappings.")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("**Tactics Covered:**\n- TA0001 Initial Access\n- TA0002 Execution\n- TA0003 Persistence\n- TA0004 Privilege Escalation\n- TA0005 Defense Evasion")
+    with col2:
+        st.markdown("**More Tactics:**\n- TA0006 Credential Access\n- TA0007 Discovery\n- TA0008 Lateral Movement\n- TA0009 Collection\n- TA0010 Exfiltration")
+    with col3:
+        st.markdown("**Framework:**\n- TA0011 Command & Control\n- TA0040 Impact\n- 14 tactics total\n- 200+ techniques\n- [attack.mitre.org](https://attack.mitre.org)")
+
+st.markdown("---")
+
 # ─── Trend Chart ──────────────────────────────────────────────────────────────
 st.markdown("### 📈 Threat Trend")
 if trend_data and len(trend_data) >= 1:
@@ -319,116 +458,6 @@ else:
 
                 # NVD link
                 st.markdown(f"[🔗 View on NVD](https://nvd.nist.gov/vuln/detail/{cve_id})")
-
-st.markdown("---")
-
-# ─── MITRE ATT&CK Section ─────────────────────────────────────────────────────
-st.markdown("### 🎯 MITRE ATT&CK Framework Mapping")
-st.caption("Each threat is mapped to the ATT&CK Enterprise framework — the industry standard for classifying cyberattack techniques.")
-
-# Load MITRE data from DB or JSON
-mitre_threats = []
-try:
-    if using_live_db:
-        db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'threats.db'))
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
-        cursor.execute("SELECT cve_id, severity, mitre_tactics, mitre_techniques, mitre_mappings FROM threats WHERE mitre_tactics IS NOT NULL")
-        mitre_threats = cursor.fetchall()
-        conn.close()
-    else:
-        for t in threats:
-            if t[9] if len(t) > 9 else None:
-                mitre_threats.append(t)
-except:
-    pass
-
-if mitre_threats:
-    # Tactic distribution
-    tactic_counts = {}
-    tactic_ids = {
-        "Initial Access": "TA0001", "Execution": "TA0002", "Persistence": "TA0003",
-        "Privilege Escalation": "TA0004", "Defense Evasion": "TA0005",
-        "Credential Access": "TA0006", "Discovery": "TA0007", "Lateral Movement": "TA0008",
-        "Collection": "TA0009", "Exfiltration": "TA0010", "Command and Control": "TA0011",
-        "Impact": "TA0040", "Exploitation": "TA0000"
-    }
-
-    for row in mitre_threats:
-        try:
-            tactics = json.loads(row[2]) if row[2] else []
-            for t in tactics:
-                tactic_counts[t] = tactic_counts.get(t, 0) + 1
-        except:
-            pass
-
-    if tactic_counts:
-        col_chart, col_table = st.columns([2, 1])
-
-        with col_chart:
-            tactic_df = pd.DataFrame({
-                "Tactic": list(tactic_counts.keys()),
-                "Threats": list(tactic_counts.values())
-            }).sort_values("Threats", ascending=False).set_index("Tactic")
-            st.bar_chart(tactic_df, height=280)
-
-        with col_table:
-            st.markdown("**Top Tactics**")
-            for tactic, count in sorted(tactic_counts.items(), key=lambda x: x[1], reverse=True)[:8]:
-                tid = tactic_ids.get(tactic, "")
-                st.markdown(f"[`{tid}`](https://attack.mitre.org/tactics/{tid}/) **{tactic}** — {count} threats")
-
-    # Sample threat mappings
-    st.markdown("**Sample ATT&CK Mappings**")
-    shown = 0
-    for row in mitre_threats[:15]:
-        try:
-            cve_id = row[0]
-            severity = row[1]
-            mappings = json.loads(row[4]) if row[4] else []
-            if not mappings:
-                continue
-            sev_icon = {"Critical":"🔴","High":"🟠","Medium":"🟡","Low":"🟢"}.get(severity,"⚪")
-            techniques = " · ".join([f"[`{m['technique_id']}`]({m['url']}) {m['technique']}" for m in mappings[:2]])
-            tactic = mappings[0]['tactic'] if mappings else ""
-            st.markdown(f"{sev_icon} **{cve_id}** → `{tactic}` — {techniques}")
-            shown += 1
-            if shown >= 8:
-                break
-        except:
-            continue
-else:
-    st.info("MITRE mappings will appear after the next pipeline run (`python3 main.py`).")
-
-    # Show what the mapping covers as a preview
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.markdown("""
-        **Tactics Covered:**
-        - TA0001 Initial Access
-        - TA0002 Execution
-        - TA0003 Persistence
-        - TA0004 Privilege Escalation
-        - TA0005 Defense Evasion
-        """)
-    with col2:
-        st.markdown("""
-        **More Tactics:**
-        - TA0006 Credential Access
-        - TA0007 Discovery
-        - TA0008 Lateral Movement
-        - TA0009 Collection
-        - TA0010 Exfiltration
-        """)
-    with col3:
-        st.markdown("""
-        **Framework:**
-        - TA0011 Command & Control
-        - TA0040 Impact
-        - 14 tactics total
-        - 200+ techniques
-        - [attack.mitre.org](https://attack.mitre.org)
-        """)
 
 st.markdown("---")
 
