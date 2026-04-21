@@ -15,18 +15,18 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    /* Overall background */
-    .stApp { background-color: #0d1117; }
+    /* Overall background - light theme */
+    .stApp { background-color: #f6f8fa; color: #1a1a2e; }
 
     /* Metric cards */
     [data-testid="stMetric"] {
-        background: linear-gradient(135deg, #161b22, #1c2333);
+        background: linear-gradient(135deg, #1a56db, #1e40af);
         border-radius: 12px;
         padding: 16px;
-        border: 1px solid #30363d;
+        border: 1px solid #1e40af;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-    [data-testid="stMetricLabel"] { color: #8b949e !important; font-size: 0.8rem !important; font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+    [data-testid="stMetricLabel"] { color: #bfdbfe !important; font-size: 0.8rem !important; font-weight: 600 !important; text-transform: uppercase; letter-spacing: 0.05em; }
     [data-testid="stMetricValue"] { color: #ffffff !important; font-size: 2.2rem !important; font-weight: 700 !important; }
 
     /* Severity badges */
@@ -36,13 +36,13 @@ st.markdown("""
     .badge-low      { background:#1a4731; color:#fff; padding:3px 10px; border-radius:20px; font-size:0.75rem; font-weight:700; }
 
     /* Section headers */
-    h2, h3 { color: #58a6ff !important; }
+    h2, h3 { color: #1a56db !important; }
 
     /* Expander styling */
-    .streamlit-expanderHeader { background: #161b22 !important; border-radius: 8px !important; }
+    .streamlit-expanderHeader { background: #ffffff !important; border-radius: 8px !important; }
 
     /* Sidebar */
-    [data-testid="stSidebar"] { background: #161b22 !important; border-right: 1px solid #30363d; }
+    [data-testid="stSidebar"] { background: #ffffff !important; border-right: 1px solid #d0d7de; }
 
     /* Info/success boxes */
     .stAlert { border-radius: 8px !important; }
@@ -61,16 +61,16 @@ st.markdown("""
 
 # ─── Header Banner ────────────────────────────────────────────────────────────
 st.markdown("""
-<div style="background:linear-gradient(135deg,#0d1117,#1c2333); border:1px solid #30363d; border-radius:12px; padding:24px 32px; margin-bottom:24px;">
+<div style="background:linear-gradient(135deg,#1a56db,#1e40af); border:1px solid #30363d; border-radius:12px; padding:24px 32px; margin-bottom:24px;">
     <div style="display:flex; align-items:center; gap:16px;">
         <span style="font-size:3rem;">🛡️</span>
         <div>
             <h1 style="color:#ffffff; margin:0; font-size:1.8rem; font-weight:700;">Threat Intelligence Platform</h1>
-            <p style="color:#8b949e; margin:4px 0 0 0; font-size:0.95rem;">
+            <p style="color:#555555; margin:4px 0 0 0; font-size:0.95rem;">
                 Multi-Agent Cybersecurity System &nbsp;·&nbsp; 
-                Powered by <strong style="color:#58a6ff;">NVD CVE API</strong> + 
-                <strong style="color:#58a6ff;">CISA KEV</strong> + 
-                <strong style="color:#58a6ff;">llama3.1 AI</strong>
+                Powered by <strong style="color:#1a56db;">NVD CVE API</strong> + 
+                <strong style="color:#1a56db;">CISA KEV</strong> + 
+                <strong style="color:#1a56db;">llama3.1 AI</strong>
             </p>
         </div>
     </div>
@@ -195,10 +195,10 @@ st.markdown("---")
 
 # ─── MITRE ATT&CK HERO SECTION ────────────────────────────────────────────────
 st.markdown("""
-<div style="background:linear-gradient(135deg,#0d1f0d,#0d1a2e); border:2px solid #238636; border-radius:12px; padding:20px 28px; margin-bottom:8px;">
+<div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7); border:2px solid #238636; border-radius:12px; padding:20px 28px; margin-bottom:8px;">
     <h2 style="color:#3fb950; margin:0 0 4px 0; font-size:1.5rem;">🎯 MITRE ATT&CK® Framework Mapping</h2>
-    <p style="color:#8b949e; margin:0; font-size:0.9rem;">
-        Every threat is automatically mapped to the <strong style="color:#58a6ff;">MITRE ATT&CK Enterprise framework</strong> — 
+    <p style="color:#555555; margin:0; font-size:0.9rem;">
+        Every threat is automatically mapped to the <strong style="color:#1a56db;">MITRE ATT&CK Enterprise framework</strong> — 
         the global standard used by the NSA, CISA, and every major cybersecurity vendor to classify attack techniques.
     </p>
 </div>
@@ -270,9 +270,9 @@ if tactic_counts:
         color = tactic_colors.get(tactic, "#58a6ff")
         with cols[i]:
             st.markdown(f"""
-            <div style="background:#161b22; border:1px solid {color}; border-radius:10px; padding:12px; text-align:center; margin-bottom:8px;">
+            <div style="background:#ffffff; border:1px solid {color}; border-radius:10px; padding:12px; text-align:center; margin-bottom:8px;">
                 <div style="color:{color}; font-size:1.6rem; font-weight:700;">{count}</div>
-                <div style="color:#e6edf3; font-size:0.75rem; font-weight:600; margin:2px 0;">{tactic}</div>
+                <div style="color:#1a1a2e; font-size:0.75rem; font-weight:600; margin:2px 0;">{tactic}</div>
                 <div style="color:#555; font-size:0.7rem;">{tid}</div>
             </div>
             """, unsafe_allow_html=True)
@@ -295,9 +295,9 @@ if tactic_counts:
             color = tactic_colors.get(tactic, "#58a6ff")
             bar = "▓" * count + "░" * max(0, 10 - count)
             st.markdown(
-                f'<div style="margin:3px 0; padding:5px 8px; background:#161b22; border-left:3px solid {color}; border-radius:4px; font-size:0.82rem;">'
+                f'<div style="margin:3px 0; padding:5px 8px; background:#ffffff; border-left:3px solid {color}; border-radius:4px; font-size:0.82rem;">'
                 f'<a href="https://attack.mitre.org/tactics/{tid}/" target="_blank" style="color:{color}; text-decoration:none; font-weight:600;">{tid}</a>'
-                f' <span style="color:#e6edf3;">{tactic}</span>'
+                f' <span style="color:#1a1a2e;">{tactic}</span>'
                 f' <span style="color:#555; font-size:0.75rem; float:right;">{count} threats</span>'
                 f'</div>',
                 unsafe_allow_html=True
@@ -329,9 +329,9 @@ if tactic_counts:
                 technique_badges += f'<a href="{url}" target="_blank" style="background:{color}22; border:1px solid {color}; color:{color}; padding:2px 8px; border-radius:12px; font-size:0.72rem; margin-right:4px; text-decoration:none;"><strong>{tid}</strong> {tname}</a>'
 
             st.markdown(
-                f'<div style="background:#161b22; border:1px solid #30363d; border-radius:8px; padding:10px 14px; margin:4px 0;">'
-                f'{sev_icon} <strong style="color:#e6edf3;">{cve_id}</strong> <span style="color:#555;">|</span> '
-                f'<span style="color:#8b949e; font-size:0.85rem;">{display_title}</span> '
+                f'<div style="background:#ffffff; border:1px solid #30363d; border-radius:8px; padding:10px 14px; margin:4px 0;">'
+                f'{sev_icon} <strong style="color:#1a1a2e;">{cve_id}</strong> <span style="color:#555;">|</span> '
+                f'<span style="color:#555555; font-size:0.85rem;">{display_title}</span> '
                 f'<span style="color:#555; font-size:0.8rem;">CVSS {cvss_str}</span><br/>'
                 f'<div style="margin-top:6px;">{technique_badges}</div>'
                 f'</div>',
@@ -340,7 +340,7 @@ if tactic_counts:
             shown += 1
         except: continue
 
-    st.markdown(f'<p style="color:#555; font-size:0.8rem; margin-top:8px;">Showing {shown} of {len(mitre_data)} mapped threats · <a href="https://attack.mitre.org" target="_blank" style="color:#58a6ff;">MITRE ATT&CK®</a></p>', unsafe_allow_html=True)
+    st.markdown(f'<p style="color:#555; font-size:0.8rem; margin-top:8px;">Showing {shown} of {len(mitre_data)} mapped threats · <a href="https://attack.mitre.org" target="_blank" style="color:#1a56db;">MITRE ATT&CK®</a></p>', unsafe_allow_html=True)
 
 else:
     st.warning("⚠️ MITRE mappings loading... refresh in a moment or run `python3 main.py` to generate mappings.")
@@ -496,10 +496,10 @@ agents = [
 for col, (icon, name, desc) in zip([col1,col2,col3,col4], agents):
     with col:
         st.markdown(f"""
-        <div style="background:#161b22; border:1px solid #30363d; border-radius:10px; padding:16px; height:180px;">
+        <div style="background:#ffffff; border:1px solid #30363d; border-radius:10px; padding:16px; height:180px;">
             <div style="font-size:2rem; margin-bottom:8px;">{icon}</div>
-            <strong style="color:#58a6ff;">{name}</strong>
-            <p style="color:#8b949e; font-size:0.85rem; margin-top:8px;">{desc}</p>
+            <strong style="color:#1a56db;">{name}</strong>
+            <p style="color:#555555; font-size:0.85rem; margin-top:8px;">{desc}</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -508,6 +508,6 @@ st.markdown("""
 <div style="text-align:center; color:#555; font-size:0.85rem; padding:12px;">
     🛡️ <strong>Threat Intelligence Platform</strong> · Built by <strong>Paul Naeger</strong> · 
     AI & ML Program, Lone Star College · 
-    <a href="https://github.com/paulieboi33-stack/threat-intelligence-platform" style="color:#58a6ff;">GitHub</a>
+    <a href="https://github.com/paulieboi33-stack/threat-intelligence-platform" style="color:#1a56db;">GitHub</a>
 </div>
 """, unsafe_allow_html=True)
