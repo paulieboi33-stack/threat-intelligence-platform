@@ -1,0 +1,41 @@
+{
+  "source": "iphone_usb",
+  "collected_at": "2026-04-24T00:31:12.005759",
+  "device": {
+    "udid": "00008140-001C24D620E3C01C",
+    "device_name": "Paul\u2019s iPhone",
+    "product_type": "iPhone17,1",
+    "ios_version": "26.3.1",
+    "serial_number": "H06M9Y4XM4",
+    "wifi_mac": "14:1b:a0:28:77:15",
+    "bluetooth_mac": "14:1b:a0:14:41:1a",
+    "timezone": "America/Chicago",
+    "collected_at": "2026-04-24T00:31:12.125588"
+  },
+  "battery": {
+    "battery_level": "81",
+    "is_charging": "false",
+    "battery_health": "Unknown"
+  },
+  "apps": [],
+  "crashes": {
+    "status": "collected",
+    "count": 186,
+    "path": "/Users/paulnaeger/.openclaw/workspace/agents/threat-intel/agents/../data/iphone/crashes",
+    "files": [
+      "JetsamEvent-2026-04-23-023829.ips",
+      "ExcUserFault_MobileSMS-2026-04-19-135025.ips",
+      "WiFiLQMMetrics-2026-04-08-065212.ips",
+      "SiriSearchFeedback-2026-04-22-112403.ips",
+      "JetsamEvent-2026-04-15-013158.ips",
+      "CoreRoutineHelperService.cpu_resource-2026-04-22-125440.ips",
+      "Widgets Extension-2026-03-31-030349.ips",
+      "CoreRoutineHelperService.cpu_resource-2026-04-22-005550.ips",
+      "WiFiLQMMetrics-2026-04-05-123912.ips",
+      "SiriSearchFeedback-2026-04-21-000154.ips"
+    ]
+  },
+  "threat_flags": [],
+  "app_count": 0,
+  "threat_count": 0
+}

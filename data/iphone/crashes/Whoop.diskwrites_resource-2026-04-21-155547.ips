@@ -1,0 +1,255 @@
+{"roots_installed":0,"app_name":"Whoop","timestamp":"2026-04-21 15:55:47.00 -0500","app_version":"5.48.0","slice_uuid":"045DD07B-5750-3EC5-ACE3-133C48DE859D","adam_id":"933944389","build_version":"573097","bundleID":"com.whoop.iphone","duration_ms":"29399472","is_first_party":0,"share_with_app_devs":0,"bug_type":"145","os_version":"iPhone OS 26.3.1 (23D771330a)","distributor_id":"com.apple.AppStore","name":"Whoop","incident_id":"BB8584CC-03C6-49DD-9C4E-2B3244AED4F1"}
+Date/Time:        2026-04-21 07:45:45.324 -0500
+End time:         2026-04-21 15:55:44.796 -0500
+OS Version:       iPhone OS 26.3.1 (Build 23D771330a)
+Architecture:     arm64e
+Report Version:   67
+Incident Identifier: BB8584CC-03C6-49DD-9C4E-2B3244AED4F1
+
+Data Source:      Microstackshots
+Shared Cache:     714092CB-10E9-3333-83EA-E3F3A795CB07 slid base address 0x1844c0000, slide 0x44c0000
+
+Command:          Whoop
+Path:             /private/var/containers/Bundle/Application/1448763A-F11B-4C29-A741-AC00867452F8/Whoop.app/Whoop
+Identifier:       com.whoop.iphone
+Version:          5.48.0 (573097)
+Adam ID:          933944389
+Is First Party:   No
+Beta Identifier:  F3DC2E68-9F66-4A17-8522-7ADF579C3695
+Resource Coalition: 19514
+On Behalf Of:     3 samples UNKNOWN [98, 97971] (2 samples originated by UNKNOWN [98], 1 sample originated by Whoop [98850])
+Architecture:     arm64
+PID:              98850
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.75 MB of file backed memory dirtied over 29399 seconds (36.52 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.75 MB
+Writes duration:  29399s
+Duration:         29399.47s
+Duration Sampled: 16827.82s (event starts 11966.10s before samples, event ends 605.55s after samples)
+Steps:            27 (10.49 MB/step)
+
+Hardware model:   iPhone17,1
+Active cpus:      6
+Memory size:      7.46 GB
+HW page size:     16384
+VM page size:     16384
+
+Models:           UNKNOWN
+
+OS Cryptex File Extents: 2886
+
+Heaviest stack for the target process:
+  23  ??? (libswift_Concurrency.dylib + 444368) [0x185ad47d0]
+  22  ??? (Whoop + 2594984) [0x104ebd8a8]
+  22  ??? (Whoop + 6299852) [0x1052460cc]
+  19  ??? (Whoop + 886804) [0x104d1c814]
+  18  ??? (Whoop + 6918176) [0x1052dd020]
+  18  ??? (Foundation + 2395260) [0x184e69c7c]
+  18  ??? (Foundation + 2378180) [0x184e659c4]
+  18  ??? (libsystem_kernel.dylib + 20516) [0x235183024]
+
+
+Powerstats for:   Whoop [98850]
+UUID:             045DD07B-5750-3EC5-ACE3-133C48DE859D
+Path:             /private/var/containers/Bundle/Application/1448763A-F11B-4C29-A741-AC00867452F8/Whoop.app/Whoop
+Identifier:       com.whoop.iphone
+Version:          5.48.0 (573097)
+Adam ID:          933944389
+Is First Party:   No
+Beta Identifier:  F3DC2E68-9F66-4A17-8522-7ADF579C3695
+Resource Coalition: 27 samples 19514
+On Behalf Of:     3 samples UNKNOWN [98, 97971] (2 samples originated by UNKNOWN [98], 1 sample originated by Whoop [98850])
+Architecture:     arm64
+Footprint:        61.78 MB -> 120.25 MB (+58.47 MB) (max 127.48 MB )
+Pageins:          43765 pages
+Start time:       2026-04-21 11:05:11.423 -0500
+End time:         2026-04-21 15:45:39.248 -0500
+Num samples:      27 (100%)
+Num threads:      26
+Primary state:    20 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    13 samples Idle, 14 samples Active
+Power Source:     24 samples on Battery, 3 samples on AC
+  23  ??? (libswift_Concurrency.dylib + 444368) [0x185ad47d0]
+    22  ??? (Whoop + 2594984) [0x104ebd8a8]
+      22  ??? (Whoop + 6299852) [0x1052460cc]
+        19  ??? (Whoop + 886804) [0x104d1c814]
+          18  ??? (Whoop + 6918176) [0x1052dd020]
+            18  ??? (Foundation + 2395260) [0x184e69c7c]
+              18  ??? (Foundation + 2378180) [0x184e659c4]
+                18  ??? (libsystem_kernel.dylib + 20516) [0x235183024]
+          1   ??? (Whoop + 6920412) [0x1052dd8dc]
+            1   ??? (Foundation + 9481208) [0x18552bbf8]
+              1   ??? (libsystem_kernel.dylib + 33360) [0x235186250]
+        3   ??? (Whoop + 2594984) [0x104ebd8a8]
+          3   ??? (Whoop + 10100560) [0x1055e5f50]
+            3   ??? (Whoop + 10095532) [0x1055e4bac]
+              3   ??? (Whoop + 9986024) [0x1055c9fe8]
+                3   ??? (Whoop + 10406272) [0x105630980]
+                  3   ??? (Whoop + 10403804) [0x10562ffdc]
+                    3   ??? (Whoop + 10580800) [0x10565b340]
+                      3   ??? (libswiftDispatch.dylib + 5684) [0x197b49634]
+                        3   ??? (libswiftDispatch.dylib + 6968) [0x197b49b38]
+                          3   ??? (libswiftDispatch.dylib + 6420) [0x197b49914]
+                            3   ??? (libswiftDispatch.dylib + 7092) [0x197b49bb4]
+                              3   ??? (libswiftDispatch.dylib + 7296) [0x197b49c80]
+                                3   ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                  3   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                    3   ??? (libswiftDispatch.dylib + 7492) [0x197b49d44]
+                                      3   ??? (libswiftDispatch.dylib + 6816) [0x197b49aa0]
+                                        3   ??? (libswiftDispatch.dylib + 5884) [0x197b496fc]
+                                          3   ??? (libswiftDispatch.dylib + 44604) [0x197b52e3c]
+                                            3   ??? (libswiftDispatch.dylib + 6776) [0x197b49a78]
+                                              3   ??? (Whoop + 10594472) [0x10565e8a8]
+                                                3   ??? (Whoop + 10597220) [0x10565f364]
+                                                  3   ??? (Whoop + 10583320) [0x10565bd18]
+                                                    3   ??? (Whoop + 10404812) [0x1056303cc]
+                                                      3   ??? (Whoop + 9993392) [0x1055cbcb0]
+                                                        3   ??? (Whoop + 10017268) [0x1055d19f4]
+                                                          3   ??? (Whoop + 10597408) [0x10565f420]
+                                                            3   ??? (Whoop + 10575060) [0x105659cd4]
+                                                              3   ??? (Whoop + 10578268) [0x10565a95c]
+                                                                3   ??? (Whoop + 10604792) [0x1056610f8]
+                                                                  3   ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                                                                    3   ??? (libsqlite3.dylib + 219388) [0x185d8b8fc]
+                                                                      3   ??? (libsqlite3.dylib + 324648) [0x185da5428]
+                                                                        3   ??? (libsqlite3.dylib + 311576) [0x185da2118]
+                                                                          3   ??? (libsqlite3.dylib + 368376) [0x185dafef8]
+                                                                            3   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                                                              3   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                                                                                2   <Requested Thread QoS User Initiated>
+                                                                                1   <Requested Thread QoS Default>
+    1   ??? (Whoop + 886804) [0x104d1c814]
+      1   ??? (Whoop + 85840552) [0x109e212a8]
+        1   ??? (Whoop + 85860296) [0x109e25fc8]
+          1   ??? (Foundation + 1050968) [0x184d21958]
+            1   ??? (Foundation + 683652) [0x184cc7e84]
+              1   ??? (Foundation + 684504) [0x184cc81d8]
+                1   ??? (Foundation + 684904) [0x184cc8368]
+                  1   ??? (libremovefile.dylib + 2080) [0x2a2a7a820]
+                    1   ??? (libremovefile.dylib + 4292) [0x2a2a7b0c4]
+                      1   ??? (libsystem_kernel.dylib + 25760) [0x2351844a0]
+                        1   <on behalf of UNKNOWN [97971] (originated by Whoop [98850])>
+  4   ??? (libsystem_pthread.dylib + 2240) [0x1e415c8c0]
+    3   ??? (libsystem_pthread.dylib + 5048) [0x1e415d3b8]
+      3   ??? (libdispatch.dylib + 85220) [0x1c0323ce4]
+        3   ??? (libdispatch.dylib + 87020) [0x1c03243ec]
+          2   ??? (libdispatch.dylib + 44868) [0x1c0319f44]
+            2   ??? (libdispatch.dylib + 42088) [0x1c0319468]
+              2   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                2   ??? (CoreData + 6732) [0x189b82a4c]
+                  2   ??? (Whoop + 480608) [0x104cb9560]
+                    2   ??? (Whoop + 99096476) [0x10aac579c]
+                      2   ??? (Whoop + 99175516) [0x10aad8c5c]
+                        2   ??? (CoreData + 1193264) [0x189ca4530]
+                          2   ??? (CoreData + 1484136) [0x189ceb568]
+                            2   ??? (CoreData + 1444956) [0x189ce1c5c]
+                              2   ??? (CoreData + 1495348) [0x189cee134]
+                                2   ??? (CoreData + 1715808) [0x189d23e60]
+                                  2   ??? (CoreData + 1704344) [0x189d21198]
+                                    2   ??? (CoreData + 2632268) [0x189e03a4c]
+                                      2   ??? (CoreData + 1422304) [0x189cdc3e0]
+                                        2   ??? (CoreData + 1911572) [0x189d53b14]
+                                          2   ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                            2   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                              2   ??? (CoreData + 1911852) [0x189d53c2c]
+                                                2   ??? (CoreData + 1422512) [0x189cdc4b0]
+                                                  2   ??? (CoreData + 826796) [0x189c4adac]
+                                                    2   ??? (CoreData + 2759720) [0x189e22c28]
+                                                      2   ??? (CoreData + 116236) [0x189b9d60c]
+                                                        2   ??? (CoreData + 110068) [0x189b9bdf4]
+                                                          2   ??? (CoreData + 37800) [0x189b8a3a8]
+                                                            2   ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                                                              2   ??? (libsqlite3.dylib + 233588) [0x185d8f074]
+                                                                2   ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+                                                                  2   ??? (libsqlite3.dylib + 259504) [0x185d955b0]
+                                                                    2   ??? (libsqlite3.dylib + 260616) [0x185d95a08]
+                                                                      2   ??? (libsqlite3.dylib + 327332) [0x185da5ea4]
+                                                                        2   ??? (libsqlite3.dylib + 697296) [0x185e003d0]
+                                                                          2   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                                                            2   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                                                                              2   <on behalf of UNKNOWN [98] (originated by UNKNOWN [98]), Requested Thread QoS User Initiated>
+          1   ??? (libdispatch.dylib + 44920) [0x1c0319f78]
+            1   ??? (libdispatch.dylib + 42088) [0x1c0319468]
+              1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                1   ??? (libdispatch.dylib + 70736) [0x1c0320450]
+                  1   ??? (CFNetwork + 307800) [0x19c35a258]
+                    1   ??? (CFNetwork + 1806956) [0x19c4c826c]
+                      1   ??? (libsqlite3.dylib + 33108) [0x185d5e154]
+                        1   ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                          1   ??? (libsqlite3.dylib + 233588) [0x185d8f074]
+                            1   ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+                              1   ??? (libsqlite3.dylib + 259504) [0x185d955b0]
+                                1   ??? (libsqlite3.dylib + 260616) [0x185d95a08]
+                                  1   ??? (libsqlite3.dylib + 327332) [0x185da5ea4]
+                                    1   ??? (libsqlite3.dylib + 697296) [0x185e003d0]
+                                      1   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                        1   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                                          1   <Requested Thread QoS Utility>
+    1   ??? (libsystem_pthread.dylib + 4988) [0x1e415d37c]
+      1   ??? (libdispatch.dylib + 83708) [0x1c03236fc]
+        1   ??? (libdispatch.dylib + 81736) [0x1c0322f48]
+          1   ??? (libdispatch.dylib + 23768) [0x1c0314cd8]
+            1   ??? (libdispatch.dylib + 26212) [0x1c0315664]
+              1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                1   ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+                  1   ??? (Foundation + 96152) [0x184c38798]
+                    1   ??? (Foundation + 98012) [0x184c38edc]
+                      1   ??? (Foundation + 97044) [0x184c38b14]
+                        1   ??? (Foundation + 98420) [0x184c39074]
+                          1   ??? (Whoop + 4845152) [0x1050e2e60]
+                            1   ??? (Whoop + 4838988) [0x1050e164c]
+                              1   ??? (Whoop + 494376) [0x104cbcb28]
+                                1   ??? (Whoop + 481444) [0x104cb98a4]
+                                  1   ??? (CoreData + 1225904) [0x189cac4b0]
+                                    1   ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                      1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                        1   ??? (CoreData + 6732) [0x189b82a4c]
+                                          1   ??? (Whoop + 481776) [0x104cb99f0]
+                                            1   ??? (Whoop + 99096476) [0x10aac579c]
+                                              1   ??? (Whoop + 99175516) [0x10aad8c5c]
+                                                1   ??? (CoreData + 1193264) [0x189ca4530]
+                                                  1   ??? (CoreData + 1484136) [0x189ceb568]
+                                                    1   ??? (CoreData + 1444956) [0x189ce1c5c]
+                                                      1   ??? (CoreData + 1495316) [0x189cee114]
+                                                        1   ??? (CoreData + 1713208) [0x189d23438]
+                                                          1   ??? (CoreData + 1711692) [0x189d22e4c]
+                                                            1   ??? (CoreData + 1704344) [0x189d21198]
+                                                              1   ??? (CoreData + 2632268) [0x189e03a4c]
+                                                                1   ??? (CoreData + 1422304) [0x189cdc3e0]
+                                                                  1   ??? (CoreData + 1911572) [0x189d53b14]
+                                                                    1   ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                      1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                        1   ??? (CoreData + 1911852) [0x189d53c2c]
+                                                                          1   ??? (CoreData + 1422512) [0x189cdc4b0]
+                                                                            1   ??? (CoreData + 826796) [0x189c4adac]
+                                                                              1   ??? (CoreData + 2711928) [0x189e17178]
+                                                                                1   ??? (CoreData + 304004) [0x189bcb384]
+                                                                                  1   ??? (CoreData + 110068) [0x189b9bdf4]
+                                                                                    1   ??? (CoreData + 37800) [0x189b8a3a8]
+                                                                                      1   ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                                                                                        1   ??? (libsqlite3.dylib + 233588) [0x185d8f074]
+                                                                                          1   ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+                                                                                            1   ??? (libsqlite3.dylib + 259504) [0x185d955b0]
+                                                                                              1   ??? (libsqlite3.dylib + 260616) [0x185d95a08]
+                                                                                                1   ??? (libsqlite3.dylib + 327332) [0x185da5ea4]
+                                                                                                  1   ??? (libsqlite3.dylib + 697296) [0x185e003d0]
+                                                                                                    1   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                                                                                      1   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                                                                                                        1   <Requested Thread QoS Utility>
+
+  Binary Images:
+           0x104c44000 -                ???  com.whoop.iphone 5.48.0 (573097) <045DD07B-5750-3EC5-ACE3-133C48DE859D>  /private/var/containers/Bundle/Application/1448763A-F11B-4C29-A741-AC00867452F8/Whoop.app/Whoop
+           0x184c21000 -        0x185a67c9f  Foundation                       <42C593BB-89FB-3EC4-8220-C746811E7A43>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x185a68000 -        0x185af0db7  libswift_Concurrency.dylib       <BD47057B-7F76-39EF-93C5-8C00B9914832>  /usr/lib/swift/libswift_Concurrency.dylib
+           0x185d56000 -        0x185eff6b3  libsqlite3.dylib                 <579118DA-D456-348C-9E1F-582D35482F62>  /usr/lib/libsqlite3.dylib
+           0x189b81000 -        0x189f114df  CoreData                         <F5D0D61A-7DC5-36DE-A232-E08926DBE9E4>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x197b48000 -        0x197b5ecd8  libswiftDispatch.dylib           <1F28F1B1-7CED-313C-B611-097E9132A688>  /usr/lib/swift/libswiftDispatch.dylib
+           0x19c30f000 -        0x19c6c58bf  CFNetwork                        <AC6CB884-3740-3320-9994-36594AF6AD73>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x1c030f000 -        0x1c035521f  libdispatch.dylib                <904D48A3-D99E-3962-BFA9-C3DFB66BBA83>  /usr/lib/system/libdispatch.dylib
+           0x1e415c000 -        0x1e416845f  libsystem_pthread.dylib          <4F94107B-94D2-3E88-8542-F5403C581B50>  /usr/lib/system/libsystem_pthread.dylib
+           0x23517e000 -        0x2351b8d2b  libsystem_kernel.dylib           <8D830129-2CBE-32A9-B61E-CE493EECB399>  /usr/lib/system/libsystem_kernel.dylib
+           0x2a2a7a000 -        0x2a2a7cb5f  libremovefile.dylib              <FE4A2C77-C202-32D3-853B-A02C73DCFAD3>  /usr/lib/system/libremovefile.dylib

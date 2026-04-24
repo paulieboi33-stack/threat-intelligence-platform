@@ -1,0 +1,885 @@
+{"app_name":"CoreRoutineHelperService","timestamp":"2026-03-24 23:27:36.00 -0500","app_version":"1.0","slice_uuid":"117F9C7C-CC1E-3E90-BAA1-02E7FA8587AF","build_version":"1","bundleID":"com.apple.CoreRoutine.helperservice","duration_ms":"92330","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 26.3.1 (23D771330a)","roots_installed":0,"name":"CoreRoutineHelperService","incident_id":"ECBBD49C-C4D7-4E7D-A3DB-84230B7D37B3"}
+Date/Time:        2026-03-24 23:26:01.481 -0500
+End time:         2026-03-24 23:27:33.811 -0500
+OS Version:       iPhone OS 26.3.1 (Build 23D771330a)
+Architecture:     arm64e
+Report Version:   67
+Incident Identifier: ECBBD49C-C4D7-4E7D-A3DB-84230B7D37B3
+
+Data Source:      Microstackshots
+Shared Cache:     714092CB-10E9-3333-83EA-E3F3A795CB07 slid base address 0x1844c0000, slide 0x44c0000
+
+Command:          CoreRoutineHelperService
+Path:             /System/Library/PrivateFrameworks/CoreRoutine.framework/XPCServices/CoreRoutineHelperService.xpc/CoreRoutineHelperService
+Identifier:       com.apple.CoreRoutine.helperservice
+Version:          1.0 (1)
+Resource Coalition: "com.apple.CoreRoutine.helperservice"(698)
+On Behalf Of:     14 samples UNKNOWN [38] (14 samples originated by UNKNOWN [32])
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              5808
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 92 seconds (97% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     92s
+Duration:         92.33s
+Duration Sampled: 86.12s (event ends 6.07s after samples)
+Steps:            25 (10 gigacycles/step)
+
+Hardware model:   iPhone17,1
+Active cpus:      6
+Memory size:      7.46 GB
+HW page size:     16384
+VM page size:     16384
+Shared cache residency: 14.49% (835.28 MB / 5765.34 MB)
+
+Time Since Boot:  160353s
+Time Awake Since Boot: 68430s
+Time Since Wake:  1777s
+
+Total CPU Time:   95.472s
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  77.25 GB/237.87 GB, low space threshold 150 MB
+Vnodes Available: 65.47% (18331/28000, 14000 allocated, 14000 soft limit)
+Model:            com.apple.fm.language.instruct_300m.tokenizer
+  Loaded:         ??? - N/A, requested by UNKNOWN
+Model:            com.apple.fm.language.instruct_3b.tokenizer
+  Loaded:         ??? - N/A, requested by UNKNOWN
+Model:            com.apple.fm.language.instruct_3b.urgency_classification?language=en
+  Executing:      6.5s - 7.1s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      6.5s - 7.0s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      7.0s - 7.1s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      7.1s - 7.1s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      7.2s - 7.3s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      7.3s - 7.3s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      7.3s - 7.3s, requested by [5772] use case classification.classifyMailMessage
+  Executing:      7.4s - 7.9s, requested by [5772] use case classification.classifyMailMessage
+Model:            com.apple.fm.language.instruct_3b.base
+  Loaded:         6.5s - 37s, requested by token-generation-inference
+  Loaded:         72s - 86s, requested by token-generation-inference
+Model:            com.apple.fm.language.instruct_3b.urgency_classification
+  Loaded:         6.6s - 11s, requested by token-generation-inference
+Model:            com.apple.fm.language.instruct_3b.summarization?language=en
+  Executing:      7.9s - 8.5s, requested by [5772] use case summarization.summarizeMailMessage
+  Executing:      8.5s - 8.5s, requested by [5772] use case summarization.summarizeMailMessage
+  Executing:      8.6s - 8.6s, requested by [5772] use case summarization.summarizeMailMessage
+  Executing:      8.6s - 8.7s, requested by [5772] use case summarization.summarizeMailMessage
+  Executing:      8.8s - 8.8s, requested by [5772] use case summarization.summarizeMailMessage
+  Executing:      8.9s - 11s, requested by [5772] use case summarization.summarizeMailMessage
+Model:            com.apple.fm.language.instruct_3b.summarization.draft
+  Loaded:         7.9s - 21s, requested by token-generation-inference
+Model:            com.apple.fm.language.instruct_3b.summarization
+  Loaded:         8.1s - 21s, requested by token-generation-inference
+Model:            com.apple.tokeninputdenylist.template
+  Executing:      8.7s - 8.7s, requested by [5772] use case summarization.summarizeMailMessage
+Model:            com.apple.gm.safety_embedding_deny.all
+  Loaded:         8.7s - 21s, requested by generative-experiences-safety-inference-provider
+Model:            com.apple.gm.safety_deny.input.foundation_models_framework.api
+  Loaded:         8.7s - 19s, requested by generative-experiences-safety-inference-provider
+Model:            com.apple.tokenoutputdenylist.template
+  Executing:      11s - 11s, requested by [5772] use case summarization.summarizeMailMessage
+Model:            com.apple.gm.safety_deny.output.foundation_models_framework.api
+  Loaded:         11s - 21s, requested by generative-experiences-safety-inference-provider
+Model:            com.apple.fm.language.instruct_300m.factual_consistency_classifier?language=en
+  Executing:      11s - 12s, requested by [5772] use case summarization.summarizeMailMessage
+Model:            com.apple.fm.language.instruct_300m.base
+  Loaded:         11s - 23s, requested by token-generation-inference
+Model:            com.apple.fm.language.instruct_300m.factual_consistency_classifier
+  Loaded:         11s - 23s, requested by token-generation-inference
+Model:            com.apple.defaultoverrides
+  Executing:      71s - 71s, requested by [5288] use case textUnderstanding.TextEventExtraction
+Model:            com.apple.gm.overrides.model_config.all
+  Loaded:         71s - 82s, requested by generative-experiences-safety-inference-provider
+Model:            com.apple.fm.language.instruct_3b.text_event_extraction?language=en
+  Executing:      71s - 76s, requested by [5288] use case textUnderstanding.TextEventExtraction
+Model:            com.apple.fm.language.instruct_3b.text_event_extraction.draft
+  Loaded:         71s - 86s, requested by token-generation-inference
+Model:            com.apple.fm.language.instruct_3b.text_event_extraction
+  Loaded:         72s - 86s, requested by token-generation-inference
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 2886
+
+Heaviest stack for the target process:
+  14  ??? (libsystem_pthread.dylib + 2240) [0x1e415c8c0]
+  14  ??? (libsystem_pthread.dylib + 5048) [0x1e415d3b8]
+  14  ??? (libdispatch.dylib + 85220) [0x1c0323ce4]
+  14  ??? (libdispatch.dylib + 87020) [0x1c03243ec]
+  14  ??? (libdispatch.dylib + 44920) [0x1c0319f78]
+  14  ??? (libdispatch.dylib + 42088) [0x1c0319468]
+  14  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+  14  ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+  14  ??? (CoreRoutineHelperService + 171996) [0x1020f1fdc]
+  14  ??? (PredictedContextAlgorithms + 533952) [0x1d3e0e5c0]
+  14  ??? (PredictedContextAlgorithms + 435604) [0x1d3df6594]
+  14  ??? (PredictedContextAlgorithms + 65208) [0x1d3d9beb8]
+  10  ??? (PredictedContextAlgorithms + 58432) [0x1d3d9a440]
+  10  ??? (NeuralNetworks + 60376) [0x2648a6bd8]
+  10  ??? (NeuralNetworks + 257896) [0x2648d6f68]
+  10  ??? (NeuralNetworks + 258244) [0x2648d70c4]
+  10  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+  10  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+  10  ??? (NeuralNetworks + 258636) [0x2648d724c]
+  10  ??? (NeuralNetworks + 258548) [0x2648d71f4]
+  10  ??? (NeuralNetworks + 45156) [0x2648a3064]
+  10  ??? (NeuralNetworks + 293104) [0x2648df8f0]
+  10  ??? (NeuralNetworks + 46560) [0x2648a35e0]
+  10  ??? (NeuralNetworks + 296088) [0x2648e0498]
+  10  ??? (NeuralNetworks + 302324) [0x2648e1cf4]
+  10  ??? (NeuralNetworks + 302276) [0x2648e1cc4]
+  10  ??? (libswiftDispatch.dylib + 5684) [0x197b49634]
+  10  ??? (libswiftDispatch.dylib + 6968) [0x197b49b38]
+  10  ??? (libswiftDispatch.dylib + 6420) [0x197b49914]
+  10  ??? (libswiftDispatch.dylib + 7092) [0x197b49bb4]
+  10  ??? (libswiftDispatch.dylib + 7296) [0x197b49c80]
+  10  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+  10  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+  10  ??? (libswiftDispatch.dylib + 7492) [0x197b49d44]
+  10  ??? (libswiftDispatch.dylib + 6816) [0x197b49aa0]
+  10  ??? (libswiftDispatch.dylib + 5884) [0x197b496fc]
+  10  ??? (libswiftDispatch.dylib + 44604) [0x197b52e3c]
+  10  ??? (libswiftDispatch.dylib + 6776) [0x197b49a78]
+  10  ??? (NeuralNetworks + 302364) [0x2648e1d1c]
+  5   ??? (NeuralNetworks + 8124) [0x264899fbc]
+  5   ??? (Espresso + 339864) [0x1982b6f98]
+  5   ??? (Espresso + 340416) [0x1982b71c0]
+  3   ??? (Espresso + 336080) [0x1982b60d0]
+  3   ??? (Espresso + 349500) [0x1982b953c]
+  3   ??? (Espresso + 363492) [0x1982bcbe4]
+  3   ??? (Espresso + 350520) [0x1982b9938]
+  1   ??? (Espresso + 146952) [0x198287e08]
+
+
+Powerstats for:   CoreRoutineHelperService [5808]
+UUID:             117F9C7C-CC1E-3E90-BAA1-02E7FA8587AF
+Path:             /System/Library/PrivateFrameworks/CoreRoutine.framework/XPCServices/CoreRoutineHelperService.xpc/CoreRoutineHelperService
+Identifier:       com.apple.CoreRoutine.helperservice
+Version:          1.0 (1)
+Resource Coalition: 14 samples "com.apple.CoreRoutine.helperservice"(698)
+On Behalf Of:     14 samples UNKNOWN [38] (14 samples originated by UNKNOWN [32])
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        8480 KB
+Start time:       2026-03-24 23:26:05.403 -0500
+End time:         2026-03-24 23:27:27.744 -0500
+Num samples:      14 (56%)
+Num threads:      1
+Primary state:    14 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    14 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 14 samples on AC
+  14  ??? (libsystem_pthread.dylib + 2240) [0x1e415c8c0]
+    14  ??? (libsystem_pthread.dylib + 5048) [0x1e415d3b8]
+      14  ??? (libdispatch.dylib + 85220) [0x1c0323ce4]
+        14  ??? (libdispatch.dylib + 87020) [0x1c03243ec]
+          14  ??? (libdispatch.dylib + 44920) [0x1c0319f78]
+            14  ??? (libdispatch.dylib + 42088) [0x1c0319468]
+              14  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                14  ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+                  14  ??? (CoreRoutineHelperService + 171996) [0x1020f1fdc]
+                    14  ??? (PredictedContextAlgorithms + 533952) [0x1d3e0e5c0]
+                      14  ??? (PredictedContextAlgorithms + 435604) [0x1d3df6594]
+                        14  ??? (PredictedContextAlgorithms + 65208) [0x1d3d9beb8]
+                          10  ??? (PredictedContextAlgorithms + 58432) [0x1d3d9a440]
+                            10  ??? (NeuralNetworks + 60376) [0x2648a6bd8]
+                              10  ??? (NeuralNetworks + 257896) [0x2648d6f68]
+                                10  ??? (NeuralNetworks + 258244) [0x2648d70c4]
+                                  10  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                    10  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                      10  ??? (NeuralNetworks + 258636) [0x2648d724c]
+                                        10  ??? (NeuralNetworks + 258548) [0x2648d71f4]
+                                          10  ??? (NeuralNetworks + 45156) [0x2648a3064]
+                                            10  ??? (NeuralNetworks + 293104) [0x2648df8f0]
+                                              10  ??? (NeuralNetworks + 46560) [0x2648a35e0]
+                                                10  ??? (NeuralNetworks + 296088) [0x2648e0498]
+                                                  10  ??? (NeuralNetworks + 302324) [0x2648e1cf4]
+                                                    10  ??? (NeuralNetworks + 302276) [0x2648e1cc4]
+                                                      10  ??? (libswiftDispatch.dylib + 5684) [0x197b49634]
+                                                        10  ??? (libswiftDispatch.dylib + 6968) [0x197b49b38]
+                                                          10  ??? (libswiftDispatch.dylib + 6420) [0x197b49914]
+                                                            10  ??? (libswiftDispatch.dylib + 7092) [0x197b49bb4]
+                                                              10  ??? (libswiftDispatch.dylib + 7296) [0x197b49c80]
+                                                                10  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                  10  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                    10  ??? (libswiftDispatch.dylib + 7492) [0x197b49d44]
+                                                                      10  ??? (libswiftDispatch.dylib + 6816) [0x197b49aa0]
+                                                                        10  ??? (libswiftDispatch.dylib + 5884) [0x197b496fc]
+                                                                          10  ??? (libswiftDispatch.dylib + 44604) [0x197b52e3c]
+                                                                            10  ??? (libswiftDispatch.dylib + 6776) [0x197b49a78]
+                                                                              10  ??? (NeuralNetworks + 302364) [0x2648e1d1c]
+                                                                                5   ??? (NeuralNetworks + 8124) [0x264899fbc]
+                                                                                  5   ??? (Espresso + 339864) [0x1982b6f98]
+                                                                                    5   ??? (Espresso + 340416) [0x1982b71c0]
+                                                                                      3   ??? (Espresso + 336080) [0x1982b60d0]
+                                                                                        3   ??? (Espresso + 349500) [0x1982b953c]
+                                                                                          3   ??? (Espresso + 363492) [0x1982bcbe4]
+                                                                                            3   ??? (Espresso + 350520) [0x1982b9938]
+                                                                                              1   ??? (Espresso + 701108) [0x19830f2b4]
+                                                                                                1   ??? (libsystem_m.dylib + 17680) [0x2a2ab1510]
+                                                                                                  1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                              1   ??? (Espresso + 359700) [0x1982bbd14]
+                                                                                                1   ??? (libsystem_platform.dylib + 2376) [0x2a2af8948]
+                                                                                                  1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                              1   ??? (Espresso + 146952) [0x198287e08]
+                                                                                                1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                      2   ??? (Espresso + 336144) [0x1982b6110]
+                                                                                        2   ??? (Espresso + 357528) [0x1982bb498]
+                                                                                          1   ??? (libsystem_platform.dylib + 2456) [0x2a2af8998]
+                                                                                            1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                          1   ??? (libsystem_platform.dylib + 2364) [0x2a2af893c]
+                                                                                            1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                5   ??? (NeuralNetworks + 7908) [0x264899ee4]
+                                                                                  5   ??? (NeuralNetworks + 313524) [0x2648e48b4]
+                                                                                    5   ??? (NeuralNetworks + 314556) [0x2648e4cbc]
+                                                                                      5   ??? (NeuralNetworks + 315148) [0x2648e4f0c]
+                                                                                        5   ??? (NeuralNetworks + 315788) [0x2648e518c]
+                                                                                          4   ??? (NeuralNetworks + 316300) [0x2648e538c]
+                                                                                            4   ??? (IOSurface + 7636) [0x1b4d62dd4]
+                                                                                              3   ??? (IOSurface + 42968) [0x1b4d6b7d8]
+                                                                                                2   ??? (IOSurface + 9200) [0x1b4d633f0]
+                                                                                                  2   ??? (IOKit + 5996) [0x19b8ee76c]
+                                                                                                    2   ??? (IOKit + 6560) [0x19b8ee9a0]
+                                                                                                      2   ??? (libsystem_kernel.dylib + 3284) [0x23517ecd4]
+                                                                                                        2   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                                1   ??? (IOSurface + 9112) [0x1b4d63398]
+                                                                                                  1   ??? (IOKit + 16692) [0x19b8f1134]
+                                                                                                    1   ??? (IOKit + 17396) [0x19b8f13f4]
+                                                                                                      1   ??? (IOKit + 18468) [0x19b8f1824]
+                                                                                                        1   ??? (CoreFoundation + 21092) [0x1875ec264]
+                                                                                                          1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                              1   ??? (IOSurface + 42960) [0x1b4d6b7d0]
+                                                                                                1   ??? (libobjc.A.dylib + 6616) [0x1845599d8]
+                                                                                                  1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                                          1   ??? (NeuralNetworks + 316272) [0x2648e5370]
+                                                                                            1   ??? (libswiftCore.dylib + 1388220) [0x1847e7ebc]
+                                                                                              1   ??? (libswiftCore.dylib + 1855928) [0x18485a1b8]
+                                                                                                1   ??? (libswiftCoreFoundation.dylib + 5768) [0x1dd3dd688]
+                                                                                                  1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                          2   ??? (PredictedContextAlgorithms + 58440) [0x1d3d9a448]
+                            2   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                              2   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                2   ??? (libswiftCore.dylib + 1668756) [0x18482c694]
+                                  2   ??? (libswiftCore.dylib + 22612) [0x18469a854]
+                                    2   ??? (libswiftCore.dylib + 350488) [0x1846ea918]
+                                      2   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                        2   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                          2   ??? (NeuralNetworks + 46356) [0x2648a3514]
+                                            2   ??? (NeuralNetworks + 46436) [0x2648a3564]
+                                              2   ??? (libswiftCore.dylib + 168268) [0x1846be14c]
+                                                2   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                  2   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                    2   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                      2   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                        2   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                          2   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                            2   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                              2   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                2   ??? (NeuralNetworks + 78624) [0x2648ab320]
+                                                                  1   ??? (NeuralNetworks + 78696) [0x2648ab368]
+                                                                    1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                      1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                        1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                          1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                            1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                              1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                  1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                    1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                      1   ??? (NeuralNetworks + 45984) [0x2648a33a0]
+                                                                                        1   ??? (NeuralNetworks + 46048) [0x2648a33e0]
+                                                                                          1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                            1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                              1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                  1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                    1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                      1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                                        1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                          1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                            1   ??? (NeuralNetworks + 79080) [0x2648ab4e8]
+                                                                                                              1   ??? (NeuralNetworks + 55104) [0x2648a5740]
+                                                                                                                1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                  1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                    1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                                      1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                                        1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                                          1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                                            1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                                                              1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                                1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                  1   ??? (NeuralNetworks + 45984) [0x2648a33a0]
+                                                                                                                                    1   ??? (NeuralNetworks + 46048) [0x2648a33e0]
+                                                                                                                                      1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                                        1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                          1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                                                            1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                                                              1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                                                                1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                                                                  1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                                                                                    1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                                                      1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                                        1   ??? (NeuralNetworks + 79204) [0x2648ab564]
+                                                                                                                                                          1   ??? (NeuralNetworks + 79160) [0x2648ab538]
+                                                                                                                                                            1   ??? (NeuralNetworks + 78516) [0x2648ab2b4]
+                                                                                                                                                              1   ??? (libswiftCore.dylib + 168268) [0x1846be14c]
+                                                                                                                                                                1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                                                  1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                                                                                    1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                                                                                      1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                                                                                        1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                                                                                          1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                                                                                                            1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                                                                              1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                                                                1   ??? (NeuralNetworks + 55428) [0x2648a5884]
+                                                                                                                                                                                  1   ??? (NeuralNetworks + 55352) [0x2648a5838]
+                                                                                                                                                                                    1   ??? (IOSurface + 4688) [0x1b4d62250]
+                                                                                                                                                                                      1   ??? (IOKit + 5936) [0x19b8ee730]
+                                                                                                                                                                                        1   ??? (IOKit + 6560) [0x19b8ee9a0]
+                                                                                                                                                                                          1   ??? (libsystem_kernel.dylib + 3284) [0x23517ecd4]
+                                                                                                                                                                                            1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                                                                  1   ??? (NeuralNetworks + 78688) [0x2648ab360]
+                                                                    1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                      1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                        1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                          1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                            1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                              1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                  1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                    1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                      1   ??? (NeuralNetworks + 45984) [0x2648a33a0]
+                                                                                        1   ??? (NeuralNetworks + 46048) [0x2648a33e0]
+                                                                                          1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                            1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                              1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                  1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                    1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                      1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                                        1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                          1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                            1   ??? (NeuralNetworks + 54888) [0x2648a5668]
+                                                                                                              1   ??? (NeuralNetworks + 54980) [0x2648a56c4]
+                                                                                                                1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                  1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                    1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                                      1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                                        1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                                          1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                                            1   ??? (libswiftCore.dylib + 50540) [0x1846a156c]
+                                                                                                                              1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                                1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                  1   ??? (NeuralNetworks + 54888) [0x2648a5668]
+                                                                                                                                    1   ??? (NeuralNetworks + 54980) [0x2648a56c4]
+                                                                                                                                      1   ??? (libswiftCore.dylib + 167876) [0x1846bdfc4]
+                                                                                                                                        1   ??? (libswiftCore.dylib + 164776) [0x1846bd3a8]
+                                                                                                                                          1   ??? (NeuralNetworks + 45792) [0x2648a32e0]
+                                                                                                                                            1   ??? (NeuralNetworks + 45732) [0x2648a32a4]
+                                                                                                                                              1   ??? (NeuralNetworks + 30672) [0x26489f7d0]
+                                                                                                                                                1   ??? (libswiftCore.dylib + 34264) [0x18469d5d8]
+                                                                                                                                                  1   ??? (libswiftCore.dylib + 584384) [0x184723ac0]
+                                                                                                                                                    1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                          1   ??? (PredictedContextAlgorithms + 58320) [0x1d3d9a3d0]
+                            1   ??? (NeuralNetworks + 155020) [0x2648bdd8c]
+                              1   ??? (NeuralNetworks + 207452) [0x2648caa5c]
+                                1   ??? (NeuralNetworks + 207356) [0x2648ca9fc]
+                                  1   ??? (NeuralNetworks + 207624) [0x2648cab08]
+                                    1   ??? (NeuralNetworks + 208104) [0x2648cace8]
+                                      1   ??? (NeuralNetworks + 208400) [0x2648cae10]
+                                        1   ??? (NeuralNetworks + 208356) [0x2648cade4]
+                                          1   ??? (NeuralNetworks + 208308) [0x2648cadb4]
+                                            1   ??? (NeuralNetworks + 210020) [0x2648cb464]
+                                              1   ??? (NeuralNetworks + 228360) [0x2648cfc08]
+                                                1   ??? (NeuralNetworks + 194376) [0x2648c7748]
+                                                  1   ??? (NeuralNetworks + 190196) [0x2648c66f4]
+                                                    1   ??? (NeuralNetworks + 67932) [0x2648a895c]
+                                                      1   ??? (NeuralNetworks + 12956) [0x26489b29c]
+                                                        1   ??? (libswiftCore.dylib + 38184) [0x18469e528]
+                                                          1   ??? (libswiftCore.dylib + 54684) [0x1846a259c]
+                                                            1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+                          1   ??? (PredictedContextAlgorithms + 56404) [0x1d3d99c54]
+                            1   ??? (NeuralNetworks + 65476) [0x2648a7fc4]
+                              1   ??? (NeuralNetworks + 85060) [0x2648acc44]
+                                1   ??? (NeuralNetworks + 88644) [0x2648ada44]
+                                  1   ??? (NeuralNetworks + 94344) [0x2648af088]
+                                    1   ??? (NeuralNetworks + 94308) [0x2648af064]
+                                      1   ??? (NeuralNetworks + 63372) [0x2648a778c]
+                                        1   ??? (libswiftCore.dylib + 4664124) [0x184b07b3c]
+                                          1   ??? (libswiftCore.dylib + 1160516) [0x1847b0544]
+                                            1   ??? (libswiftCore.dylib + 1160692) [0x1847b05f4]
+                                              1   <on behalf of UNKNOWN [38] (originated by UNKNOWN [32])>
+
+  Binary Images:
+           0x1020c8000 -                ???  com.apple.CoreRoutine.helperservice 1.0 (1) <117F9C7C-CC1E-3E90-BAA1-02E7FA8587AF>  /System/Library/PrivateFrameworks/CoreRoutine.framework/XPCServices/CoreRoutineHelperService.xpc/CoreRoutineHelperService
+           0x184558000 -        0x1845a9b5f  libobjc.A.dylib                             <4358DAF9-7758-3542-A1E1-9F185534A911>  /usr/lib/libobjc.A.dylib
+           0x184695000 -        0x184c2087f  libswiftCore.dylib                          <B7F3C19D-F3FB-3555-A60C-5F3F7B808C4F>  /usr/lib/swift/libswiftCore.dylib
+           0x1875e7000 -        0x187b6d73f  CoreFoundation                              <2F32D384-4637-3018-843E-4FC875B865C4>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x197b48000 -        0x197b5ecd8  libswiftDispatch.dylib                      <1F28F1B1-7CED-313C-B611-097E9132A688>  /usr/lib/swift/libswiftDispatch.dylib
+           0x198264000 -        0x19910361f  Espresso                                    <4284D63D-8FEC-3B19-88EF-30431972C05F>  /System/Library/PrivateFrameworks/Espresso.framework/Espresso
+           0x19b8ed000 -        0x19b9ba47f  IOKit                                       <5A5310B8-8F98-35D9-A54D-5C14F2CFF87D>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1b4d61000 -        0x1b4d7d9df  IOSurface                                   <5E881E57-7B15-3AA8-94F4-C14BCEFCFC76>  /System/Library/Frameworks/IOSurface.framework/IOSurface
+           0x1c030f000 -        0x1c035521f  libdispatch.dylib                           <904D48A3-D99E-3962-BFA9-C3DFB66BBA83>  /usr/lib/system/libdispatch.dylib
+           0x1d3d8c000 -        0x1d3e491bf  PredictedContextAlgorithms                  <10690A61-EC17-325C-8020-554A587D4078>  /System/Library/PrivateFrameworks/PredictedContextAlgorithms.framework/PredictedContextAlgorithms
+           0x1dd3dc000 -        0x1dd3e2007  libswiftCoreFoundation.dylib                <71B3E8EB-F1D1-304B-8332-EFB120E0E7BD>  /usr/lib/swift/libswiftCoreFoundation.dylib
+           0x1e415c000 -        0x1e416845f  libsystem_pthread.dylib                     <4F94107B-94D2-3E88-8542-F5403C581B50>  /usr/lib/system/libsystem_pthread.dylib
+           0x23517e000 -        0x2351b8d2b  libsystem_kernel.dylib                      <8D830129-2CBE-32A9-B61E-CE493EECB399>  /usr/lib/system/libsystem_kernel.dylib
+           0x264898000 -        0x264b2fe3f  NeuralNetworks                              <9E98C4A8-8A66-39A9-9EDB-A86F6F0D7DAC>  /System/Library/PrivateFrameworks/NeuralNetworks.framework/NeuralNetworks
+           0x2a2aad000 -        0x2a2aea5ff  libsystem_m.dylib                           <B589891F-147B-334E-98FA-1E59E0DD2F98>  /usr/lib/system/libsystem_m.dylib
+           0x2a2af8000 -        0x2a2afff3b  libsystem_platform.dylib                    <440513F7-C74E-35A6-A34A-D06A9DF88547>  /usr/lib/system/libsystem_platform.dylib
+
+
+Powerstats for:   mediaanalysisd
+UUID:             E1E645A0-6C85-3216-92E7-FBDA48736859
+Path:             /System/Library/PrivateFrameworks/MediaAnalysis.framework/mediaanalysisd
+Resource Coalition: 9 samples "com.apple.mediaanalysisd"(712)
+On Behalf Of:     9 samples UNKNOWN [84] (9 samples originated by UNKNOWN [84])
+Architecture:     arm64e
+Start time:       2026-03-24 23:26:07.112 -0500
+End time:         2026-03-24 23:26:35.038 -0500
+Num samples:      9 (36%)
+Primary state:    9 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    9 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 9 samples on AC
+  9  ??? (libsystem_pthread.dylib + 2240) [0x1e415c8c0]
+    5  ??? (libsystem_pthread.dylib + 5048) [0x1e415d3b8]
+      5  ??? (libdispatch.dylib + 85220) [0x1c0323ce4]
+        5  ??? (libdispatch.dylib + 87020) [0x1c03243ec]
+          5  ??? (libdispatch.dylib + 44868) [0x1c0319f44]
+            5  ??? (libdispatch.dylib + 42292) [0x1c0319534]
+              5  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                5  ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+                  5  ??? (MediaAnalysis + 2418284) [0x1cec7866c]
+                    4  ??? (MediaAnalysis + 2517200) [0x1cec908d0]
+                      4  ??? (MediaAnalysis + 2516344) [0x1cec90578]
+                        4  ??? (MediaAnalysis + 2515908) [0x1cec903c4]
+                          4  ??? (MediaAnalysis + 2200400) [0x1cec43350]
+                            4  ??? (SoundAnalysis + 413436) [0x1ce6aaefc]
+                              4  ??? (SoundAnalysis + 413164) [0x1ce6aadec]
+                                4  ??? (SoundAnalysis + 413316) [0x1ce6aae84]
+                                  4  ??? (libswiftDispatch.dylib + 5684) [0x197b49634]
+                                    4  ??? (libswiftDispatch.dylib + 6968) [0x197b49b38]
+                                      4  ??? (libswiftDispatch.dylib + 6420) [0x197b49914]
+                                        4  ??? (libswiftDispatch.dylib + 7092) [0x197b49bb4]
+                                          4  ??? (libswiftDispatch.dylib + 7296) [0x197b49c80]
+                                            4  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                              4  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                4  ??? (libswiftDispatch.dylib + 7492) [0x197b49d44]
+                                                  4  ??? (libswiftDispatch.dylib + 6816) [0x197b49aa0]
+                                                    4  ??? (libswiftDispatch.dylib + 5884) [0x197b496fc]
+                                                      4  ??? (libswiftDispatch.dylib + 44604) [0x197b52e3c]
+                                                        4  ??? (libswiftDispatch.dylib + 6776) [0x197b49a78]
+                                                          4  ??? (SoundAnalysis + 425224) [0x1ce6add08]
+                                                            4  ??? (SoundAnalysis + 413788) [0x1ce6ab05c]
+                                                              4  ??? (SoundAnalysis + 414352) [0x1ce6ab290]
+                                                                4  ??? (SoundAnalysis + 624868) [0x1ce6de8e4]
+                                                                  4  ??? (SoundAnalysis + 3078432) [0x1ce935920]
+                                                                    4  ??? (SoundAnalysis + 3047188) [0x1ce92df14]
+                                                                      4  ??? (SoundAnalysis + 3041852) [0x1ce92ca3c]
+                                                                        4  ??? (SoundAnalysis + 3056872) [0x1ce9304e8]
+                                                                          4  ??? (SoundAnalysis + 3057648) [0x1ce9307f0]
+                                                                            4  ??? (SoundAnalysis + 3058120) [0x1ce9309c8]
+                                                                              4  ??? (SoundAnalysis + 3078596) [0x1ce9359c4]
+                                                                                4  ??? (SoundAnalysis + 2897316) [0x1ce9095a4]
+                                                                                  4  ??? (AudioToolboxCore + 201576) [0x193c0e368]
+                                                                                    4  ??? (AudioToolboxCore + 188136) [0x193c0aee8]
+                                                                                      4  ??? (AudioToolboxCore + 189436) [0x193c0b3fc]
+                                                                                        4  ??? (AudioToolboxCore + 204016) [0x193c0ecf0]
+                                                                                          3  ??? (AudioToolboxCore + 204948) [0x193c0f094]
+                                                                                            3  ??? (SoundAnalysis + 2923544) [0x1ce90fc18]
+                                                                                              3  ??? (AudioToolboxCore + 201576) [0x193c0e368]
+                                                                                                3  ??? (AudioToolboxCore + 188136) [0x193c0aee8]
+                                                                                                  3  ??? (AudioToolboxCore + 189348) [0x193c0b3a4]
+                                                                                                    3  ??? (AudioToolboxCore + 204016) [0x193c0ecf0]
+                                                                                                      3  ??? (AudioToolboxCore + 204680) [0x193c0ef88]
+                                                                                                        3  ??? (SoundAnalysis + 3027328) [0x1ce929180]
+                                                                                                          3  ??? (SoundAnalysis + 1047232) [0x1ce745ac0]
+                                                                                                            3  ??? (SoundAnalysis + 1047124) [0x1ce745a54]
+                                                                                                              3  ??? (SoundAnalysis + 1045020) [0x1ce74521c]
+                                                                                                                3  ??? (SoundAnalysis + 1044816) [0x1ce745150]
+                                                                                                                  3  ??? (SoundAnalysis + 1046888) [0x1ce745968]
+                                                                                                                    3  ??? (SoundAnalysis + 1046772) [0x1ce7458f4]
+                                                                                                                      3  ??? (SoundAnalysis + 1052636) [0x1ce746fdc]
+                                                                                                                        3  ??? (SoundAnalysis + 34640) [0x1ce64e750]
+                                                                                                                          3  ??? (SoundAnalysis + 1045988) [0x1ce7455e4]
+                                                                                                                            3  ??? (CoreML + 3785856) [0x1994a0480]
+                                                                                                                              3  ??? (CoreML + 4876048) [0x1995aa710]
+                                                                                                                                3  ??? (CoreML + 4225220) [0x19950b8c4]
+                                                                                                                                  3  ??? (CoreML + 4649608) [0x199573288]
+                                                                                                                                    3  ??? (CoreML + 4146652) [0x1994f85dc]
+                                                                                                                                      3  ??? (SoundAnalysis + 1423444) [0x1ce7a1854]
+                                                                                                                                        3  ??? (SoundAnalysis + 1421708) [0x1ce7a118c]
+                                                                                                                                          3  ??? (SoundAnalysis + 1422408) [0x1ce7a1448]
+                                                                                                                                            3  ??? (SoundAnalysis + 1415972) [0x1ce79fb24]
+                                                                                                                                              3  ??? (SoundAnalysis + 1052636) [0x1ce746fdc]
+                                                                                                                                                3  ??? (SoundAnalysis + 34640) [0x1ce64e750]
+                                                                                                                                                  3  ??? (SoundAnalysis + 1045988) [0x1ce7455e4]
+                                                                                                                                                    3  ??? (CoreML + 4757784) [0x19958d918]
+                                                                                                                                                      3  ??? (CoreML + 4756996) [0x19958d604]
+                                                                                                                                                        3  ??? (CoreML + 4649608) [0x199573288]
+                                                                                                                                                          3  ??? (CoreML + 4757784) [0x19958d918]
+                                                                                                                                                            3  ??? (CoreML + 4756996) [0x19958d604]
+                                                                                                                                                              3  ??? (CoreML + 4065292) [0x1994e480c]
+                                                                                                                                                                3  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                                                                                                  3  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                                                                                                    3  ??? (CoreML + 4065580) [0x1994e492c]
+                                                                                                                                                                      3  ??? (CoreML + 4104824) [0x1994ee278]
+                                                                                                                                                                        3  ??? (CoreML + 4104312) [0x1994ee078]
+                                                                                                                                                                          3  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                                                                                                            3  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                                                                                                              3  ??? (CoreML + 4104624) [0x1994ee1b0]
+                                                                                                                                                                                3  ??? (CoreML + 4095588) [0x1994ebe64]
+                                                                                                                                                                                  3  ??? (CoreML + 4093852) [0x1994eb79c]
+                                                                                                                                                                                    3  ??? (Espresso + 339864) [0x1982b6f98]
+                                                                                                                                                                                      3  ??? (Espresso + 340416) [0x1982b71c0]
+                                                                                                                                                                                        3  ??? (Espresso + 336080) [0x1982b60d0]
+                                                                                                                                                                                          3  ??? (Espresso + 349500) [0x1982b953c]
+                                                                                                                                                                                            3  ??? (Espresso + 363492) [0x1982bcbe4]
+                                                                                                                                                                                              3  ??? (Espresso + 350520) [0x1982b9938]
+                                                                                                                                                                                                2  ??? (Espresso + 657476) [0x198304844]
+                                                                                                                                                                                                  1  ??? (libBNNS.dylib + 14732) [0x23c84198c]
+                                                                                                                                                                                                    1  ??? (libBNNS.dylib + 710008) [0x23c8eb578]
+                                                                                                                                                                                                      1  ??? (libBNNS.dylib + 724656) [0x23c8eeeb0]
+                                                                                                                                                                                                        1  ??? (libBNNS.dylib + 8963092) [0x23d0ca414]
+                                                                                                                                                                                                          1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                                                                                                                                                                                                  1  ??? (libBNNS.dylib + 14684) [0x23c84195c]
+                                                                                                                                                                                                    1  ??? (libBNNS.dylib + 10612456) [0x23d25cee8]
+                                                                                                                                                                                                      1  ??? (libBNNS.dylib + 762376) [0x23c8f8208]
+                                                                                                                                                                                                        1  ??? (libBNNS.dylib + 2196124) [0x23ca5629c]
+                                                                                                                                                                                                          1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                                                                                                                                                                                                1  ??? (Espresso + 701892) [0x19830f5c4]
+                                                                                                                                                                                                  1  ??? (libvDSP.dylib + 822228) [0x23ed9abd4]
+                                                                                                                                                                                                    1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                                                                                          1  ??? (AudioToolboxCore + 583480) [0x193c6b738]
+                                                                                            1  ??? (SoundAnalysis + 2915648) [0x1ce90dd40]
+                                                                                              1  ??? (AudioToolboxCore + 201576) [0x193c0e368]
+                                                                                                1  ??? (AudioToolboxCore + 188136) [0x193c0aee8]
+                                                                                                  1  ??? (AudioToolboxCore + 189348) [0x193c0b3a4]
+                                                                                                    1  ??? (AudioToolboxCore + 204016) [0x193c0ecf0]
+                                                                                                      1  ??? (AudioToolboxCore + 204948) [0x193c0f094]
+                                                                                                        1  ??? (SoundAnalysis + 3027328) [0x1ce929180]
+                                                                                                          1  ??? (SoundAnalysis + 1047232) [0x1ce745ac0]
+                                                                                                            1  ??? (SoundAnalysis + 1047124) [0x1ce745a54]
+                                                                                                              1  ??? (SoundAnalysis + 1045020) [0x1ce74521c]
+                                                                                                                1  ??? (SoundAnalysis + 1044816) [0x1ce745150]
+                                                                                                                  1  ??? (SoundAnalysis + 1046888) [0x1ce745968]
+                                                                                                                    1  ??? (SoundAnalysis + 1046772) [0x1ce7458f4]
+                                                                                                                      1  ??? (SoundAnalysis + 1052636) [0x1ce746fdc]
+                                                                                                                        1  ??? (SoundAnalysis + 34640) [0x1ce64e750]
+                                                                                                                          1  ??? (SoundAnalysis + 1045988) [0x1ce7455e4]
+                                                                                                                            1  ??? (CoreML + 4757784) [0x19958d918]
+                                                                                                                              1  ??? (CoreML + 4756996) [0x19958d604]
+                                                                                                                                1  ??? (CoreML + 4065292) [0x1994e480c]
+                                                                                                                                  1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                                                                    1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                                                                      1  ??? (CoreML + 4065580) [0x1994e492c]
+                                                                                                                                        1  ??? (CoreML + 4104824) [0x1994ee278]
+                                                                                                                                          1  ??? (CoreML + 4104312) [0x1994ee078]
+                                                                                                                                            1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                                                                              1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                                                                                1  ??? (CoreML + 4104624) [0x1994ee1b0]
+                                                                                                                                                  1  ??? (CoreML + 4095588) [0x1994ebe64]
+                                                                                                                                                    1  ??? (CoreML + 4093852) [0x1994eb79c]
+                                                                                                                                                      1  ??? (Espresso + 339864) [0x1982b6f98]
+                                                                                                                                                        1  ??? (Espresso + 340416) [0x1982b71c0]
+                                                                                                                                                          1  ??? (Espresso + 336144) [0x1982b6110]
+                                                                                                                                                            1  ??? (Espresso + 357528) [0x1982bb498]
+                                                                                                                                                              1  ??? (Espresso + 11853868) [0x198db202c]
+                                                                                                                                                                1  ??? (vImage + 190260) [0x23bdc1734]
+                                                                                                                                                                  1  ??? (vImage + 48100) [0x23bd9ebe4]
+                                                                                                                                                                    1  ??? (libsystem_pthread.dylib + 7016) [0x1e415db68]
+                                                                                                                                                                      1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                    1  ??? (MediaAnalysis + 2517148) [0x1cec9089c]
+                      1  ??? (MediaAnalysis + 2515612) [0x1cec9029c]
+                        1  ??? (MediaAnalysis + 2198792) [0x1cec42d08]
+                          1  ??? (MediaAnalysis + 2196480) [0x1cec42400]
+                            1  ??? (MediaAnalysis + 907724) [0x1ceb079cc]
+                              1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                  1  ??? (MediaAnalysis + 907956) [0x1ceb07ab4]
+                                    1  ??? (SoundAnalysis + 1741400) [0x1ce7ef258]
+                                      1  ??? (SoundAnalysis + 1741284) [0x1ce7ef1e4]
+                                        1  ??? (SoundAnalysis + 1736144) [0x1ce7eddd0]
+                                          1  ??? (SoundAnalysis + 1733556) [0x1ce7ed3b4]
+                                            1  ??? (SoundAnalysis + 1734400) [0x1ce7ed700]
+                                              1  ??? (SoundAnalysis + 370836) [0x1ce6a0894]
+                                                1  ??? (SoundAnalysis + 373800) [0x1ce6a1428]
+                                                  1  ??? (SoundAnalysis + 705332) [0x1ce6f2334]
+                                                    1  ??? (SoundAnalysis + 1234172) [0x1ce7734fc]
+                                                      1  ??? (SoundAnalysis + 376532) [0x1ce6a1ed4]
+                                                        1  ??? (SoundAnalysis + 705300) [0x1ce6f2314]
+                                                          1  ??? (SoundAnalysis + 1307036) [0x1ce78519c]
+                                                            1  ??? (SoundAnalysis + 1306460) [0x1ce784f5c]
+                                                              1  ??? (SoundAnalysis + 2600720) [0x1ce8c0f10]
+                                                                1  ??? (CoreML + 4930172) [0x1995b7a7c]
+                                                                  1  ??? (CoreML + 4445272) [0x199541458]
+                                                                    1  ??? (CoreML + 5279148) [0x19960cdac]
+                                                                      1  ??? (CoreML + 5203392) [0x1995fa5c0]
+                                                                        1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                          1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                            1  ??? (CoreML + 5203692) [0x1995fa6ec]
+                                                                              1  ??? (CoreML + 3895304) [0x1994bb008]
+                                                                                1  ??? (CoreML + 4582148) [0x199562b04]
+                                                                                  1  ??? (CoreML + 4581644) [0x19956290c]
+                                                                                    1  ??? (CoreML + 4572668) [0x1995605fc]
+                                                                                      1  ??? (CoreML + 4571680) [0x199560220]
+                                                                                        1  ??? (CoreML + 4569140) [0x19955f834]
+                                                                                          1  ??? (CoreML + 4576980) [0x1995616d4]
+                                                                                            1  ??? (CoreML + 5161612) [0x1995f028c]
+                                                                                              1  ??? (CoreML + 4651968) [0x199573bc0]
+                                                                                                1  ??? (CoreML + 4573836) [0x199560a8c]
+                                                                                                  1  ??? (CoreML + 4572668) [0x1995605fc]
+                                                                                                    1  ??? (CoreML + 4571680) [0x199560220]
+                                                                                                      1  ??? (CoreML + 4569140) [0x19955f834]
+                                                                                                        1  ??? (CoreML + 4576980) [0x1995616d4]
+                                                                                                          1  ??? (CoreML + 4144268) [0x1994f7c8c]
+                                                                                                            1  ??? (CoreML + 4127972) [0x1994f3ce4]
+                                                                                                              1  ??? (CoreML + 4123240) [0x1994f2a68]
+                                                                                                                1  ??? (CoreML + 4125332) [0x1994f3294]
+                                                                                                                  1  ??? (Espresso + 20004) [0x198268e24]
+                                                                                                                    1  ??? (Espresso + 30364) [0x19826b69c]
+                                                                                                                      1  ??? (Espresso + 26172) [0x19826a63c]
+                                                                                                                        1  ??? (Espresso + 23272) [0x198269ae8]
+                                                                                                                          1  ??? (Espresso + 41880) [0x19826e398]
+                                                                                                                            1  ??? (Espresso + 44388) [0x19826ed64]
+                                                                                                                              1  ??? (Espresso + 45240) [0x19826f0b8]
+                                                                                                                                1  ??? (Espresso + 40788) [0x19826df54]
+                                                                                                                                  1  ??? (libc++.1.dylib + 214008) [0x19697d3f8]
+                                                                                                                                    1  ??? (libsystem_c.dylib + 31924) [0x192f18cb4]
+                                                                                                                                      1  ??? (libsystem_kernel.dylib + 26384) [0x235184710]
+                                                                                                                                        1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+    4  ??? (libsystem_pthread.dylib + 4988) [0x1e415d37c]
+      4  ??? (libdispatch.dylib + 83708) [0x1c03236fc]
+        4  ??? (libdispatch.dylib + 82108) [0x1c03230bc]
+          4  ??? (libdispatch.dylib + 230492) [0x1c034745c]
+            4  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+              4  ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+                4  ??? (mediaanalysisd + 116992) [0x10030c900]
+                  2  ??? (MediaAnalysis + 3129860) [0x1ced26204]
+                    2  ??? (mediaanalysisd + 1563068) [0x10046d9bc]
+                      2  ??? (mediaanalysisd + 1457916) [0x100453efc]
+                        2  ??? (mediaanalysisd + 1453620) [0x100452e34]
+                          2  ??? (mediaanalysisd + 1437920) [0x10044f0e0]
+                            2  ??? (VisualUnderstanding + 858768) [0x1d71d8a90]
+                              2  ??? (VisualUnderstanding + 867164) [0x1d71dab5c]
+                                2  ??? (mediaanalysisd + 1445428) [0x100450e34]
+                                  1  ??? (Photos + 36160) [0x1a0f23d40]
+                                    1  ??? (Photos + 2453848) [0x1a1172158]
+                                      1  ??? (Photos + 2449976) [0x1a1171238]
+                                        1  ??? (Photos + 2449640) [0x1a11710e8]
+                                          1  ??? (PhotoLibraryServicesCore + 7452) [0x1af595d1c]
+                                            1  ??? (PhotoLibraryServicesCore + 7232) [0x1af595c40]
+                                              1  ??? (PhotoLibraryServicesCore + 7568) [0x1af595d90]
+                                                1  ??? (Photos + 2449864) [0x1a11711c8]
+                                                  1  ??? (Photos + 2448984) [0x1a1170e58]
+                                                    1  ??? (Photos + 2451252) [0x1a1171734]
+                                                      1  ??? (Photos + 1289016) [0x1a1055b38]
+                                                        1  ??? (Photos + 1290112) [0x1a1055f80]
+                                                          1  ??? (PhotoLibraryServices + 1816600) [0x1a077a818]
+                                                            1  ??? (PhotoLibraryServices + 1823224) [0x1a077c1f8]
+                                                              1  ??? (CoreData + 1225904) [0x189cac4b0]
+                                                                1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                  1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                    1  ??? (CoreData + 6732) [0x189b82a4c]
+                                                                      1  ??? (PhotoLibraryServices + 1823300) [0x1a077c244]
+                                                                        1  ??? (Photos + 1290732) [0x1a10561ec]
+                                                                          1  ??? (PhotoLibraryServices + 1819540) [0x1a077b394]
+                                                                            1  ??? (PhotoLibraryServices + 1823856) [0x1a077c470]
+                                                                              1  ??? (CoreData + 1207552) [0x189ca7d00]
+                                                                                1  ??? (CoreData + 1484136) [0x189ceb568]
+                                                                                  1  ??? (CoreData + 1444956) [0x189ce1c5c]
+                                                                                    1  ??? (CoreData + 1490868) [0x189cecfb4]
+                                                                                      1  ??? (CoreData + 1716408) [0x189d240b8]
+                                                                                        1  ??? (CoreData + 1704344) [0x189d21198]
+                                                                                          1  ??? (CoreData + 2632268) [0x189e03a4c]
+                                                                                            1  ??? (CoreData + 1422304) [0x189cdc3e0]
+                                                                                              1  ??? (CoreData + 1911572) [0x189d53b14]
+                                                                                                1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                                  1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                                    1  ??? (CoreData + 1911852) [0x189d53c2c]
+                                                                                                      1  ??? (CoreData + 1422512) [0x189cdc4b0]
+                                                                                                        1  ??? (CoreData + 826796) [0x189c4adac]
+                                                                                                          1  ??? (CoreData + 2758064) [0x189e225b0]
+                                                                                                            1  ??? (CoreData + 57600) [0x189b8f100]
+                                                                                                              1  ??? (CoreData + 42924) [0x189b8b7ac]
+                                                                                                                1  ??? (CoreData + 1964320) [0x189d60920]
+                                                                                                                  1  ??? (CoreData + 37800) [0x189b8a3a8]
+                                                                                                                    1  ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                                                                                                                      1  ??? (libsqlite3.dylib + 233512) [0x185d8f028]
+                                                                                                                        1  ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+                                                                                                                          1  ??? (libsqlite3.dylib + 259580) [0x185d955fc]
+                                                                                                                            1  ??? (libsqlite3.dylib + 261844) [0x185d95ed4]
+                                                                                                                              1  ??? (libsqlite3.dylib + 264928) [0x185d96ae0]
+                                                                                                                                1  ??? (libsqlite3.dylib + 107016) [0x185d70208]
+                                                                                                                                  1  ??? (libsqlite3.dylib + 668108) [0x185df91cc]
+                                                                                                                                    1  ??? (libsystem_kernel.dylib + 23908) [0x235183d64]
+                                                                                                                                      1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                                  1  ??? (Photos + 36148) [0x1a0f23d34]
+                                    1  ??? (Photos + 2651728) [0x1a11a2650]
+                                      1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                        1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                          1  ??? (Photos + 2651908) [0x1a11a2704]
+                                            1  ??? (Photos + 2660088) [0x1a11a46f8]
+                                              1  ??? (PhotoLibraryServices + 1816600) [0x1a077a818]
+                                                1  ??? (PhotoLibraryServices + 1823224) [0x1a077c1f8]
+                                                  1  ??? (CoreData + 1225904) [0x189cac4b0]
+                                                    1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                      1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                        1  ??? (CoreData + 6732) [0x189b82a4c]
+                                                          1  ??? (PhotoLibraryServices + 1823300) [0x1a077c244]
+                                                            1  ??? (Photos + 2660700) [0x1a11a495c]
+                                                              1  ??? (PhotoLibraryServices + 1819540) [0x1a077b394]
+                                                                1  ??? (PhotoLibraryServices + 1823856) [0x1a077c470]
+                                                                  1  ??? (CoreData + 1207552) [0x189ca7d00]
+                                                                    1  ??? (CoreData + 1484136) [0x189ceb568]
+                                                                      1  ??? (CoreData + 1444956) [0x189ce1c5c]
+                                                                        1  ??? (CoreData + 1490868) [0x189cecfb4]
+                                                                          1  ??? (CoreData + 1716408) [0x189d240b8]
+                                                                            1  ??? (CoreData + 1704344) [0x189d21198]
+                                                                              1  ??? (CoreData + 2632268) [0x189e03a4c]
+                                                                                1  ??? (CoreData + 1422304) [0x189cdc3e0]
+                                                                                  1  ??? (CoreData + 1911572) [0x189d53b14]
+                                                                                    1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                      1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                        1  ??? (CoreData + 1911852) [0x189d53c2c]
+                                                                                          1  ??? (CoreData + 1422512) [0x189cdc4b0]
+                                                                                            1  ??? (CoreData + 826796) [0x189c4adac]
+                                                                                              1  ??? (CoreData + 2758056) [0x189e225a8]
+                                                                                                1  ??? (CoreData + 29608) [0x189b883a8]
+                                                                                                  1  ??? (CoreData + 29360) [0x189b882b0]
+                                                                                                    1  ??? (CoreData + 1866352) [0x189d48a70]
+                                                                                                      1  ??? (CoreData + 1847120) [0x189d43f50]
+                                                                                                        1  ??? (CoreData + 1815636) [0x189d3c454]
+                                                                                                          1  ??? (CoreData + 1680596) [0x189d1b4d4]
+                                                                                                            1  ??? (CoreData + 1680596) [0x189d1b4d4]
+                                                                                                              1  ??? (CoreData + 2163136) [0x189d911c0]
+                                                                                                                1  ??? (libobjc.A.dylib + 12320) [0x18455b020]
+                                                                                                                  1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                  1  ??? (mediaanalysisd + 1140400) [0x1004066b0]
+                    1  ??? (CoreFoundation + 1495228) [0x1877540bc]
+                      1  ??? (CoreFoundation + 85880) [0x1875fbf78]
+                        1  ??? (mediaanalysisd + 1141840) [0x100406c50]
+                          1  ??? (CoreFoundation + 888544) [0x1876bfee0]
+                            1  ??? (CoreFoundation + 85880) [0x1875fbf78]
+                              1  ??? (mediaanalysisd + 1143164) [0x10040717c]
+                                1  ??? (Foundation + 97044) [0x184c38b14]
+                                  1  ??? (Foundation + 98420) [0x184c39074]
+                                    1  ??? (mediaanalysisd + 1803152) [0x1004a8390]
+                                      1  ??? (mediaanalysisd + 1346172) [0x100438a7c]
+                                        1  ??? (mediaanalysisd + 1341096) [0x1004376a8]
+                                          1  ??? (mediaanalysisd + 1339528) [0x100437088]
+                                            1  ??? (MediaAnalysis + 2175276) [0x1cec3d12c]
+                                              1  ??? (MediaAnalysis + 2175168) [0x1cec3d0c0]
+                                                1  ??? (Photos + 1209268) [0x1a10423b4]
+                                                  1  ??? (PhotoLibraryServices + 2788636) [0x1a0867d1c]
+                                                    1  ??? (PhotoLibraryServices + 2800208) [0x1a086aa50]
+                                                      1  ??? (PhotoLibraryServices + 1820388) [0x1a077b6e4]
+                                                        1  ??? (CoreData + 1261124) [0x189cb4e44]
+                                                          1  ??? (libdispatch.dylib + 71540) [0x1c0320774]
+                                                            1  ??? (libdispatch.dylib + 72932) [0x1c0320ce4]
+                                                              1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                1  ??? (CoreData + 6732) [0x189b82a4c]
+                                                                  1  ??? (PhotoLibraryServices + 1820516) [0x1a077b764]
+                                                                    1  ??? (PhotoLibraryServices + 1820636) [0x1a077b7dc]
+                                                                      1  ??? (PhotoLibraryServices + 2800840) [0x1a086acc8]
+                                                                        1  ??? (Photos + 1209844) [0x1a10425f4]
+                                                                          1  ??? (Photos + 1205176) [0x1a10413b8]
+                                                                            1  ??? (Photos + 1200976) [0x1a1040350]
+                                                                              1  ??? (PhotoLibraryServices + 5396112) [0x1a0ae4690]
+                                                                                1  ??? (Foundation + 660684) [0x184cc24cc]
+                                                                                  1  ??? (Foundation + 672476) [0x184cc52dc]
+                                                                                    1  ??? (Foundation + 672952) [0x184cc54b8]
+                                                                                      1  ??? (Foundation + 657940) [0x184cc1a14]
+                                                                                        1  ??? (libsystem_kernel.dylib + 26112) [0x235184600]
+                                                                                          1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+                  1  ??? (mediaanalysisd + 1140128) [0x1004065a0]
+                    1  ??? (MediaAnalysis + 3129860) [0x1ced26204]
+                      1  ??? (mediaanalysisd + 1177412) [0x10040f744]
+                        1  ??? (mediaanalysisd + 1165352) [0x10040c828]
+                          1  ??? (mediaanalysisd + 1163388) [0x10040c07c]
+                            1  ??? (mediaanalysisd + 1175376) [0x10040ef50]
+                              1  ??? (mediaanalysisd + 1156688) [0x10040a650]
+                                1  ??? (mediaanalysisd + 1512260) [0x100461344]
+                                  1  ??? (Photos + 2645552) [0x1a11a0e30]
+                                    1  ??? (Photos + 2453848) [0x1a1172158]
+                                      1  ??? (Photos + 2449976) [0x1a1171238]
+                                        1  ??? (Photos + 2449640) [0x1a11710e8]
+                                          1  ??? (PhotoLibraryServicesCore + 7452) [0x1af595d1c]
+                                            1  ??? (PhotoLibraryServicesCore + 7232) [0x1af595c40]
+                                              1  ??? (PhotoLibraryServicesCore + 7568) [0x1af595d90]
+                                                1  ??? (Photos + 2449864) [0x1a11711c8]
+                                                  1  ??? (Photos + 2448984) [0x1a1170e58]
+                                                    1  ??? (Photos + 2451252) [0x1a1171734]
+                                                      1  ??? (Photos + 1289016) [0x1a1055b38]
+                                                        1  ??? (Photos + 1290112) [0x1a1055f80]
+                                                          1  ??? (PhotoLibraryServices + 1816600) [0x1a077a818]
+                                                            1  ??? (PhotoLibraryServices + 1823224) [0x1a077c1f8]
+                                                              1  ??? (CoreData + 1225904) [0x189cac4b0]
+                                                                1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                  1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                    1  ??? (CoreData + 6732) [0x189b82a4c]
+                                                                      1  ??? (PhotoLibraryServices + 1823300) [0x1a077c244]
+                                                                        1  ??? (Photos + 1290732) [0x1a10561ec]
+                                                                          1  ??? (PhotoLibraryServices + 1819540) [0x1a077b394]
+                                                                            1  ??? (PhotoLibraryServices + 1823856) [0x1a077c470]
+                                                                              1  ??? (CoreData + 1207552) [0x189ca7d00]
+                                                                                1  ??? (CoreData + 1484136) [0x189ceb568]
+                                                                                  1  ??? (CoreData + 1444956) [0x189ce1c5c]
+                                                                                    1  ??? (CoreData + 1490868) [0x189cecfb4]
+                                                                                      1  ??? (CoreData + 1716408) [0x189d240b8]
+                                                                                        1  ??? (CoreData + 1704344) [0x189d21198]
+                                                                                          1  ??? (CoreData + 2632268) [0x189e03a4c]
+                                                                                            1  ??? (CoreData + 1422304) [0x189cdc3e0]
+                                                                                              1  ??? (CoreData + 1911572) [0x189d53b14]
+                                                                                                1  ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                                                  1  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                                    1  ??? (CoreData + 1911852) [0x189d53c2c]
+                                                                                                      1  ??? (CoreData + 1422512) [0x189cdc4b0]
+                                                                                                        1  ??? (CoreData + 826796) [0x189c4adac]
+                                                                                                          1  ??? (CoreData + 2758064) [0x189e225b0]
+                                                                                                            1  ??? (CoreData + 57600) [0x189b8f100]
+                                                                                                              1  ??? (CoreData + 42924) [0x189b8b7ac]
+                                                                                                                1  ??? (CoreData + 1964320) [0x189d60920]
+                                                                                                                  1  ??? (CoreData + 37800) [0x189b8a3a8]
+                                                                                                                    1  ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                                                                                                                      1  ??? (libsqlite3.dylib + 207116) [0x185d8890c]
+                                                                                                                        1  ??? (libsqlite3.dylib + 730596) [0x185e085e4]
+                                                                                                                          1  ??? (libsqlite3.dylib + 237436) [0x185d8ff7c]
+                                                                                                                            1  ??? (libsqlite3.dylib + 747872) [0x185e0c960]
+                                                                                                                              1  ??? (libsqlite3.dylib + 685032) [0x185dfd3e8]
+                                                                                                                                1  ??? (libsqlite3.dylib + 113456) [0x185d71b30]
+                                                                                                                                  1  ??? (libsqlite3.dylib + 26476) [0x185d5c76c]
+                                                                                                                                    1  ??? (libsystem_kernel.dylib + 4560) [0x23517f1d0]
+                                                                                                                                      1  <on behalf of UNKNOWN [84] (originated by UNKNOWN [84])>
+
+  Binary Images:
+           0x1002f0000 -                ???  mediaanalysisd           <E1E645A0-6C85-3216-92E7-FBDA48736859>  /System/Library/PrivateFrameworks/MediaAnalysis.framework/mediaanalysisd
+           0x184558000 -        0x1845a9b5f  libobjc.A.dylib          <4358DAF9-7758-3542-A1E1-9F185534A911>  /usr/lib/libobjc.A.dylib
+           0x184c21000 -        0x185a67c9f  Foundation               <42C593BB-89FB-3EC4-8220-C746811E7A43>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x185d56000 -        0x185eff6b3  libsqlite3.dylib         <579118DA-D456-348C-9E1F-582D35482F62>  /usr/lib/libsqlite3.dylib
+           0x1875e7000 -        0x187b6d73f  CoreFoundation           <2F32D384-4637-3018-843E-4FC875B865C4>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x189b81000 -        0x189f114df  CoreData                 <F5D0D61A-7DC5-36DE-A232-E08926DBE9E4>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x192f11000 -        0x192f915af  libsystem_c.dylib        <61A33AA9-D668-3B35-A859-B6925C4047B9>  /usr/lib/system/libsystem_c.dylib
+           0x193bdd000 -        0x193f99e7f  AudioToolboxCore         <623CCF67-18C3-30BE-8433-4DF6C83F145B>  /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
+           0x196949000 -        0x1969dbe23  libc++.1.dylib           <1BA945BC-7F65-386A-8A4C-F74CAAB2A260>  /usr/lib/libc++.1.dylib
+           0x197b48000 -        0x197b5ecd8  libswiftDispatch.dylib   <1F28F1B1-7CED-313C-B611-097E9132A688>  /usr/lib/swift/libswiftDispatch.dylib
+           0x198264000 -        0x19910361f  Espresso                 <4284D63D-8FEC-3B19-88EF-30431972C05F>  /System/Library/PrivateFrameworks/Espresso.framework/Espresso
+           0x199104000 -        0x19991569f  CoreML                   <C58711D5-5348-36A3-8804-EB0581512321>  /System/Library/Frameworks/CoreML.framework/CoreML
+           0x1a05bf000 -        0x1a0f1afbf  PhotoLibraryServices     <4946A6D4-F16A-3548-A705-D81FA4EDE443>  /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices
+           0x1a0f1b000 -        0x1a12e1f3f  Photos                   <10E4782E-1F82-36F5-A9A2-EF4CE8E27F23>  /System/Library/Frameworks/Photos.framework/Photos
+           0x1af594000 -        0x1af6b7cbf  PhotoLibraryServicesCore <65F2E275-A902-3487-B3A6-4A315E7C3CDE>  /System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore
+           0x1c030f000 -        0x1c035521f  libdispatch.dylib        <904D48A3-D99E-3962-BFA9-C3DFB66BBA83>  /usr/lib/system/libdispatch.dylib
+           0x1ce646000 -        0x1cea2983f  SoundAnalysis            <65CA03FB-5B03-3F7D-89C6-21BB2B1C8794>  /System/Library/Frameworks/SoundAnalysis.framework/SoundAnalysis
+           0x1cea2a000 -        0x1cef507bf  MediaAnalysis            <9C30E81E-F5C3-3138-BBE6-63A45E1258BE>  /System/Library/PrivateFrameworks/MediaAnalysis.framework/MediaAnalysis
+           0x1d7107000 -        0x1d72038be  VisualUnderstanding      <B9C67976-0943-359B-8B42-F3CC57A162EC>  /System/Library/PrivateFrameworks/VisualUnderstanding.framework/VisualUnderstanding
+           0x1e415c000 -        0x1e416845f  libsystem_pthread.dylib  <4F94107B-94D2-3E88-8542-F5403C581B50>  /usr/lib/system/libsystem_pthread.dylib
+           0x23517e000 -        0x2351b8d2b  libsystem_kernel.dylib   <8D830129-2CBE-32A9-B61E-CE493EECB399>  /usr/lib/system/libsystem_kernel.dylib
+           0x23bd93000 -        0x23c0d2a2f  vImage                   <1E5E0F15-D685-3F33-BD2E-571C2BA3C086>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
+           0x23c83e000 -        0x23d82542b  libBNNS.dylib            <18626A75-7DAD-36DA-958B-75FBA945B198>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
+           0x23ecd2000 -        0x23ee07277  libvDSP.dylib            <395CFA35-FD6D-3AB4-BBEA-ADE29AFABA79>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib

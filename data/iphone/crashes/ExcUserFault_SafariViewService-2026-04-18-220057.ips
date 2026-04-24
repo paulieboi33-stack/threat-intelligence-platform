@@ -1,0 +1,85 @@
+{"is_simulated":1,"app_name":"SafariViewService","timestamp":"2026-04-18 22:00:57.00 -0500","app_version":"26.3","slice_uuid":"a3d8b2cd-a31a-3358-a794-642cb81f39c7","build_version":"8623.2.7.10.4","platform":2,"bundleID":"com.apple.SafariViewService","share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 26.3.1 (23D771330a)","roots_installed":0,"name":"SafariViewService","incident_id":"585DA86D-1C7C-47BA-86C9-D346670AC748"}
+{
+  "uptime" : 1000000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPhone17,1",
+  "coalitionID" : 18150,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 26.3.1",
+    "releaseType" : "User",
+    "build" : "23D771330a"
+  },
+  "captureTime" : "2026-04-18 22:00:57.0473 -0500",
+  "codeSigningMonitor" : 2,
+  "incident" : "585DA86D-1C7C-47BA-86C9-D346670AC748",
+  "pid" : 89505,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "procStartAbsTime" : 24692409923949,
+  "procName" : "SafariViewService",
+  "procPath" : "\/Applications\/SafariViewService.app\/SafariViewService",
+  "bundleInfo" : {"CFBundleShortVersionString":"26.3","CFBundleVersion":"8623.2.7.10.4","CFBundleIdentifier":"com.apple.SafariViewService"},
+  "storeInfo" : {"deviceIdentifierForVendor":"3C9E2D33-EE40-4E5E-B441-B0327AD6BCB8"},
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.SafariViewService",
+  "crashReporterKey" : "b98e2a84c9f6bf59a8b063a044b4cfb3741e314a",
+  "bootProgressRegister" : "0x2080000c",
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "bootSessionUUID" : "400FE404-068A-4ADD-8124-121295B1EB23",
+  "basebandVersion" : "2.40.01",
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x600000000000001f, 0x0000000000000000","reason":0,"message":"namespc 31 reason_code 0x0000000000000000","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081887,0],"namespc":31},
+  "termination" : {"namespace":"WEBKIT","flags":518,"code":0},
+  "faultingThread" : 0,
+  "threads" : [{"id":15550167,"frames":[{"imageOffset":2966174060,"imageIndex":0},{"imageOffset":769024,"imageIndex":0},{"imageOffset":765428,"imageIndex":0},{"imageOffset":764340,"imageIndex":0},{"imageOffset":650524,"imageIndex":0},{"imageOffset":636132,"imageIndex":0},{"imageOffset":1428120420,"imageIndex":0},{"imageOffset":1428121348,"imageIndex":0},{"imageOffset":1004866268,"imageIndex":0},{"imageOffset":1004972028,"imageIndex":0},{"imageOffset":1004901480,"imageIndex":0},{"imageOffset":1004904260,"imageIndex":0},{"imageOffset":1004946412,"imageIndex":0},{"imageOffset":1004944612,"imageIndex":0},{"imageOffset":1607062456,"imageIndex":0},{"imageOffset":1607059648,"imageIndex":0}],"threadState":{"x":[{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":0},"fp":{"value":0},"sp":{"value":0},"esr":{"value":0},"pc":{"value":0,"matchesCrashFrame":0},"far":{"value":0}}}],
+  "usedImages" : [
+  {
+    "size" : 4888944788,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "714092cb-10e9-3333-83ea-e3f3a795cb07"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "roots_installed" : 0,
+  "bug_type" : "308",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60da5e84ab0ca017dace9abf",
+      "factorPackIds" : [
+
+      ],
+      "deploymentId" : 240000008
+    },
+    {
+      "rolloutId" : "644114de41e7236e6177f9bd",
+      "factorPackIds" : [
+        "6675625cdcbaa70271ca2dac"
+      ],
+      "deploymentId" : 240000013
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "582596be-1d4a-408d-901b-5b311c006a4a",
+      "experimentId" : "65f31ccb74b6f500a45abda4",
+      "deploymentId" : 400000026
+    }
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x0 vs 0x230CC396C)"
+]
+}

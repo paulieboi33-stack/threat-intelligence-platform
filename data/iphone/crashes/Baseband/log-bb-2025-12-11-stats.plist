@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SysInfoCrashReporterKey</key>
+	<string>b98e2a84c9f6bf59a8b063a044b4cfb3741e314a</string>
+	<key>bug_type</key>
+	<string>195</string>
+	<key>description</key>
+	<string>Version=4
+IncidentIdentifier=E06F167D-8DAF-4F27-8A39-13240A4CA618
+Date=2025-12-11;AP=22G100;BB=1.70.02;Machine=iPhone17,1
+11:48:53 -0600 ST [clm] disconnect: duration=0;cause=kNoError;modemErr=1010;rat=1001
+11:49:24 -0600 ST [clm] disconnect: duration=3;cause=kNoError;modemErr=1007;rat=1001
+11:51:08 -0600 ST [clm] disconnect: duration=3;cause=kNoError;modemErr=1007;rat=1001
+13:42:10 -0600 ST [clm] disconnect: duration=10;cause=kNoError;modemErr=1008;rat=1001
+14:56:53 -0600 ST [clm] disconnect: duration=142;cause=kNoError;modemErr=1007;rat=1001
+15:01:07 -0600 ST [clm] disconnect: duration=0;cause=kNoError;modemErr=1010;rat=1001
+15:07:04 -0600 ST [clm] disconnect: duration=50;cause=kNoError;modemErr=1007;rat=1001
+12:03:57 -0600 ST [clm] disconnect: duration=38;cause=kNoError;modemErr=1008;rat=1001
+</string>
+	<key>os_version</key>
+	<string>iPhone OS 18.6.2 (22G100)</string>
+	<key>system_ID</key>
+	<string></string>
+</dict>
+</plist>

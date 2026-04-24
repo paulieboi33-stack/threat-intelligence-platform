@@ -1,0 +1,274 @@
+{"roots_installed":0,"app_name":"Twitter","timestamp":"2026-04-03 13:50:11.00 -0500","app_version":"11.78","slice_uuid":"6F8D3CBD-07E5-345A-8557-9C74D77BB4F1","adam_id":"333903271","build_version":"11","bundleID":"com.atebits.Tweetie2","duration_ms":"35940135","is_first_party":0,"share_with_app_devs":0,"bug_type":"145","os_version":"iPhone OS 26.3.1 (23D771330a)","distributor_id":"com.apple.AppStore","name":"Twitter","incident_id":"E187974A-D0EE-4525-9D33-EA1D5149FF31"}
+Date/Time:        2026-04-03 03:51:07.393 -0500
+End time:         2026-04-03 13:50:07.528 -0500
+OS Version:       iPhone OS 26.3.1 (Build 23D771330a)
+Architecture:     arm64e
+Report Version:   67
+Incident Identifier: E187974A-D0EE-4525-9D33-EA1D5149FF31
+
+Data Source:      Microstackshots
+Shared Cache:     714092CB-10E9-3333-83EA-E3F3A795CB07 slid base address 0x1844c0000, slide 0x44c0000
+
+Command:          Twitter
+Path:             /private/var/containers/Bundle/Application/1302BD01-D3A8-461A-8139-6C71BE66426E/Twitter.app/Twitter
+Identifier:       com.atebits.Tweetie2
+Version:          11.78 (11)
+Adam ID:          333903271
+Is First Party:   No
+Beta Identifier:  2CFB000C-5DCB-468A-9421-ABA76ED41146
+Resource Coalition: 7751
+On Behalf Of:     10 samples UNKNOWN [312, 34670] (8 samples originated by UNKNOWN [34670], 2 samples originated by Twitter [35619])
+Architecture:     arm64
+PID:              35619
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.74 MB of file backed memory dirtied over 35940 seconds (29.88 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.74 MB
+Writes duration:  35940s
+Duration:         35940.14s
+Duration Sampled: 8395.67s (event starts 27544.33s before samples)
+Steps:            25 (10.49 MB/step)
+
+Hardware model:   iPhone17,1
+Active cpus:      6
+Memory size:      7.46 GB
+HW page size:     16384
+VM page size:     16384
+
+Models:           UNKNOWN
+
+OS Cryptex File Extents: 2886
+
+Heaviest stack for the target process:
+  19  ??? (libsystem_pthread.dylib + 2240) [0x1e415c8c0]
+  19  ??? (libsystem_pthread.dylib + 5048) [0x1e415d3b8]
+  19  ??? (libdispatch.dylib + 85220) [0x1c0323ce4]
+  19  ??? (libdispatch.dylib + 87020) [0x1c03243ec]
+  18  ??? (libdispatch.dylib + 44920) [0x1c0319f78]
+  18  ??? (libdispatch.dylib + 42088) [0x1c0319468]
+  18  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+  18  ??? (libdispatch.dylib + 70736) [0x1c0320450]
+  15  ??? (Foundation + 96152) [0x184c38798]
+  15  ??? (Foundation + 98012) [0x184c38edc]
+  15  ??? (Foundation + 97044) [0x184c38b14]
+  15  ??? (Foundation + 98420) [0x184c39074]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21773324) [0x10314fc0c]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21767432) [0x10314e508]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21765024) [0x10314dba0]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21753696) [0x10314af60]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21755724) [0x10314b74c]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21754040) [0x10314b0b8]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21769896) [0x10314eea8]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21770432) [0x10314f0c0]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21771304) [0x10314f428]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21755724) [0x10314b74c]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21771588) [0x10314f544]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21754220) [0x10314b16c]
+  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21756824) [0x10314bb98]
+  10  ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+  10  ??? (libsqlite3.dylib + 233588) [0x185d8f074]
+  10  ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+  10  ??? (libsqlite3.dylib + 259504) [0x185d955b0]
+  10  ??? (libsqlite3.dylib + 260616) [0x185d95a08]
+  10  ??? (libsqlite3.dylib + 327332) [0x185da5ea4]
+  10  ??? (libsqlite3.dylib + 697296) [0x185e003d0]
+  10  ??? (libsqlite3.dylib + 328236) [0x185da622c]
+  10  ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+
+
+Powerstats for:   Twitter [35619]
+UUID:             6F8D3CBD-07E5-345A-8557-9C74D77BB4F1
+Path:             /private/var/containers/Bundle/Application/1302BD01-D3A8-461A-8139-6C71BE66426E/Twitter.app/Twitter
+Identifier:       com.atebits.Tweetie2
+Version:          11.78 (11)
+Adam ID:          333903271
+Is First Party:   No
+Beta Identifier:  2CFB000C-5DCB-468A-9421-ABA76ED41146
+Resource Coalition: 25 samples 7751
+On Behalf Of:     10 samples UNKNOWN [312, 34670] (8 samples originated by UNKNOWN [34670], 2 samples originated by Twitter [35619])
+Architecture:     arm64
+Footprint:        114.34 MB -> 213.19 MB (+98.84 MB) (max 226.31 MB )
+Pageins:          18197 pages
+Start time:       2026-04-03 11:30:11.724 -0500
+End time:         2026-04-03 13:50:07.392 -0500
+Num samples:      25 (100%)
+Num threads:      19
+Primary state:    19 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    1 samples Idle, 24 samples Active
+Power Source:     5 samples on Battery, 20 samples on AC
+  19  ??? (libsystem_pthread.dylib + 2240) [0x1e415c8c0]
+    19  ??? (libsystem_pthread.dylib + 5048) [0x1e415d3b8]
+      19  ??? (libdispatch.dylib + 85220) [0x1c0323ce4]
+        19  ??? (libdispatch.dylib + 87020) [0x1c03243ec]
+          18  ??? (libdispatch.dylib + 44920) [0x1c0319f78]
+            18  ??? (libdispatch.dylib + 42088) [0x1c0319468]
+              18  ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                18  ??? (libdispatch.dylib + 70736) [0x1c0320450]
+                  15  ??? (Foundation + 96152) [0x184c38798]
+                    15  ??? (Foundation + 98012) [0x184c38edc]
+                      15  ??? (Foundation + 97044) [0x184c38b14]
+                        15  ??? (Foundation + 98420) [0x184c39074]
+                          15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21773324) [0x10314fc0c]
+                            15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21767432) [0x10314e508]
+                              15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21765024) [0x10314dba0]
+                                15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21753696) [0x10314af60]
+                                  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21755724) [0x10314b74c]
+                                    15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21754040) [0x10314b0b8]
+                                      15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21769896) [0x10314eea8]
+                                        15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21770432) [0x10314f0c0]
+                                          15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21771304) [0x10314f428]
+                                            15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21755724) [0x10314b74c]
+                                              15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21771588) [0x10314f544]
+                                                15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21754220) [0x10314b16c]
+                                                  15  ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 21756824) [0x10314bb98]
+                                                    10  ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                                                      10  ??? (libsqlite3.dylib + 233588) [0x185d8f074]
+                                                        10  ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+                                                          10  ??? (libsqlite3.dylib + 259504) [0x185d955b0]
+                                                            10  ??? (libsqlite3.dylib + 260616) [0x185d95a08]
+                                                              10  ??? (libsqlite3.dylib + 327332) [0x185da5ea4]
+                                                                10  ??? (libsqlite3.dylib + 697296) [0x185e003d0]
+                                                                  10  ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                                                    10  ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                                                                      1   <on behalf of UNKNOWN [312] (originated by Twitter [35619])>
+                                                                      1   <on behalf of UNKNOWN [34670] (originated by UNKNOWN [34670])>
+                                                                      1   <on behalf of UNKNOWN [34670] (originated by Twitter [35619])>
+                                                    5   ??? (libsqlite3.dylib + 192004) [0x185d84e04]
+                                                      5   ??? (libsqlite3.dylib + 329248) [0x185da6620]
+                                                        5   ??? (libsqlite3.dylib + 563596) [0x185ddf98c]
+                                                          5   ??? (libsqlite3.dylib + 1165988) [0x185e72aa4]
+                                                            5   ??? (libsqlite3.dylib + 408612) [0x185db9c24]
+                                                              5   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                                                5   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                                                                  4   <p-core>
+                                                                  1   <on behalf of UNKNOWN [34670] (originated by UNKNOWN [34670]), p-core>
+                  3   ??? (CFNetwork + 307800) [0x19c35a258]
+                    3   ??? (CFNetwork + 1806956) [0x19c4c826c]
+                      3   ??? (libsqlite3.dylib + 33108) [0x185d5e154]
+                        2   ??? (libsqlite3.dylib + 191252) [0x185d84b14]
+                          2   ??? (libsqlite3.dylib + 233588) [0x185d8f074]
+                            2   ??? (libsqlite3.dylib + 92476) [0x185d6c93c]
+                              2   ??? (libsqlite3.dylib + 259504) [0x185d955b0]
+                                2   ??? (libsqlite3.dylib + 260616) [0x185d95a08]
+                                  2   ??? (libsqlite3.dylib + 327332) [0x185da5ea4]
+                                    2   ??? (libsqlite3.dylib + 697296) [0x185e003d0]
+                                      2   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                        2   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+                        1   ??? (libsqlite3.dylib + 192004) [0x185d84e04]
+                          1   ??? (libsqlite3.dylib + 329248) [0x185da6620]
+                            1   ??? (libsqlite3.dylib + 563596) [0x185ddf98c]
+                              1   ??? (libsqlite3.dylib + 1165988) [0x185e72aa4]
+                                1   ??? (libsqlite3.dylib + 408612) [0x185db9c24]
+                                  1   ??? (libsqlite3.dylib + 328236) [0x185da622c]
+                                    1   ??? (libsystem_kernel.dylib + 27704) [0x235184c38]
+          1   ??? (libdispatch.dylib + 49800) [0x1c031b288]
+            1   ??? (libdispatch.dylib + 44920) [0x1c0319f78]
+              1   ??? (libdispatch.dylib + 42088) [0x1c0319468]
+                1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                  1   ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+                    1   ??? (<9F36EE9D-EC71-3D76-B1A2-25B3B07DC674> + 22088) [0x1012b5648]
+                      1   ??? (<9F36EE9D-EC71-3D76-B1A2-25B3B07DC674> + 24664) [0x1012b6058]
+                        1   ??? (Foundation + 457364) [0x184c90a94]
+                          1   ??? (Foundation + 457820) [0x184c90c5c]
+                            1   ??? (Foundation + 1164620) [0x184d3d54c]
+                              1   ??? (libsystem_kernel.dylib + 20516) [0x235183024]
+  6   ??? (dyld + 20008) [0x1845dee28]
+    6   ??? (Twitter + 16576) [0x100d1c0c0]
+      6   ??? (UIKitCore + 290388) [0x18d05ce54]
+        6   ??? (UIKitCore + 646648) [0x18d0b3df8]
+          6   ??? (GraphicsServices + 5272) [0x22bfa1498]
+            6   ??? (CoreFoundation + 117356) [0x187603a6c]
+              5   ??? (CoreFoundation + 121660) [0x187604b3c]
+                5   ??? (CoreFoundation + 434868) [0x1876512b4]
+                  5   ??? (libdispatch.dylib + 69124) [0x1c031fe04]
+                    5   ??? (libdispatch.dylib + 69320) [0x1c031fec8]
+                      5   ??? (libdispatch.dylib + 232208) [0x1c0347b10]
+                        5   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                          5   ??? (libdispatch.dylib + 6876) [0x1c0310adc]
+                            5   ??? (Foundation + 96152) [0x184c38798]
+                              5   ??? (Foundation + 98012) [0x184c38edc]
+                                5   ??? (Foundation + 97044) [0x184c38b14]
+                                  5   ??? (Foundation + 98420) [0x184c39074]
+                                    5   ??? (Foundation + 98116) [0x184c38f44]
+                                      5   ??? (Foundation + 99156) [0x184c39354]
+                                        5   ??? (<527696D7-5B81-3A9B-BFAD-2A1F8044E5E3> + 826232) [0x10a639b78]
+                                          5   ??? (<527696D7-5B81-3A9B-BFAD-2A1F8044E5E3> + 846204) [0x10a63e97c]
+                                            5   ??? (<527696D7-5B81-3A9B-BFAD-2A1F8044E5E3> + 2242204) [0x10a79369c]
+                                              5   ??? (<8EBC7126-86A9-30D3-AC5B-3475BF797F37> + 13580284) [0x10d1637fc]
+                                                5   ??? (<8EBC7126-86A9-30D3-AC5B-3475BF797F37> + 13344080) [0x10d129d50]
+                                                  5   ??? (<8EBC7126-86A9-30D3-AC5B-3475BF797F37> + 13345976) [0x10d12a4b8]
+                                                    5   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 32472208) [0x103b83c90]
+                                                      5   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 32472140) [0x103b83c4c]
+                                                        5   ??? (<8EBC7126-86A9-30D3-AC5B-3475BF797F37> + 22823132) [0x10da340dc]
+                                                          5   ??? (<8EBC7126-86A9-30D3-AC5B-3475BF797F37> + 22823072) [0x10da340a0]
+                                                            5   ??? (<8EBC7126-86A9-30D3-AC5B-3475BF797F37> + 22596272) [0x10d9fcab0]
+                                                              5   ??? (<0A8A247A-E2E0-3EE0-A5FE-6E4E671081ED> + 59616) [0x10128e8e0]
+                                                                5   ??? (Foundation + 457364) [0x184c90a94]
+                                                                  5   ??? (Foundation + 457820) [0x184c90c5c]
+                                                                    5   ??? (Foundation + 1164620) [0x184d3d54c]
+                                                                      5   ??? (libsystem_kernel.dylib + 20516) [0x235183024]
+                                                                        3   <on behalf of UNKNOWN [34670] (originated by UNKNOWN [34670]), Non-Frontmost App, Effective Thread QoS Default, Requested Thread QoS User Interactive, p-core>
+                                                                        1   <on behalf of UNKNOWN [34670] (originated by UNKNOWN [34670]), Non-Frontmost App, Effective Thread QoS Default, Requested Thread QoS User Interactive>
+                                                                        1   <on behalf of UNKNOWN [34670] (originated by UNKNOWN [34670]), Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+              1   ??? (CoreFoundation + 120536) [0x1876046d8]
+                1   ??? (CoreFoundation + 289484) [0x18762dacc]
+                  1   ??? (CoreFoundation + 429700) [0x18764fe84]
+                    1   ??? (CoreFoundation + 429840) [0x18764ff10]
+                      1   ??? (BoardServices + 36948) [0x19eebe054]
+                        1   ??? (BoardServices + 37332) [0x19eebe1d4]
+                          1   ??? (libdispatch.dylib + 27572) [0x1c0315bb4]
+                            1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                              1   ??? (FrontBoardServices + 180068) [0x1a77ccf64]
+                                1   ??? (FrontBoardServices + 310064) [0x1a77ecb30]
+                                  1   ??? (FrontBoardServices + 588720) [0x1a7830bb0]
+                                    1   ??? (FrontBoardServices + 129244) [0x1a77c08dc]
+                                      1   ??? (FrontBoardServices + 125092) [0x1a77bf8a4]
+                                        1   ??? (FrontBoardServices + 130092) [0x1a77c0c2c]
+                                          1   ??? (UIKitCore + 15552556) [0x18deeb02c]
+                                            1   ??? (UIKitCore + 8879696) [0x18d88de50]
+                                              1   ??? (UIKitCore + 8876664) [0x18d88d278]
+                                                1   ??? (UIKitCore + 8880612) [0x18d88e1e4]
+                                                  1   ??? (UIKitCore + 10719108) [0x18da4ef84]
+                                                    1   ??? (UIKitCore + 892104) [0x18d0efcc8]
+                                                      1   ??? (UIKitCore + 15384260) [0x18dec1ec4]
+                                                        1   ??? (UIKitCore + 10719880) [0x18da4f288]
+                                                          1   ??? (UIKitCore + 10673672) [0x18da43e08]
+                                                            1   ??? (UIKitCore + 10675068) [0x18da4437c]
+                                                              1   ??? (UIKitCore + 10674344) [0x18da440a8]
+                                                                1   ??? (UIKitCore + 21101564) [0x18e435bfc]
+                                                                  1   ??? (<527696D7-5B81-3A9B-BFAD-2A1F8044E5E3> + 5775052) [0x10aaf1ecc]
+                                                                    1   ??? (<527696D7-5B81-3A9B-BFAD-2A1F8044E5E3> + 821928) [0x10a638aa8]
+                                                                      1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 34275836) [0x103d3c1fc]
+                                                                        1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 78008832) [0x1066f1200]
+                                                                          1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 78010332) [0x1066f17dc]
+                                                                            1   ??? (libdispatch.dylib + 71872) [0x1c03208c0]
+                                                                              1   ??? (libdispatch.dylib + 112636) [0x1c032a7fc]
+                                                                                1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 78009312) [0x1066f13e0]
+                                                                                  1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 77922752) [0x1066dc1c0]
+                                                                                    1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 77922936) [0x1066dc278]
+                                                                                      1   ??? (<44A8B05A-539A-3067-AE85-29F681380591> + 77923076) [0x1066dc304]
+                                                                                        1   ??? (libsystem_kernel.dylib + 20516) [0x235183024]
+                                                                                          1   <on behalf of UNKNOWN [34670] (originated by UNKNOWN [34670]), Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, p-core>
+
+  Binary Images:
+           0x100d18000 -                ???  com.atebits.Tweetie2 11.78 (11) <6F8D3CBD-07E5-345A-8557-9C74D77BB4F1>  /private/var/containers/Bundle/Application/1302BD01-D3A8-461A-8139-6C71BE66426E/Twitter.app/Twitter
+           0x101280000 -                ???  ???                             <0A8A247A-E2E0-3EE0-A5FE-6E4E671081ED>
+           0x1012b0000 -                ???  ???                             <9F36EE9D-EC71-3D76-B1A2-25B3B07DC674>
+           0x101c8c000 -                ???  ???                             <44A8B05A-539A-3067-AE85-29F681380591>
+           0x10a570000 -                ???  ???                             <527696D7-5B81-3A9B-BFAD-2A1F8044E5E3>
+           0x10c470000 -                ???  ???                             <8EBC7126-86A9-30D3-AC5B-3475BF797F37>
+           0x1845da000 -        0x18467934b  dyld                            <8ACDB580-8AB7-38C0-A586-E667ADB1C11C>  /usr/lib/dyld
+           0x184c21000 -        0x185a67c9f  Foundation                      <42C593BB-89FB-3EC4-8220-C746811E7A43>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x185d56000 -        0x185eff6b3  libsqlite3.dylib                <579118DA-D456-348C-9E1F-582D35482F62>  /usr/lib/libsqlite3.dylib
+           0x1875e7000 -        0x187b6d73f  CoreFoundation                  <2F32D384-4637-3018-843E-4FC875B865C4>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18d016000 -        0x18f4759bf  UIKitCore                       <C768F963-A0CC-3F5C-A1D3-2E06D53A2381>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x19c30f000 -        0x19c6c58bf  CFNetwork                       <AC6CB884-3740-3320-9994-36594AF6AD73>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x19eeb5000 -        0x19ef3787f  BoardServices                   <76C29400-A366-344E-90A3-C79063A02BFC>  /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
+           0x1a77a1000 -        0x1a788537f  FrontBoardServices              <A22C8550-B61B-345D-8096-A663707AAC84>  /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+           0x1c030f000 -        0x1c035521f  libdispatch.dylib               <904D48A3-D99E-3962-BFA9-C3DFB66BBA83>  /usr/lib/system/libdispatch.dylib
+           0x1e415c000 -        0x1e416845f  libsystem_pthread.dylib         <4F94107B-94D2-3E88-8542-F5403C581B50>  /usr/lib/system/libsystem_pthread.dylib
+           0x22bfa0000 -        0x22bfa87ff  GraphicsServices                <12A401FF-9664-3602-9F17-F3047446E62B>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x23517e000 -        0x2351b8d2b  libsystem_kernel.dylib          <8D830129-2CBE-32A9-B61E-CE493EECB399>  /usr/lib/system/libsystem_kernel.dylib

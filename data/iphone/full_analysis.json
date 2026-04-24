@@ -1,0 +1,2218 @@
+{
+  "apps": [
+    {
+      "bundle_id": "com.mercariapp.ios.mercari",
+      "version": "9.32.0",
+      "name": "Mercari"
+    },
+    {
+      "bundle_id": "com.livenation.LiveNation",
+      "version": "10.9.2",
+      "name": "Live Nation"
+    },
+    {
+      "bundle_id": "com.brave.ios.browser",
+      "version": "1.88",
+      "name": "Brave"
+    },
+    {
+      "bundle_id": "com.apple.BluetoothUIService",
+      "version": "1.0",
+      "name": "BluetoothUIService"
+    },
+    {
+      "bundle_id": "com.apple.Preview",
+      "version": "1.0",
+      "name": "Preview"
+    },
+    {
+      "bundle_id": "com.apple.icloud.FindMyDevice.FindMyExtensionContainer",
+      "version": "1.0",
+      "name": "FindMyExtensionContainer"
+    },
+    {
+      "bundle_id": "com.apple.Posters.KaleidoscopePosterApp",
+      "version": "1.0",
+      "name": "Kaleidoscope"
+    },
+    {
+      "bundle_id": "com.google.Docs",
+      "version": "1.2026.15101",
+      "name": "Docs"
+    },
+    {
+      "bundle_id": "com.audible.iphone",
+      "version": "4.67.1",
+      "name": "Audible"
+    },
+    {
+      "bundle_id": "us.zoom.videomeetings",
+      "version": "7.0.2",
+      "name": "Zoom"
+    },
+    {
+      "bundle_id": "com.apple.ContinuityCaptureShieldUI",
+      "version": "",
+      "name": "Continuity Camera"
+    },
+    {
+      "bundle_id": "com.apple.replaykitangel",
+      "version": "1.0",
+      "name": "ReplayKitAngel"
+    },
+    {
+      "bundle_id": "com.apple.StoreKitUISceneService",
+      "version": "1.0",
+      "name": "StoreKitUISceneService"
+    },
+    {
+      "bundle_id": "net.zedge.wallpapers",
+      "version": "5.39.4",
+      "name": "Zedge"
+    },
+    {
+      "bundle_id": "com.apple.PridePoster",
+      "version": "1.0",
+      "name": "Pride"
+    },
+    {
+      "bundle_id": "com.apple.HealthPrivacyService",
+      "version": "1.0",
+      "name": "HealthPrivacyService"
+    },
+    {
+      "bundle_id": "se.resenatverket.FlightRadar24-Free",
+      "version": "11.3.0",
+      "name": "Flightradar24"
+    },
+    {
+      "bundle_id": "com.sensi.BooksyCUST",
+      "version": "26.04.1500",
+      "name": "Booksy"
+    },
+    {
+      "bundle_id": "com.nike.omega",
+      "version": "26.23.0",
+      "name": "Nike"
+    },
+    {
+      "bundle_id": "com.apple.APSUIApp",
+      "version": "1.0",
+      "name": "AirPlay"
+    },
+    {
+      "bundle_id": "com.apple.AXRemoteViewService",
+      "version": "1.0",
+      "name": "Control Nearby Devices"
+    },
+    {
+      "bundle_id": "com.squareup.cash",
+      "version": "5.48.0",
+      "name": "Cash App"
+    },
+    {
+      "bundle_id": "com.apple.Migration",
+      "version": "1.0",
+      "name": "Transfer to Android"
+    },
+    {
+      "bundle_id": "com.apple.MobileStore",
+      "version": "1.0",
+      "name": "iTunes Store"
+    },
+    {
+      "bundle_id": "com.apple.CarPlaySettings",
+      "version": "1.0",
+      "name": "Settings"
+    },
+    {
+      "bundle_id": "com.apple.PCViewService",
+      "version": "1.0",
+      "name": "ProximityControlViewService"
+    },
+    {
+      "bundle_id": "com.apple.MediaRemoteUI",
+      "version": "1.0",
+      "name": "\u200e"
+    },
+    {
+      "bundle_id": "com.apple.NanoUniverse.AegirProxyApp",
+      "version": "1.0",
+      "name": "Astronomy"
+    },
+    {
+      "bundle_id": "com.apple.AccessibilityUIServer",
+      "version": "1.0",
+      "name": "Accessibility"
+    },
+    {
+      "bundle_id": "com.apple.MXUIService",
+      "version": "1.0",
+      "name": "MXUIService"
+    },
+    {
+      "bundle_id": "com.apple.SESUIServiceApp",
+      "version": "1.0",
+      "name": "SESUIServiceApp"
+    },
+    {
+      "bundle_id": "com.apple.GradientPoster",
+      "version": "1.0",
+      "name": "Color"
+    },
+    {
+      "bundle_id": "com.google.Drive",
+      "version": "4.2616.41200",
+      "name": "Drive"
+    },
+    {
+      "bundle_id": "com.apple.CloudKit.ShareBear",
+      "version": "1.0",
+      "name": "iCloud"
+    },
+    {
+      "bundle_id": "com.TapMediaLtd.VoiceRecorderFREE",
+      "version": "6.0.43",
+      "name": "Voice Recorder"
+    },
+    {
+      "bundle_id": "com.foxnews.nation",
+      "version": "3.83",
+      "name": "Fox Nation"
+    },
+    {
+      "bundle_id": "com.apple.MTLReplayer",
+      "version": "313.2",
+      "name": "MTLReplayer"
+    },
+    {
+      "bundle_id": "com.fandango.fandango",
+      "version": "17.2",
+      "name": "Fandango"
+    },
+    {
+      "bundle_id": "com.apple.ClarityBoard",
+      "version": "1.0",
+      "name": "ClarityBoard"
+    },
+    {
+      "bundle_id": "com.codeway.wonder",
+      "version": "5.1.6",
+      "name": "Wonder"
+    },
+    {
+      "bundle_id": "com.cheesecakefactory.app",
+      "version": "6.0.3",
+      "name": "Cheesecake Factory"
+    },
+    {
+      "bundle_id": "com.apple.FMDMagSafeSetupRemoteUI",
+      "version": "1.0",
+      "name": "FMDMagSafeSetupRemoteUI"
+    },
+    {
+      "bundle_id": "com.phase4mobile.rainsoundshq",
+      "version": "4.7",
+      "name": "Rain Sounds"
+    },
+    {
+      "bundle_id": "com.apple.EyeReliefUI",
+      "version": "1.0",
+      "name": "EyeReliefUI"
+    },
+    {
+      "bundle_id": "com.apple.NetworkEndpointPickerUI",
+      "version": "1.0",
+      "name": "NetworkEndpointPickerUI"
+    },
+    {
+      "bundle_id": "com.timgostony.rainrain",
+      "version": "6.9.10",
+      "name": "Rain Rain"
+    },
+    {
+      "bundle_id": "com.starbucks.mystarbucks",
+      "version": "6.120.1",
+      "name": "Starbucks"
+    },
+    {
+      "bundle_id": "com.toomuchwasabi.Crypto-Galaxy",
+      "version": "2.20",
+      "name": "Crypto Pie"
+    },
+    {
+      "bundle_id": "com.apple.findmy",
+      "version": "4.0",
+      "name": "Find My"
+    },
+    {
+      "bundle_id": "com.disney.disneyplus",
+      "version": "5.6.0",
+      "name": "Disney+"
+    },
+    {
+      "bundle_id": "com.apple.Fitness",
+      "version": "1.0",
+      "name": "Fitness"
+    },
+    {
+      "bundle_id": "com.apple.PreBoard",
+      "version": "1.0",
+      "name": "PreBoard"
+    },
+    {
+      "bundle_id": "com.apple.reminders",
+      "version": "7.0",
+      "name": "Reminders"
+    },
+    {
+      "bundle_id": "com.yahoo.ffootball2009",
+      "version": "11.37.2",
+      "name": "Fantasy"
+    },
+    {
+      "bundle_id": "com.apple.CarTrip",
+      "version": "1.0",
+      "name": "Trip"
+    },
+    {
+      "bundle_id": "com.apple.VSViewService",
+      "version": "1.0",
+      "name": "TV Provider"
+    },
+    {
+      "bundle_id": "com.apple.PDUIApp",
+      "version": "1.0",
+      "name": "PDUIApp"
+    },
+    {
+      "bundle_id": "com.apple.CarPlayApp",
+      "version": "1.0",
+      "name": "CarPlay"
+    },
+    {
+      "bundle_id": "com.apple.NewDeviceSetupUIService",
+      "version": "1.0",
+      "name": "Setup"
+    },
+    {
+      "bundle_id": "com.apple.facetime",
+      "version": "36",
+      "name": "FaceTime"
+    },
+    {
+      "bundle_id": "com.apple.webapp",
+      "version": "8623",
+      "name": "Web"
+    },
+    {
+      "bundle_id": "com.apple.ios.StoreKitUIService",
+      "version": "1.0",
+      "name": "iTunes"
+    },
+    {
+      "bundle_id": "com.skool.skoolcommunities",
+      "version": "1.1.18",
+      "name": "Skool"
+    },
+    {
+      "bundle_id": "com.apple.WebSheet",
+      "version": "1.0",
+      "name": "WebSheet"
+    },
+    {
+      "bundle_id": "pinterest",
+      "version": "14.14",
+      "name": "Pinterest"
+    },
+    {
+      "bundle_id": "com.apple.DemoApp",
+      "version": "1.0.0",
+      "name": "DemoApp"
+    },
+    {
+      "bundle_id": "com.apple.journal",
+      "version": "2.0",
+      "name": "Journal"
+    },
+    {
+      "bundle_id": "com.geniussoftware.GeniusScan",
+      "version": "8.9",
+      "name": "Genius Scan"
+    },
+    {
+      "bundle_id": "com.walmart.electronics",
+      "version": "26.14.1",
+      "name": "Walmart"
+    },
+    {
+      "bundle_id": "com.VidAngel.TheChosen",
+      "version": "26.4.15",
+      "name": "Angel"
+    },
+    {
+      "bundle_id": "com.getdropbox.Dropbox",
+      "version": "468.2",
+      "name": "Dropbox"
+    },
+    {
+      "bundle_id": "com.progressive.snapshot2-ios",
+      "version": "2.14.0",
+      "name": "Snapshot"
+    },
+    {
+      "bundle_id": "com.apple.CompassCalibrationViewService",
+      "version": "1.0",
+      "name": "CompassCalibrationViewService"
+    },
+    {
+      "bundle_id": "com.apple.siri.IntelligentLight",
+      "version": "1.0",
+      "name": "IntelligentLight"
+    },
+    {
+      "bundle_id": "com.adrise.tubitv",
+      "version": "10.15.2",
+      "name": "Tubi"
+    },
+    {
+      "bundle_id": "com.apple.SharingUIService",
+      "version": "1.0",
+      "name": "SharingUIService"
+    },
+    {
+      "bundle_id": "com.apple.ScreenshotServicesService",
+      "version": "1.0",
+      "name": "Screenshots"
+    },
+    {
+      "bundle_id": "com.apple.freeform",
+      "version": "4.2",
+      "name": "Freeform"
+    },
+    {
+      "bundle_id": "com.whop.whopapp",
+      "version": "5.4.0",
+      "name": "Whop"
+    },
+    {
+      "bundle_id": "com.yahoo.Aerogram",
+      "version": "26.14.1",
+      "name": "Yahoo Mail"
+    },
+    {
+      "bundle_id": "com.apple.Maps",
+      "version": "1.0",
+      "name": "Maps"
+    },
+    {
+      "bundle_id": "com.apple.AccessorySetupUI",
+      "version": "1.0",
+      "name": "AccessorySetupUI"
+    },
+    {
+      "bundle_id": "com.apple.MailCompositionService",
+      "version": "1.0",
+      "name": "Mail"
+    },
+    {
+      "bundle_id": "com.mlb.AtTheBallpark",
+      "version": "15.4.0",
+      "name": "Ballpark"
+    },
+    {
+      "bundle_id": "com.foxbet.foxsuper6",
+      "version": "1.9812",
+      "name": "Super 6"
+    },
+    {
+      "bundle_id": "com.apple.MusicKit.UI",
+      "version": "1.0",
+      "name": "MusicKitUI"
+    },
+    {
+      "bundle_id": "com.einnovation.temu",
+      "version": "4.44.0",
+      "name": "Temu"
+    },
+    {
+      "bundle_id": "com.theepochtimes.mobile",
+      "version": "3.1.21",
+      "name": "Epoch Times"
+    },
+    {
+      "bundle_id": "com.apple.ContactsUI.LimitedAccessPromptView",
+      "version": "1.0",
+      "name": "LimitedAccessPromptView"
+    },
+    {
+      "bundle_id": "com.apple.clips",
+      "version": "3.1.7",
+      "name": "Clips"
+    },
+    {
+      "bundle_id": "com.nfl.fantasy.core",
+      "version": "3.60.23",
+      "name": "NFL Fantasy"
+    },
+    {
+      "bundle_id": "com.apple.Spotlight",
+      "version": "1.0",
+      "name": "Spotlight"
+    },
+    {
+      "bundle_id": "com.myprizepicks.prizepicks",
+      "version": "12.67.0",
+      "name": "PrizePicks"
+    },
+    {
+      "bundle_id": "com.apple.ScreenSharingViewService",
+      "version": "1.1",
+      "name": "ScreenSharingViewService"
+    },
+    {
+      "bundle_id": "com.apple.mobiletimer",
+      "version": "1.1",
+      "name": "Clock"
+    },
+    {
+      "bundle_id": "com.apple.AutoSettings",
+      "version": "1.0",
+      "name": "Vehicle"
+    },
+    {
+      "bundle_id": "app.rork",
+      "version": "1.0.11",
+      "name": "Rork"
+    },
+    {
+      "bundle_id": "com.apple.CTCarrierSpaceAuth",
+      "version": "1.0",
+      "name": "CTCarrierSpaceAuth"
+    },
+    {
+      "bundle_id": "com.apple.Passbook",
+      "version": "1.0",
+      "name": "Wallet"
+    },
+    {
+      "bundle_id": "com.d2l.brightspace.pulse",
+      "version": "2.2602.1019",
+      "name": "Pulse"
+    },
+    {
+      "bundle_id": "com.apple.FamilyExtensionHost",
+      "version": "1.0",
+      "name": "FamilyExtensionHost"
+    },
+    {
+      "bundle_id": "com.apple.UIKit.ColorPickerUIService",
+      "version": "",
+      "name": "ColorPickerUIService"
+    },
+    {
+      "bundle_id": "com.apple.accessibility.AccessibilityReader",
+      "version": "1.0",
+      "name": "Accessibility Reader"
+    },
+    {
+      "bundle_id": "com.apple.shortcuts.runtime",
+      "version": "1.0",
+      "name": "Shortcuts"
+    },
+    {
+      "bundle_id": "com.tacobell.ARgame",
+      "version": "8.89.2",
+      "name": "Taco Bell"
+    },
+    {
+      "bundle_id": "com.softacular.Sportacular",
+      "version": "12.12.1",
+      "name": "Sports"
+    },
+    {
+      "bundle_id": "com.apple.BarcodeScanner",
+      "version": "1001",
+      "name": "Code Scanner"
+    },
+    {
+      "bundle_id": "com.apple.SystemIntents",
+      "version": "1.0",
+      "name": "SystemIntents"
+    },
+    {
+      "bundle_id": "com.apple.SharingViewService",
+      "version": "2094.40.71",
+      "name": "Setup"
+    },
+    {
+      "bundle_id": "com.apple.CarTirePressure",
+      "version": "1.0",
+      "name": "TirePressure"
+    },
+    {
+      "bundle_id": "com.priviahealth.privia",
+      "version": "2.43.0",
+      "name": "myPrivia"
+    },
+    {
+      "bundle_id": "com.microsoft.Office.Outlook",
+      "version": "5.2614.0",
+      "name": "Outlook"
+    },
+    {
+      "bundle_id": "com.duolingo.DuolingoMobile",
+      "version": "7.119.0",
+      "name": "Duolingo"
+    },
+    {
+      "bundle_id": "com.apple.DocumentsApp",
+      "version": "1.0",
+      "name": "Files"
+    },
+    {
+      "bundle_id": "ch.protonmail.protonmail",
+      "version": "7.9.1",
+      "name": "Proton Mail"
+    },
+    {
+      "bundle_id": "ai.perplexity.app",
+      "version": "26.15.0",
+      "name": "Perplexity"
+    },
+    {
+      "bundle_id": "com.augustineinstitute.formed",
+      "version": "10.000.1",
+      "name": "Formed"
+    },
+    {
+      "bundle_id": "com.apple.mobilecal",
+      "version": "1.0",
+      "name": "Calendar"
+    },
+    {
+      "bundle_id": "com.apple.CarPlayWallpaper",
+      "version": "1.0",
+      "name": "CarPlayWallpaper"
+    },
+    {
+      "bundle_id": "com.apple.WorkoutRemoteViewService",
+      "version": "1.0",
+      "name": "WorkoutRemoteViewService"
+    },
+    {
+      "bundle_id": "com.apple.AskToUIHost",
+      "version": "1.0",
+      "name": "AskToUIHost"
+    },
+    {
+      "bundle_id": "com.apple.AppSSOUIService",
+      "version": "1.0",
+      "name": "AppSSOUIService"
+    },
+    {
+      "bundle_id": "com.apple.MusicUIService",
+      "version": "1.0",
+      "name": "MusicUIService"
+    },
+    {
+      "bundle_id": "com.apple.FinanceStub",
+      "version": "1.0",
+      "name": "Wallet"
+    },
+    {
+      "bundle_id": "com.minitree.dailycam",
+      "version": "3.0.6",
+      "name": "DailyCam"
+    },
+    {
+      "bundle_id": "com.kraken.invest.app",
+      "version": "3.60.0",
+      "name": "Kraken"
+    },
+    {
+      "bundle_id": "com.apple.games",
+      "version": "1.0",
+      "name": "Games"
+    },
+    {
+      "bundle_id": "com.apple.InputUI",
+      "version": "1.0",
+      "name": "Input UI"
+    },
+    {
+      "bundle_id": "com.apple.commandandcontrol",
+      "version": "1.2.43",
+      "name": "Voice Control"
+    },
+    {
+      "bundle_id": "com.myisolved.aee",
+      "version": "17",
+      "name": "isolved"
+    },
+    {
+      "bundle_id": "com.apple.measure",
+      "version": "181.60.3",
+      "name": "Measure"
+    },
+    {
+      "bundle_id": "com.apple.MobileReplayer",
+      "version": "310.8",
+      "name": "MobileReplayer"
+    },
+    {
+      "bundle_id": "com.apple.InCallService",
+      "version": "1.0",
+      "name": "InCallService"
+    },
+    {
+      "bundle_id": "com.splickit.jerseymikes",
+      "version": "4.50.0",
+      "name": "Jersey Mike\u2019s"
+    },
+    {
+      "bundle_id": "com.apple.IOUIAngel",
+      "version": "1.0",
+      "name": "IOUIAngel"
+    },
+    {
+      "bundle_id": "com.apple.BacklinkIndicator",
+      "version": "1.0",
+      "name": "BacklinkIndicator"
+    },
+    {
+      "bundle_id": "com.apple.mobilenotes",
+      "version": "2.13",
+      "name": "Notes"
+    },
+    {
+      "bundle_id": "com.walla.Walla",
+      "version": "1.78.1",
+      "name": "Walla"
+    },
+    {
+      "bundle_id": "com.deepseek.chat",
+      "version": "1.8.6",
+      "name": "DeepSeek"
+    },
+    {
+      "bundle_id": "com.apple.avkit.AVKitRoutingService",
+      "version": "1.0",
+      "name": "AVKitRoutingService"
+    },
+    {
+      "bundle_id": "com.apple.Photos.PhotosUIService",
+      "version": "1.0",
+      "name": "PhotosUIService"
+    },
+    {
+      "bundle_id": "com.apple.SafetyMonitorApp",
+      "version": "1.0",
+      "name": "Check\u00a0In"
+    },
+    {
+      "bundle_id": "com.apple.ContinuitySingShieldUI",
+      "version": "",
+      "name": "Sing"
+    },
+    {
+      "bundle_id": "com.pandora",
+      "version": "2602.1.2",
+      "name": "Pandora"
+    },
+    {
+      "bundle_id": "com.apple.ClarityPhotos",
+      "version": "1.0",
+      "name": "Photos"
+    },
+    {
+      "bundle_id": "com.apple.EventViewService",
+      "version": "1.0",
+      "name": "Events"
+    },
+    {
+      "bundle_id": "com.orb.Masters",
+      "version": "18.0.4283",
+      "name": "Masters 2026"
+    },
+    {
+      "bundle_id": "com.apple.ProximityReaderSceneUI",
+      "version": "1.0",
+      "name": "Tap to Pay on iPhone"
+    },
+    {
+      "bundle_id": "com.apple.PassbookUISceneService",
+      "version": "1.0",
+      "name": "Wallet"
+    },
+    {
+      "bundle_id": "com.apple.Magnifier",
+      "version": "1.0",
+      "name": "Magnifier"
+    },
+    {
+      "bundle_id": "com.rccl.royalcaribbean",
+      "version": "1.75.2",
+      "name": "Royal"
+    },
+    {
+      "bundle_id": "com.microsoft.skydrive",
+      "version": "16.36.5",
+      "name": "OneDrive"
+    },
+    {
+      "bundle_id": "com.apple.screensharingserver",
+      "version": "1.1",
+      "name": "ScreenSharingServer"
+    },
+    {
+      "bundle_id": "com.apple.appleseed.FeedbackAssistant",
+      "version": "4.0",
+      "name": "Feedback"
+    },
+    {
+      "bundle_id": "com.apple.SOSBuddy",
+      "version": "1.0",
+      "name": "Connection Assistant"
+    },
+    {
+      "bundle_id": "com.apple.HomeCaptiveViewService",
+      "version": "1.0",
+      "name": "HomeCaptiveViewService"
+    },
+    {
+      "bundle_id": "ph.telegra.Telegraph",
+      "version": "12.6.3",
+      "name": "Telegram"
+    },
+    {
+      "bundle_id": "com.apple.TVSetupUIService",
+      "version": "1.0",
+      "name": "Apple\u00a0TV Setup"
+    },
+    {
+      "bundle_id": "com.openai.chat",
+      "version": "1.2026.104",
+      "name": "ChatGPT"
+    },
+    {
+      "bundle_id": "com.jd.jdsportsusa",
+      "version": "5.10.0",
+      "name": "JD Sports"
+    },
+    {
+      "bundle_id": "com.apple.family",
+      "version": "1.0",
+      "name": "Family"
+    },
+    {
+      "bundle_id": "com.zimride.instant",
+      "version": "2026.13.31",
+      "name": "Lyft"
+    },
+    {
+      "bundle_id": "com.google.Dynamite",
+      "version": "0.628",
+      "name": "Chat"
+    },
+    {
+      "bundle_id": "com.apple.ClockAngel",
+      "version": "1.0",
+      "name": "Clock"
+    },
+    {
+      "bundle_id": "com.atebits.Tweetie2",
+      "version": "11.84",
+      "name": "X"
+    },
+    {
+      "bundle_id": "com.missouri.lottery",
+      "version": "4.3.1",
+      "name": "MO Lottery"
+    },
+    {
+      "bundle_id": "com.apple.coreidv.CoreIDVUIService",
+      "version": "8.303",
+      "name": "CoreIDVUIService"
+    },
+    {
+      "bundle_id": "com.apple.assistivetouchd",
+      "version": "1.0",
+      "name": "AssistiveTouch"
+    },
+    {
+      "bundle_id": "com.apple.Numbers",
+      "version": "15.2",
+      "name": "Numbers"
+    },
+    {
+      "bundle_id": "com.wbd.stream",
+      "version": "6.17.2",
+      "name": "HBO Max"
+    },
+    {
+      "bundle_id": "com.apple.systemactions",
+      "version": "1.0",
+      "name": "Shortcuts"
+    },
+    {
+      "bundle_id": "com.apple.AskPermissionUI",
+      "version": "1.0",
+      "name": "Family"
+    },
+    {
+      "bundle_id": "com.peacocktv.peacock",
+      "version": "7.4.21",
+      "name": "Peacock"
+    },
+    {
+      "bundle_id": "com.apple.PreviewShell",
+      "version": "16.0",
+      "name": "Xcode Previews"
+    },
+    {
+      "bundle_id": "com.apple.NFCUISceneService",
+      "version": "1.0",
+      "name": "NFCUISceneService"
+    },
+    {
+      "bundle_id": "com.apple.AdaptiveMusicApp",
+      "version": "1.0.0",
+      "name": "Ambient Music"
+    },
+    {
+      "bundle_id": "com.cbsvideo.app",
+      "version": "15.15.1",
+      "name": "Paramount+"
+    },
+    {
+      "bundle_id": "com.apple.TVAccessViewService",
+      "version": "1.0",
+      "name": "TVAccessViewService"
+    },
+    {
+      "bundle_id": "com.hammerandchisel.discord",
+      "version": "324.0",
+      "name": "Discord"
+    },
+    {
+      "bundle_id": "com.weather.TWC",
+      "version": "16.4",
+      "name": "The Weather Channel"
+    },
+    {
+      "bundle_id": "com.apple.EmojiPoster",
+      "version": "1.0",
+      "name": "Emoji"
+    },
+    {
+      "bundle_id": "com.apple.MediaRemoteUIService",
+      "version": "1.0",
+      "name": "\u200e"
+    },
+    {
+      "bundle_id": "com.amazon.Amazon",
+      "version": "27.7.0",
+      "name": "Amazon"
+    },
+    {
+      "bundle_id": "com.apple.mobilegarageband",
+      "version": "2.3.18",
+      "name": "GarageBand"
+    },
+    {
+      "bundle_id": "com.waze.iphone",
+      "version": "5.18.0",
+      "name": "Waze"
+    },
+    {
+      "bundle_id": "com.apple.CarPlayTemplateUIHost",
+      "version": "1.0",
+      "name": "CarPlayTemplateUIHost"
+    },
+    {
+      "bundle_id": "com.apple.Preferences",
+      "version": "1",
+      "name": "Settings"
+    },
+    {
+      "bundle_id": "com.apple.AppStore",
+      "version": "3.0",
+      "name": "App Store"
+    },
+    {
+      "bundle_id": "com.draftkings.dknativermg",
+      "version": "5.72.0",
+      "name": "DraftKings"
+    },
+    {
+      "bundle_id": "com.apple.UIKit.FontPickerUIService",
+      "version": "",
+      "name": "FontPickerUIService"
+    },
+    {
+      "bundle_id": "com.newsmax.newsmaxapp",
+      "version": "5.1.10",
+      "name": "Newsmax"
+    },
+    {
+      "bundle_id": "com.apple.BusinessChatViewService",
+      "version": "1.0",
+      "name": "BusinessChatViewService"
+    },
+    {
+      "bundle_id": "com.apple.SpringBoardEducation",
+      "version": "1.0",
+      "name": "SpringBoardEducation"
+    },
+    {
+      "bundle_id": "com.apple.news",
+      "version": "11.3",
+      "name": "News"
+    },
+    {
+      "bundle_id": "com.apple.susuiservice",
+      "version": "1.0",
+      "name": "SoftwareUpdateUIService"
+    },
+    {
+      "bundle_id": "com.apple.CredentialSharingService",
+      "version": "1.0",
+      "name": "Wallet"
+    },
+    {
+      "bundle_id": "com.starboardmf.relevant",
+      "version": "5.24.1",
+      "name": "Relevant Radio"
+    },
+    {
+      "bundle_id": "com.apple.CarPlaySetupApp",
+      "version": "1.0",
+      "name": "CarPlaySetup"
+    },
+    {
+      "bundle_id": "com.apple.iBooks",
+      "version": "12.1",
+      "name": "Books"
+    },
+    {
+      "bundle_id": "com.yinzcam.nba.hou",
+      "version": "3.4.1",
+      "name": "Rockets"
+    },
+    {
+      "bundle_id": "com.apple.dockkit.TrackingUIService",
+      "version": "1.0",
+      "name": "DockKit"
+    },
+    {
+      "bundle_id": "com.jimmyjohns.jimmyjohns",
+      "version": "7.4.0",
+      "name": "Jimmy John\u2019s"
+    },
+    {
+      "bundle_id": "com.apple.CoreAuthUI",
+      "version": "1.0",
+      "name": "User Authentication"
+    },
+    {
+      "bundle_id": "com.apple.mobilephone",
+      "version": "36",
+      "name": "Phone"
+    },
+    {
+      "bundle_id": "net.whatsapp.WhatsApp",
+      "version": "26.14.76",
+      "name": "\u200eWhatsApp"
+    },
+    {
+      "bundle_id": "com.apple.ContactsUI.Carousel",
+      "version": "1.0",
+      "name": "ContactPhotoCarouselRemoteAlert"
+    },
+    {
+      "bundle_id": "com.apple.UIKit.OverlayUI",
+      "version": "1.0",
+      "name": "OverlayUI"
+    },
+    {
+      "bundle_id": "com.apple.gamecenter.widgets",
+      "version": "1.0.0",
+      "name": "Game Center"
+    },
+    {
+      "bundle_id": "com.apple.AppDeletionUIHost",
+      "version": "1.0",
+      "name": "AppDeletionUIHost"
+    },
+    {
+      "bundle_id": "com.apple.dockkit.pairinguiservice",
+      "version": "1.0",
+      "name": "DKPairingUIService"
+    },
+    {
+      "bundle_id": "com.nfl.gamecenter",
+      "version": "60.0.30",
+      "name": "NFL"
+    },
+    {
+      "bundle_id": "com.microsoft.skype.teams",
+      "version": "8.6.2",
+      "name": "Teams"
+    },
+    {
+      "bundle_id": "com.apple.HDSViewService",
+      "version": "1.0",
+      "name": "HomePod Setup"
+    },
+    {
+      "bundle_id": "com.vilcsak.bitcoin2",
+      "version": "14.14.27",
+      "name": "Coinbase"
+    },
+    {
+      "bundle_id": "com.apple.livetranscriptionui",
+      "version": "1.0",
+      "name": "Live Captions"
+    },
+    {
+      "bundle_id": "com.apple.ShazamEventsApp",
+      "version": "1.0",
+      "name": "Events"
+    },
+    {
+      "bundle_id": "com.google.GoogleMobile",
+      "version": "416.4",
+      "name": "Google"
+    },
+    {
+      "bundle_id": "io.routeapp.route",
+      "version": "2.180.0",
+      "name": "Route"
+    },
+    {
+      "bundle_id": "com.apple.AXUIViewService",
+      "version": "1.0",
+      "name": "AXUIViewService"
+    },
+    {
+      "bundle_id": "com.apple.DiagnosticsReporter",
+      "version": "1.0",
+      "name": "Diagnostics Reporter"
+    },
+    {
+      "bundle_id": "com.Whataburger.Production",
+      "version": "6.0.18",
+      "name": "Whataburger"
+    },
+    {
+      "bundle_id": "com.apple.AccountAuthenticationDialog",
+      "version": "1.0",
+      "name": "AccountAuthenticationDialog"
+    },
+    {
+      "bundle_id": "com.imc2.iHut",
+      "version": "6.1.2",
+      "name": "Pizza Hut"
+    },
+    {
+      "bundle_id": "com.apple.stocks",
+      "version": "8.3",
+      "name": "Stocks"
+    },
+    {
+      "bundle_id": "com.apple.mobileslideshow",
+      "version": "1.0",
+      "name": "Photos"
+    },
+    {
+      "bundle_id": "com.apple.RemotePassUIService",
+      "version": "1.0",
+      "name": "RemotePaymentPassActionsService"
+    },
+    {
+      "bundle_id": "com.apple.StickerKit.StickerPickerService",
+      "version": "1.0",
+      "name": "Emoji Keyboard"
+    },
+    {
+      "bundle_id": "com.ajnlive.ajnive",
+      "version": "2.1.1",
+      "name": "AJN LIVE"
+    },
+    {
+      "bundle_id": "com.apple.SharedWebCredentialViewService",
+      "version": "1.0",
+      "name": "SharedWebCredentialViewService"
+    },
+    {
+      "bundle_id": "com.apple.Diagnostics",
+      "version": "2.12",
+      "name": "Diagnostics"
+    },
+    {
+      "bundle_id": "com.apple.MBHelperApp",
+      "version": "1.0",
+      "name": "MBHelperApp"
+    },
+    {
+      "bundle_id": "tv.fubo.mobile",
+      "version": "7.36.0",
+      "name": "Fubo"
+    },
+    {
+      "bundle_id": "com.poshmark.poshmark",
+      "version": "10.04.02",
+      "name": "Poshmark"
+    },
+    {
+      "bundle_id": "com.nextdoor.nextdoor",
+      "version": "6.194.1",
+      "name": "Nextdoor"
+    },
+    {
+      "bundle_id": "com.apple.GameCenterRemoteAlert",
+      "version": "1.0",
+      "name": "GameCenterRemoteAlert"
+    },
+    {
+      "bundle_id": "com.apple.GameTrampoline",
+      "version": "",
+      "name": "Games"
+    },
+    {
+      "bundle_id": "com.apple.HealthENLauncher",
+      "version": "1.0",
+      "name": "Exposure Notifications"
+    },
+    {
+      "bundle_id": "com.wf.mobilebanking",
+      "version": "26.03.02",
+      "name": "Wells Fargo"
+    },
+    {
+      "bundle_id": "com.apple.Bridge",
+      "version": "1.0",
+      "name": "Watch"
+    },
+    {
+      "bundle_id": "com.google.gemini",
+      "version": "1.2026.1470001",
+      "name": "Gemini"
+    },
+    {
+      "bundle_id": "com.amazon.aiv.AIVApp",
+      "version": "10.127.2",
+      "name": "Prime Video"
+    },
+    {
+      "bundle_id": "com.apple.Device-Recovery-Assistant",
+      "version": "1.0",
+      "name": "Recovery Assistant"
+    },
+    {
+      "bundle_id": "com.swishly.photocaster",
+      "version": "4.11.9",
+      "name": "Photo Cast"
+    },
+    {
+      "bundle_id": "com.apple.ScreenContinuityShell",
+      "version": "1.5",
+      "name": "ScreenContinuityShell"
+    },
+    {
+      "bundle_id": "com.apple.ClarityCamera",
+      "version": "1.0",
+      "name": "Camera"
+    },
+    {
+      "bundle_id": "com.paytronix.grimaldis",
+      "version": "2025.8.5",
+      "name": "Grimaldi's"
+    },
+    {
+      "bundle_id": "app.hallow.Hallow",
+      "version": "13.1.0",
+      "name": "Hallow"
+    },
+    {
+      "bundle_id": "com.apple.store.Jolly",
+      "version": "670050",
+      "name": "Apple Store"
+    },
+    {
+      "bundle_id": "com.engauge.Chick-fil-A",
+      "version": "2026.7.0",
+      "name": "Chick-fil-A"
+    },
+    {
+      "bundle_id": "com.dji.golite",
+      "version": "1.20.0",
+      "name": "DJI Fly"
+    },
+    {
+      "bundle_id": "com.apple.AppleIDSetupUIService",
+      "version": "1.0",
+      "name": "Apple ID Setup"
+    },
+    {
+      "bundle_id": "com.apple.HangHUD",
+      "version": "",
+      "name": "HangHUD"
+    },
+    {
+      "bundle_id": "org.olympic.app.mobile",
+      "version": "12.1.0",
+      "name": "Olympics"
+    },
+    {
+      "bundle_id": "com.apple.Music",
+      "version": "3.1",
+      "name": "Music"
+    },
+    {
+      "bundle_id": "com.apple.PublicHealthRemoteUI",
+      "version": "1.0",
+      "name": "ExposureNotificationRemoteViewService"
+    },
+    {
+      "bundle_id": "com.apple.SafariViewService",
+      "version": "26.3",
+      "name": "Safari"
+    },
+    {
+      "bundle_id": "com.apple.LocalAuthenticationUIService",
+      "version": "1.0",
+      "name": "User Authentication"
+    },
+    {
+      "bundle_id": "com.apple.SystemPaperViewService",
+      "version": "2.13",
+      "name": "SystemPaperViewService"
+    },
+    {
+      "bundle_id": "com.apple.AuthKitUIService",
+      "version": "1.0",
+      "name": "AuthKitUIService"
+    },
+    {
+      "bundle_id": "com.apple.chrono.WidgetRenderer-CarPlay",
+      "version": "1.0",
+      "name": "WidgetRenderer_CarPlay"
+    },
+    {
+      "bundle_id": "com.apple.fullkeyboardaccess",
+      "version": "1.0",
+      "name": "FullKeyboardAccess"
+    },
+    {
+      "bundle_id": "com.apple.TVRemoteUIService",
+      "version": "1.0",
+      "name": "Remote"
+    },
+    {
+      "bundle_id": "com.apple.Passwords",
+      "version": "2.3",
+      "name": "Passwords"
+    },
+    {
+      "bundle_id": "com.apple.ProximityReaderUIService",
+      "version": "1.0",
+      "name": "Proximity Reader UI Service"
+    },
+    {
+      "bundle_id": "com.rainydayapps.Blockchain",
+      "version": "202604.1.2",
+      "name": "Blockchain"
+    },
+    {
+      "bundle_id": "com.revivasoftworks.Snore-Lab",
+      "version": "6.3.1",
+      "name": "SnoreLab"
+    },
+    {
+      "bundle_id": "com.apple.weather",
+      "version": "6.0",
+      "name": "Weather"
+    },
+    {
+      "bundle_id": "kling.ai.video.chat",
+      "version": "3.3.30",
+      "name": "KLINGAI"
+    },
+    {
+      "bundle_id": "com.apple.EscrowSecurityAlert",
+      "version": "1.0",
+      "name": "EscrowSecurityAlert"
+    },
+    {
+      "bundle_id": "com.apple.social.SLYahooAuth",
+      "version": "1.0",
+      "name": "SLYahooAuth"
+    },
+    {
+      "bundle_id": "com.apple.Home",
+      "version": "10.0",
+      "name": "Home"
+    },
+    {
+      "bundle_id": "com.rottentomatoes.ios",
+      "version": "0.5.35",
+      "name": "Rotten Tomatoes"
+    },
+    {
+      "bundle_id": "com.apple.Sharing.AirDropUI",
+      "version": "1.0",
+      "name": "AirDrop"
+    },
+    {
+      "bundle_id": "com.uie.foxsports",
+      "version": "5.151",
+      "name": "FOX Sports"
+    },
+    {
+      "bundle_id": "com.apple.FTMInternal",
+      "version": "18.0",
+      "name": "Field Test"
+    },
+    {
+      "bundle_id": "com.apple.siri",
+      "version": "1.0",
+      "name": "Siri"
+    },
+    {
+      "bundle_id": "com.progressive.ProgressiveApp",
+      "version": "3.141",
+      "name": "Progressive"
+    },
+    {
+      "bundle_id": "com.apple.icq",
+      "version": "1.0",
+      "name": "iCloud+"
+    },
+    {
+      "bundle_id": "com.apple.AAUIViewService",
+      "version": "1.0",
+      "name": "AAUIViewService"
+    },
+    {
+      "bundle_id": "com.apple.CarCamera",
+      "version": "1.0",
+      "name": "Camera"
+    },
+    {
+      "bundle_id": "KL9E84795R.com.bcbstx.providerfinder",
+      "version": "7.21.0",
+      "name": "BCBSTX"
+    },
+    {
+      "bundle_id": "com.google.chrome.ios",
+      "version": "147.7727.99",
+      "name": "Chrome"
+    },
+    {
+      "bundle_id": "com.apple.ScreenTimeUnlock",
+      "version": "3.0",
+      "name": "ScreenTimeUnlock"
+    },
+    {
+      "bundle_id": "com.apple.chrono.WidgetRenderer-Default",
+      "version": "1.0",
+      "name": "WidgetRenderer_Default"
+    },
+    {
+      "bundle_id": "com.apple.HealthENBuddy",
+      "version": "1.0",
+      "name": "HealthENBuddy"
+    },
+    {
+      "bundle_id": "com.apple.Batteries",
+      "version": "1.0",
+      "name": "Batteries"
+    },
+    {
+      "bundle_id": "com.vividseats.VividSeatsMobile",
+      "version": "2026.129.0",
+      "name": "Vivid Seats"
+    },
+    {
+      "bundle_id": "com.jackinthebox.jibprod",
+      "version": "2026.6",
+      "name": "Jack in the Box"
+    },
+    {
+      "bundle_id": "com.apple.iMovie",
+      "version": "3005",
+      "name": "iMovie"
+    },
+    {
+      "bundle_id": "com.apple.findmy.remoteuiservice",
+      "version": "1.0",
+      "name": "FindMyRemoteUIService"
+    },
+    {
+      "bundle_id": "com.apple.FCAuthenticationUI",
+      "version": "1223.80.2",
+      "name": "FamilyControlsAuthenticationUI"
+    },
+    {
+      "bundle_id": "com.apple.musicrecognition",
+      "version": "1.0",
+      "name": "Music Recognition"
+    },
+    {
+      "bundle_id": "com.mylaps.eventapp.thewoodlandsmarathon",
+      "version": "4.0.0",
+      "name": "The Woodlands Marathon"
+    },
+    {
+      "bundle_id": "com.contextlogic.Wish",
+      "version": "24.25.16",
+      "name": "Wish"
+    },
+    {
+      "bundle_id": "com.apple.TrustMe",
+      "version": "1.0",
+      "name": "TrustMe"
+    },
+    {
+      "bundle_id": "com.apple.chrono.WidgetRenderer-Activities",
+      "version": "1.0",
+      "name": "WidgetRenderer_Activities"
+    },
+    {
+      "bundle_id": "com.tmediatech.truthsocial",
+      "version": "1.25.1",
+      "name": "TruthSocial"
+    },
+    {
+      "bundle_id": "com.apple.mobilemail",
+      "version": "1.0.0",
+      "name": "Mail"
+    },
+    {
+      "bundle_id": "com.apple.SIMSetupUIService",
+      "version": "1.0",
+      "name": "Cellular"
+    },
+    {
+      "bundle_id": "com.apple.AMSEngagementViewService",
+      "version": "1.0",
+      "name": "Apple Media Services"
+    },
+    {
+      "bundle_id": "com.apple.StoreDemoViewService",
+      "version": "1.0",
+      "name": "StoreDemoViewService"
+    },
+    {
+      "bundle_id": "com.apple.sidecar",
+      "version": "1.0",
+      "name": "Continuity"
+    },
+    {
+      "bundle_id": "com.apple.chrono.WidgetRenderer-WatchFaces",
+      "version": "1.0",
+      "name": "WidgetRenderer_WatchFaces"
+    },
+    {
+      "bundle_id": "ai.suno.ios",
+      "version": "1.67.0",
+      "name": "Suno"
+    },
+    {
+      "bundle_id": "com.APSQA.MetisTest",
+      "version": "1.0",
+      "name": "OTEAutomationTest"
+    },
+    {
+      "bundle_id": "com.apple.CameraOverlayAngel",
+      "version": "1.0",
+      "name": "CameraOverlayAngel"
+    },
+    {
+      "bundle_id": "com.apple.VoiceOverTouch",
+      "version": "1.0",
+      "name": "VoiceOver"
+    },
+    {
+      "bundle_id": "com.apple.mobilesafari",
+      "version": "26.3",
+      "name": "Safari"
+    },
+    {
+      "bundle_id": "com.espn.ScoreCenter",
+      "version": "8.15.1",
+      "name": "ESPN"
+    },
+    {
+      "bundle_id": "com.apple.iMessageAppsViewService",
+      "version": "1.0",
+      "name": "iMessageAppsViewService"
+    },
+    {
+      "bundle_id": "com.apple.AuthenticationServicesUI",
+      "version": "1.0",
+      "name": "AuthenticationServicesUI"
+    },
+    {
+      "bundle_id": "com.nike.onenikecommerce",
+      "version": "8.3.0",
+      "name": "SNKRS"
+    },
+    {
+      "bundle_id": "com.apple.PassbookSecureUIService",
+      "version": "1.0",
+      "name": "PassbookSecureUIService"
+    },
+    {
+      "bundle_id": "com.apple.Home.HomeControlService",
+      "version": "1.0",
+      "name": "Home"
+    },
+    {
+      "bundle_id": "ai.x.GrokApp",
+      "version": "1.3.67",
+      "name": "Grok"
+    },
+    {
+      "bundle_id": "com.apple.mobilesms.compose",
+      "version": "1.0",
+      "name": "Messages"
+    },
+    {
+      "bundle_id": "com.foxnews.foxnews",
+      "version": "5.24.0",
+      "name": "Fox News"
+    },
+    {
+      "bundle_id": "com.apple.PASViewService",
+      "version": "1.0",
+      "name": "PASViewService"
+    },
+    {
+      "bundle_id": "com.yourcompany.PPClient",
+      "version": "8.104.1",
+      "name": "PayPal"
+    },
+    {
+      "bundle_id": "com.apple.Posters.WeatherPosterApp",
+      "version": "6.0",
+      "name": "Weather Wallpaper"
+    },
+    {
+      "bundle_id": "com.apple.Health",
+      "version": "1.0",
+      "name": "Health"
+    },
+    {
+      "bundle_id": "com.apple.ShortcutsUI",
+      "version": "1.0",
+      "name": "Shortcuts"
+    },
+    {
+      "bundle_id": "com.apple.WritingToolsUIService",
+      "version": "1.0",
+      "name": "Writing Tools"
+    },
+    {
+      "bundle_id": "com.whoop.iphone",
+      "version": "5.48.0",
+      "name": "WHOOP"
+    },
+    {
+      "bundle_id": "com.apple.NewDeviceOutreachApp",
+      "version": "1.0",
+      "name": "Coverage Details"
+    },
+    {
+      "bundle_id": "com.apple.feedback.remote",
+      "version": "1.0",
+      "name": "FeedbackRemoteView"
+    },
+    {
+      "bundle_id": "com.apple.CheckerBoard",
+      "version": "1.0",
+      "name": "CheckerBoard"
+    },
+    {
+      "bundle_id": "com.apple.Health.Sleep",
+      "version": "1.0",
+      "name": "Sleep"
+    },
+    {
+      "bundle_id": "com.apple.DiagnosticsService",
+      "version": "1.1",
+      "name": "DiagnosticsService"
+    },
+    {
+      "bundle_id": "org.toshi.distribution",
+      "version": "29.90.0",
+      "name": "Base"
+    },
+    {
+      "bundle_id": "com.apple.ClipViewService",
+      "version": "1001",
+      "name": "App Clip"
+    },
+    {
+      "bundle_id": "com.pulse.oximeter.app",
+      "version": "2.62.0",
+      "name": "Blood Oxygen App"
+    },
+    {
+      "bundle_id": "com.apple.SleepLockScreen",
+      "version": "1.0",
+      "name": "SleepLockScreen"
+    },
+    {
+      "bundle_id": "com.google.Tachyon",
+      "version": "354.0",
+      "name": "Meet"
+    },
+    {
+      "bundle_id": "com.gettr.gettr",
+      "version": "1.81.0",
+      "name": "GETTR"
+    },
+    {
+      "bundle_id": "com.microsoft.azureauthenticator",
+      "version": "6.8.45",
+      "name": "Authenticator"
+    },
+    {
+      "bundle_id": "com.apple.Home.HomeUIService",
+      "version": "1.0",
+      "name": "Home"
+    },
+    {
+      "bundle_id": "com.apple.ShortcutsActions",
+      "version": "",
+      "name": "ShortcutsActions"
+    },
+    {
+      "bundle_id": "com.apple.VoiceMemos",
+      "version": "3.2",
+      "name": "Voice Memos"
+    },
+    {
+      "bundle_id": "com.offerup.iphone.consumer",
+      "version": "2026.16.0",
+      "name": "OfferUp"
+    },
+    {
+      "bundle_id": "com.tuckercarlson.readerapp",
+      "version": "0.0.131",
+      "name": "TCN"
+    },
+    {
+      "bundle_id": "com.apple.podcasts",
+      "version": "3.9",
+      "name": "Podcasts"
+    },
+    {
+      "bundle_id": "com.apple.PeopleViewService",
+      "version": "1.0",
+      "name": "Contacts"
+    },
+    {
+      "bundle_id": "com.jadedlabs.arrive",
+      "version": "2.248.1",
+      "name": "Shop"
+    },
+    {
+      "bundle_id": "com.apple.RecoverDeviceUI",
+      "version": "1.0",
+      "name": "Recover Device UI extension"
+    },
+    {
+      "bundle_id": "com.playmgm.nj.sports2",
+      "version": "26.03.10",
+      "name": "BetMGM Sports"
+    },
+    {
+      "bundle_id": "com.amazon.mp3.AmazonCloudPlayer",
+      "version": "26.10.0",
+      "name": "Amazon Music"
+    },
+    {
+      "bundle_id": "com.apple.PassbookUIService",
+      "version": "1.0",
+      "name": "Wallet"
+    },
+    {
+      "bundle_id": "com.apple.HearingApp",
+      "version": "1.0",
+      "name": "HearingApp"
+    },
+    {
+      "bundle_id": "com.apple.GameOverlayUI",
+      "version": "1.0",
+      "name": "GameOverlayUI"
+    },
+    {
+      "bundle_id": "com.google.b612",
+      "version": "10.103.78",
+      "name": "Google Earth"
+    },
+    {
+      "bundle_id": "com.apple.Pages",
+      "version": "15.2",
+      "name": "Pages"
+    },
+    {
+      "bundle_id": "com.apple.WebContentFilter.remoteUI.WebContentAnalysisUI",
+      "version": "1.0",
+      "name": "WebContentRestrictionsUI"
+    },
+    {
+      "bundle_id": "com.apple.AppleCashStickerPackHost",
+      "version": "1.0",
+      "name": "AppleCashStickerPackHost"
+    },
+    {
+      "bundle_id": "com.apple.calculator",
+      "version": "12.0",
+      "name": "Calculator"
+    },
+    {
+      "bundle_id": "com.apple.Translate",
+      "version": "1.0",
+      "name": "Translate"
+    },
+    {
+      "bundle_id": "com.nikonikos.engage",
+      "version": "22.0.0",
+      "name": "Niko Niko's"
+    },
+    {
+      "bundle_id": "com.reddit.Reddit",
+      "version": "2026.16.0",
+      "name": "Reddit"
+    },
+    {
+      "bundle_id": "com.apple.SystemVoiceAssistant",
+      "version": "1.0",
+      "name": "SystemVoiceAssistant"
+    },
+    {
+      "bundle_id": "com.rumble.battles",
+      "version": "2.18.2",
+      "name": "Rumble"
+    },
+    {
+      "bundle_id": "com.apple.GuestUserHandoverSetup",
+      "version": "1.33.7",
+      "name": "GuestUserHandoverSetup"
+    },
+    {
+      "bundle_id": "com.apple.TDGSharingViewService",
+      "version": "1.0",
+      "name": "TDGSharingViewService"
+    },
+    {
+      "bundle_id": "com.upscrolled.app",
+      "version": "1.5.1",
+      "name": "UpScrolled"
+    },
+    {
+      "bundle_id": "com.microsoft.LinkToWindows",
+      "version": "1.26032.13",
+      "name": "Link to Windows"
+    },
+    {
+      "bundle_id": "com.netflix.Netflix",
+      "version": "18.28.0",
+      "name": "Netflix"
+    },
+    {
+      "bundle_id": "com.apple.CompanionViewService",
+      "version": "1.0",
+      "name": "CompanionViewService"
+    },
+    {
+      "bundle_id": "com.apple.DeviceOMatic",
+      "version": "1.0",
+      "name": "DeviceOMatic"
+    },
+    {
+      "bundle_id": "com.apple.PosterBoard",
+      "version": "1.0",
+      "name": "PosterBoard"
+    },
+    {
+      "bundle_id": "gov.fema.mobile.ios.FEMA",
+      "version": "3.1.6",
+      "name": "FEMA"
+    },
+    {
+      "bundle_id": "com.apple.CarRadio",
+      "version": "1.0",
+      "name": "Radio"
+    },
+    {
+      "bundle_id": "net.kortina.labs.Venmo",
+      "version": "26.7.0",
+      "name": "Venmo"
+    },
+    {
+      "bundle_id": "com.apple.springboard",
+      "version": "1.0",
+      "name": "SpringBoard"
+    },
+    {
+      "bundle_id": "com.apple.camera",
+      "version": "2.0",
+      "name": "Camera"
+    },
+    {
+      "bundle_id": "com.apple.GAXApp",
+      "version": "1.0",
+      "name": "Guided Access"
+    },
+    {
+      "bundle_id": "com.aligntech.myinvisalign",
+      "version": "3006.8",
+      "name": "My Invisalign"
+    },
+    {
+      "bundle_id": "com.apple.gamecenter.GameCenterUIService",
+      "version": "820.3.10",
+      "name": "Game Center UI Service"
+    },
+    {
+      "bundle_id": "com.apple.shortcuts",
+      "version": "7.0",
+      "name": "Shortcuts"
+    },
+    {
+      "bundle_id": "com.apple.tv",
+      "version": "1.0",
+      "name": "TV"
+    },
+    {
+      "bundle_id": "com.apple.printcenter",
+      "version": "1.0",
+      "name": "Print Center"
+    },
+    {
+      "bundle_id": "com.united.UnitedCustomerFacingIPhone",
+      "version": "4.2.74",
+      "name": "United"
+    },
+    {
+      "bundle_id": "com.indeed.JobSearch",
+      "version": "306.0",
+      "name": "Indeed Jobs"
+    },
+    {
+      "bundle_id": "com.apple.CTNotifyUIService",
+      "version": "1.0",
+      "name": "CTNotifyUIService"
+    },
+    {
+      "bundle_id": "com.apple.purplebuddy",
+      "version": "1.0.0",
+      "name": "Setup"
+    },
+    {
+      "bundle_id": "net.comeandsee.thechosen",
+      "version": "3.1.2",
+      "name": "The Chosen"
+    },
+    {
+      "bundle_id": "com.apple.CarClimate",
+      "version": "1.0",
+      "name": "Climate"
+    },
+    {
+      "bundle_id": "com.tx.lottery",
+      "version": "4.2.0",
+      "name": "Texas Lottery"
+    },
+    {
+      "bundle_id": "com.apple.AMSUIAuthenticationViewService",
+      "version": "1.0",
+      "name": "AMSUIAuthenticationViewService"
+    },
+    {
+      "bundle_id": "com.apple.SupportFlow",
+      "version": "11.0",
+      "name": "Step-by-Step Help"
+    },
+    {
+      "bundle_id": "mycatholiclife.mycatholiclife",
+      "version": "2.8",
+      "name": "My Catholic Life!"
+    },
+    {
+      "bundle_id": "com.apple.CBRemoteSetup",
+      "version": "1.0",
+      "name": "CheckerBoardRemoteSetup"
+    },
+    {
+      "bundle_id": "com.google.Gmail",
+      "version": "6.0.260406",
+      "name": "Gmail"
+    },
+    {
+      "bundle_id": "com.apple.DocumentManager.DockFolderViewService",
+      "version": "",
+      "name": "DockFolderViewService"
+    },
+    {
+      "bundle_id": "app.phantom",
+      "version": "26.13.0",
+      "name": "Phantom"
+    },
+    {
+      "bundle_id": "com.apple.ctkui",
+      "version": "1.0",
+      "name": "CTKUIService"
+    },
+    {
+      "bundle_id": "com.google.Maps",
+      "version": "26.16.0",
+      "name": "Google Maps"
+    },
+    {
+      "bundle_id": "com.apple.PeopleMessageService",
+      "version": "1.0",
+      "name": "Family Request"
+    },
+    {
+      "bundle_id": "com.apple.tips",
+      "version": "26.0",
+      "name": "Tips"
+    },
+    {
+      "bundle_id": "com.apple.compass",
+      "version": "1.0.0",
+      "name": "Compass"
+    },
+    {
+      "bundle_id": "com.apple.accessibility.MagnifierAngel",
+      "version": "1.0",
+      "name": "Live Recognition"
+    },
+    {
+      "bundle_id": "com.apple.CarPlaySplashScreen",
+      "version": "1.0",
+      "name": "CarPlaySplashScreen"
+    },
+    {
+      "bundle_id": "com.apple.Keynote",
+      "version": "15.2",
+      "name": "Keynote"
+    },
+    {
+      "bundle_id": "com.apple.AppProtectionUIHost",
+      "version": "1.0",
+      "name": "AppProtectionUIHost"
+    },
+    {
+      "bundle_id": "com.apple.SubcredentialUIService",
+      "version": "1.0",
+      "name": "Wallet"
+    },
+    {
+      "bundle_id": "com.apple.MobileSMS",
+      "version": "26.0",
+      "name": "Messages"
+    },
+    {
+      "bundle_id": "com.vudu.VuduIosClient",
+      "version": "10.9",
+      "name": "Fandango"
+    },
+    {
+      "bundle_id": "com.apple.FaceTimeLinkTrampoline",
+      "version": "",
+      "name": "FaceTime"
+    },
+    {
+      "bundle_id": "com.hulu.plus",
+      "version": "9.30.0",
+      "name": "Hulu"
+    },
+    {
+      "bundle_id": "com.apple.CarCharge",
+      "version": "1.0",
+      "name": "Charge"
+    },
+    {
+      "bundle_id": "com.sap.fla.snap.release",
+      "version": "5.48.0",
+      "name": "BILT"
+    },
+    {
+      "bundle_id": "com.apple.VisualIntelligenceCamera",
+      "version": "1.0.6",
+      "name": "Visual Intelligence"
+    },
+    {
+      "bundle_id": "co.mona.Monaco",
+      "version": "3.231.01",
+      "name": "Crypto.com"
+    },
+    {
+      "bundle_id": "com.apple.RemoteiCloudQuotaUI",
+      "version": "1.0",
+      "name": "RemoteiCloudQuotaUI"
+    },
+    {
+      "bundle_id": "com.apple.CarClosures",
+      "version": "1.0",
+      "name": "Closures"
+    },
+    {
+      "bundle_id": "com.ubercab.UberEats",
+      "version": "6.319.10000",
+      "name": "Uber Eats"
+    },
+    {
+      "bundle_id": "com.apple.HeadphoneProxService",
+      "version": "1.0",
+      "name": "Setup"
+    },
+    {
+      "bundle_id": "com.apple.FontInstallViewService",
+      "version": "1.0",
+      "name": "FontInstallViewService"
+    },
+    {
+      "bundle_id": "com.anthropic.claude",
+      "version": "1.260409.1",
+      "name": "Claude"
+    },
+    {
+      "bundle_id": "com.ubercab.UberClient",
+      "version": "3.718.10001",
+      "name": "Uber"
+    },
+    {
+      "bundle_id": "com.apple.datadetectors.DDActionsService",
+      "version": "3.0",
+      "name": "Look Up"
+    },
+    {
+      "bundle_id": "com.fifa.plus.ios",
+      "version": "8.5.7",
+      "name": "FIFA+"
+    },
+    {
+      "bundle_id": "com.duckduckgo.mobile.ios",
+      "version": "7.216.0",
+      "name": "DuckDuckGo"
+    },
+    {
+      "bundle_id": "com.canva.canvaeditor",
+      "version": "4.204.0",
+      "name": "Canva"
+    },
+    {
+      "bundle_id": "com.apple.ActivityProgress.ActivityProgressUI",
+      "version": "1.0",
+      "name": "Background Activities"
+    },
+    {
+      "bundle_id": "com.apple.MomentsUIService",
+      "version": "",
+      "name": "Journaling Suggestions"
+    },
+    {
+      "bundle_id": "com.apple.AppDistributionLaunchAngel",
+      "version": "1.0",
+      "name": "AppDistributionLaunchAngel"
+    },
+    {
+      "bundle_id": "com.apple.CoreServicesUIAgent",
+      "version": "1.0",
+      "name": "CoreServicesUIAgent"
+    },
+    {
+      "bundle_id": "com.apple.ScreenTimeWidgetApplication",
+      "version": "3.0",
+      "name": "Screen Time"
+    },
+    {
+      "bundle_id": "com.apple.FinanceUIService",
+      "version": "1.0",
+      "name": "FinanceUIService"
+    },
+    {
+      "bundle_id": "com.apple.MobileAddressBook",
+      "version": "1.0",
+      "name": "Contacts"
+    },
+    {
+      "bundle_id": "com.apple.Posters.UnityPosterApp",
+      "version": "1.0",
+      "name": "Unity"
+    }
+  ],
+  "flags": [
+    {
+      "app": "Brave",
+      "bundle_id": "com.brave.ios.browser",
+      "risk": "LOW",
+      "reason": "Privacy browser \u2014 generally positive, but verify extensions"
+    },
+    {
+      "app": "Docs",
+      "bundle_id": "com.google.Docs",
+      "risk": "LOW",
+      "reason": "Google service \u2014 data processed on Google servers"
+    },
+    {
+      "app": "Zoom",
+      "bundle_id": "us.zoom.videomeetings",
+      "risk": "MEDIUM",
+      "reason": "Zoom: known for aggressive data collection & microphone access"
+    },
+    {
+      "app": "Zedge",
+      "bundle_id": "net.zedge.wallpapers",
+      "risk": "MEDIUM",
+      "reason": "Wallpaper apps often request unnecessary permissions & track users"
+    },
+    {
+      "app": "Cash App",
+      "bundle_id": "com.squareup.cash",
+      "risk": "MEDIUM",
+      "reason": "Financial app \u2014 high-value target for attackers, ensure 2FA is on"
+    },
+    {
+      "app": "Drive",
+      "bundle_id": "com.google.Drive",
+      "risk": "LOW",
+      "reason": "Google service \u2014 cloud storage, data leaves device"
+    },
+    {
+      "app": "Voice Recorder",
+      "bundle_id": "com.TapMediaLtd.VoiceRecorderFREE",
+      "risk": "HIGH",
+      "reason": "Voice recorder with microphone access \u2014 verify it's not uploading recordings"
+    },
+    {
+      "app": "Wonder",
+      "bundle_id": "com.codeway.wonder",
+      "risk": "MEDIUM",
+      "reason": "AI image app \u2014 review what data it uploads to servers"
+    },
+    {
+      "app": "Crypto Pie",
+      "bundle_id": "com.toomuchwasabi.Crypto-Galaxy",
+      "risk": "MEDIUM",
+      "reason": "Crypto app \u2014 verify legitimacy, not a well-known publisher"
+    },
+    {
+      "app": "Check\u00a0In",
+      "bundle_id": "com.apple.safetymonitorapp",
+      "risk": "HIGH",
+      "reason": "Matches suspicious pattern: 'monitor'"
+    }
+  ],
+  "total": 430,
+  "collected_at": "2026-04-24T00:31:44.049916"
+}

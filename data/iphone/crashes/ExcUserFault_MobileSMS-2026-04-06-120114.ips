@@ -1,0 +1,91 @@
+{"is_simulated":1,"app_name":"MobileSMS","timestamp":"2026-04-06 12:01:14.00 -0500","app_version":"26.0","slice_uuid":"7d11e40d-bf3b-389d-b041-72ecc4b6b496","build_version":"1450.400.42.2.1","platform":2,"bundleID":"com.apple.MobileSMS","share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 26.3.1 (23D771330a)","roots_installed":0,"name":"MobileSMS","incident_id":"6C8D3C2B-C4BC-44F1-9E07-716DF0875A06"}
+{
+  "uptime" : 520000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPhone17,1",
+  "coalitionID" : 8998,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 26.3.1",
+    "releaseType" : "User",
+    "build" : "23D771330a"
+  },
+  "captureTime" : "2026-04-06 12:01:14.6318 -0500",
+  "codeSigningMonitor" : 2,
+  "incident" : "6C8D3C2B-C4BC-44F1-9E07-716DF0875A06",
+  "pid" : 43535,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "procStartAbsTime" : 12393620439548,
+  "procName" : "MobileSMS",
+  "procPath" : "\/private\/var\/containers\/Bundle\/Application\/866B9006-BB32-4C3A-B576-01EDE42215A6\/MobileSMS.app\/MobileSMS",
+  "bundleInfo" : {"CFBundleShortVersionString":"26.0","CFBundleVersion":"1450.400.42.2.1","CFBundleIdentifier":"com.apple.MobileSMS"},
+  "storeInfo" : {"deviceIdentifierForVendor":"3C9E2D33-EE40-4E5E-B441-B0327AD6BCB8"},
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.MobileSMS",
+  "crashReporterKey" : "b98e2a84c9f6bf59a8b063a044b4cfb3741e314a",
+  "bootProgressRegister" : "0x2080000c",
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "bootSessionUUID" : "400FE404-068A-4ADD-8124-121295B1EB23",
+  "basebandVersion" : "2.40.01",
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x600000000000001f, 0x0000000000000000","reason":0,"message":"namespc 31 reason_code 0x0000000000000000","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081887,0],"namespc":31},
+  "termination" : {"namespace":"WEBKIT","flags":518,"code":0},
+  "faultingThread" : 0,
+  "threads" : [{"id":7852007,"frames":[{"imageOffset":2966174060,"imageIndex":0},{"imageOffset":769024,"imageIndex":0},{"imageOffset":765428,"imageIndex":0},{"imageOffset":764340,"imageIndex":0},{"imageOffset":650524,"imageIndex":0},{"imageOffset":636132,"imageIndex":0},{"imageOffset":164396272,"imageIndex":0},{"imageOffset":164288784,"imageIndex":0},{"imageOffset":164192680,"imageIndex":0},{"imageOffset":290573788,"imageIndex":0},{"imageOffset":290578808,"imageIndex":0},{"imageOffset":1004866268,"imageIndex":0},{"imageOffset":1004972028,"imageIndex":0},{"imageOffset":1005091600,"imageIndex":0},{"imageOffset":1004928712,"imageIndex":0},{"imageOffset":1004928516,"imageIndex":0},{"imageOffset":51974836,"imageIndex":0},{"imageOffset":51661628,"imageIndex":0},{"imageOffset":51657324,"imageIndex":0},{"imageOffset":2813203608,"imageIndex":0},{"imageOffset":146750968,"imageIndex":0},{"imageOffset":146394708,"imageIndex":0},{"imageOffset":5660,"imageIndex":1},{"imageOffset":1175080,"imageIndex":0}],"threadState":{"x":[{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":0},"fp":{"value":0},"sp":{"value":0},"esr":{"value":0},"pc":{"value":0,"matchesCrashFrame":0},"far":{"value":0}}}],
+  "usedImages" : [
+  {
+    "size" : 4888944788,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "714092cb-10e9-3333-83ea-e3f3a795cb07"
+  },
+  {
+    "size" : 1409024,
+    "source" : "P",
+    "base" : 4377722880,
+    "uuid" : "7d11e40d-bf3b-389d-b041-72ecc4b6b496"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "bug_type" : "308",
+  "roots_installed" : 0,
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60da5e84ab0ca017dace9abf",
+      "factorPackIds" : [
+
+      ],
+      "deploymentId" : 240000008
+    },
+    {
+      "rolloutId" : "644114de41e7236e6177f9bd",
+      "factorPackIds" : [
+        "6675625cdcbaa70271ca2dac"
+      ],
+      "deploymentId" : 240000013
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "582596be-1d4a-408d-901b-5b311c006a4a",
+      "experimentId" : "65f31ccb74b6f500a45abda4",
+      "deploymentId" : 400000026
+    }
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x0 vs 0x230CC396C)"
+]
+}
