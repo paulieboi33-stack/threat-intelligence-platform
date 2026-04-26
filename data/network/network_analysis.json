@@ -1,0 +1,101 @@
+{
+  "collected_at": "2026-04-26T11:13:12.885533",
+  "total_flows": 249,
+  "unique_domains": 26,
+  "findings": [
+    {
+      "type": "SUSPICIOUS",
+      "host": "api.prod.zedge.net",
+      "root": "zedge.net",
+      "risk": "MEDIUM",
+      "reason": "Zedge CDN \u2014 wallpaper app with broad permissions",
+      "count": 1
+    },
+    {
+      "type": "TRACKER",
+      "host": "googleads.g.doubleclick.net",
+      "root": "doubleclick.net",
+      "risk": "LOW",
+      "reason": "Google ad/tracking network",
+      "count": 1
+    },
+    {
+      "type": "TRACKER",
+      "host": "ep2.facebook.com",
+      "root": "facebook.com",
+      "risk": "LOW",
+      "reason": "Facebook tracking pixel",
+      "count": 1
+    },
+    {
+      "type": "TRACKER",
+      "host": "pagead2.googlesyndication.com",
+      "root": "googlesyndication.com",
+      "risk": "LOW",
+      "reason": "Google ad syndication",
+      "count": 1
+    }
+  ],
+  "top_domains": [
+    {
+      "domain": "zobj.net",
+      "count": 76
+    },
+    {
+      "domain": "zedge.net",
+      "count": 60
+    },
+    {
+      "domain": "shopify.com",
+      "count": 18
+    },
+    {
+      "domain": "doubleclick.net",
+      "count": 14
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 12
+    },
+    {
+      "domain": "unity3d.com",
+      "count": 10
+    },
+    {
+      "domain": "googlesyndication.com",
+      "count": 8
+    },
+    {
+      "domain": "shopifysvc.com",
+      "count": 8
+    },
+    {
+      "domain": "shop.app",
+      "count": 7
+    },
+    {
+      "domain": "facebook.com",
+      "count": 5
+    },
+    {
+      "domain": "skool.com",
+      "count": 4
+    },
+    {
+      "domain": "apple.com",
+      "count": 3
+    },
+    {
+      "domain": "singular.net",
+      "count": 3
+    },
+    {
+      "domain": "app-analytics-services.com",
+      "count": 3
+    },
+    {
+      "domain": "stripe.com",
+      "count": 2
+    }
+  ]
+}

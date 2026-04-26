@@ -11,6 +11,7 @@ from datetime import datetime
 
 DB_PATH = os.path.join(os.path.dirname(__file__), 'data', 'threats.db')
 IPHONE_PATH = os.path.join(os.path.dirname(__file__), 'data', 'iphone', 'full_analysis.json')
+NETWORK_PATH = os.path.join(os.path.dirname(__file__), 'data', 'network', 'network_analysis.json')
 
 st.set_page_config(
     page_title="Threat Intelligence Platform",
@@ -29,7 +30,7 @@ st.markdown("""
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 st.sidebar.title("🛡️ Threat Intel Platform")
 st.sidebar.markdown("Multi-Agent Cybersecurity System")
-page = st.sidebar.radio("Navigate", ["📊 Dashboard", "📱 iPhone Analysis", "🔍 Threat Explorer"])
+page = st.sidebar.radio("Navigate", ["📊 Dashboard", "📱 iPhone Analysis", "📡 Network Traffic", "🔍 Threat Explorer"])
 st.sidebar.markdown("---")
 st.sidebar.caption(f"Last loaded: {datetime.now().strftime('%H:%M:%S')}")
 
@@ -44,6 +45,14 @@ def load_threats():
     except Exception as e:
         return pd.DataFrame()
 
+@st.cache_data(ttl=30)
+def load_network():
+    try:
+        with open(NETWORK_PATH) as f:
+            return json.load(f)
+    except:
+        return None
+
 @st.cache_data
 def load_iphone():
     try:
@@ -54,6 +63,7 @@ def load_iphone():
 
 df = load_threats()
 iphone = load_iphone()
+network = load_network()
 
 # ── DASHBOARD PAGE ────────────────────────────────────────────────────────────
 if page == "📊 Dashboard":
@@ -128,6 +138,62 @@ elif page == "📱 iPhone Analysis":
             st.info("No app data available.")
     else:
         st.warning("No iPhone data found. Connect your iPhone and run iphone_collector.py first.")
+
+# ── NETWORK TRAFFIC PAGE ─────────────────────────────────────────────────────
+elif page == "📡 Network Traffic":
+    st.title("📡 Network Traffic Analysis")
+    st.caption("Live capture from iPhone via mitmproxy — what your phone is really talking to")
+
+    if network:
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("📶 Total Requests", network.get("total_flows", 0))
+        col2.metric("🌐 Unique Domains", network.get("unique_domains", 0))
+        findings = network.get("findings", [])
+        suspicious = [f for f in findings if f["type"] == "SUSPICIOUS"]
+        trackers = [f for f in findings if f["type"] == "TRACKER"]
+        col3.metric("⚠️ Suspicious", len(suspicious))
+        col4.metric("📡 Trackers", len(trackers))
+
+        st.markdown("---")
+
+        col_a, col_b = st.columns(2)
+
+        with col_a:
+            st.subheader("🔝 Most Active Domains")
+            top = network.get("top_domains", [])
+            if top:
+                top_df = pd.DataFrame(top)
+                st.bar_chart(top_df.set_index("domain")["count"])
+
+        with col_b:
+            st.subheader("⚠️ Suspicious Connections")
+            if suspicious:
+                for f in suspicious:
+                    risk = f["risk"]
+                    icon = "🔴" if risk == "HIGH" else "🟡"
+                    with st.expander(f"{icon} {f['host']}"):
+                        st.write(f"**Risk:** {risk}")
+                        st.write(f"**Reason:** {f['reason']}")
+                        st.write(f"**Requests:** {f['count']}")
+            else:
+                st.success("No suspicious connections detected")
+
+        st.markdown("---")
+        st.subheader("📡 Trackers & Data Collectors")
+        if trackers:
+            tracker_df = pd.DataFrame([{
+                "Host": f["host"],
+                "Tracker": f["reason"],
+                "Requests": f["count"]
+            } for f in trackers])
+            st.dataframe(tracker_df, use_container_width=True, hide_index=True)
+        else:
+            st.info("No trackers detected yet — open more apps on your iPhone")
+
+        st.caption(f"Last analyzed: {network.get('collected_at', 'unknown')}")
+    else:
+        st.warning("No network data yet. Keep mitmproxy running and open apps on your iPhone, then run: `python3 agents/network_analyzer.py`")
+        st.code("python3 agents/network_analyzer.py", language="bash")
 
 # ── THREAT EXPLORER PAGE ──────────────────────────────────────────────────────
 elif page == "🔍 Threat Explorer":
