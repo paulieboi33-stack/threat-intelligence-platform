@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-04-26 18:02:55
+Generated: 2026-04-27 00:02:46
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 3
-- **High**: 9
+- **Critical**: 1
+- **High**: 12
 
 ## 🚨 Critical Threats
 
-### CVE-2026-33945
-- **Severity**: Critical
-- **CVSS Score**: 9.9
-- **Product**: Incus is a system container and virtual machine manager. Incus instances have an
-- **Title**: Incus is a system container and virtual machine manager. Incus instances have an
-
-**Description**:
-Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prio...
-
-### CVE-2026-33701
+### CVE-2025-9497
 - **Severity**: Critical
 - **CVSS Score**: 9.8
-- **Product**: OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation a
-- **Title**: OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation a
+- **Product**: Use of Hard-coded Credentials vulnerability in Microchip Time Provider 4100 allo
+- **Title**: Use of Hard-coded Credentials vulnerability in Microchip Time Provider 4100 allo
 
 **Description**:
-OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation and instrumentation libraries for Java. In versions prior to 2.26.1, the RMI instrumentation registered a custom endpoint...
+Use of Hard-coded Credentials vulnerability in Microchip Time Provider 4100 allows Malicious Manual Software Update.This issue affects Time Provider 4100: before 2.5.0.
 
-### CVE-2026-33729
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: OpenFGA is a high-performance and flexible authorization/permission engine built
-- **Title**: OpenFGA is a high-performance and flexible authorization/permission engine built
-
-**Description**:
-OpenFGA is a high-performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar. In versions prior to 1.13.1, under specific conditions, models using co...
-
-### CVE-2026-27893
+### CVE-2016-20037
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: vLLM is an inference and serving engine for large language models (LLMs). Starti
-- **Title**: vLLM is an inference and serving engine for large language models (LLMs). Starti
+- **CVSS Score**: 8.4
+- **Product**: xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability 
+- **Title**: xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability 
 
 **Description**:
-vLLM is an inference and serving engine for large language models (LLMs). Starting in version 0.10.1 and prior to version 0.18.0, two model implementation files hardcode `trust_remote_code=True` when ...
+xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying overly long input strings that exceed buffer boundari...
 
-### CVE-2026-33898
+### CVE-2016-20038
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: Incus is a system container and virtual machine manager. Prior to version 6.23.0
-- **Title**: Incus is a system container and virtual machine manager. Prior to version 6.23.0
+- **CVSS Score**: 8.4
+- **Product**: yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows 
+- **Title**: yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows 
 
 **Description**:
-Incus is a system container and virtual machine manager. Prior to version 6.23.0, the web server spawned by `incus webui` incorrectly validates the authentication token such that an invalid value will...
+yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an excessively long argument to the application. Attackers can cr...
+
+### CVE-2016-20039
+- **Severity**: High
+- **CVSS Score**: 8.4
+- **Product**: Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability i
+- **Title**: Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability i
+
+**Description**:
+Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability in the gamma parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers...
+
+### CVE-2016-20040
+- **Severity**: High
+- **CVSS Score**: 8.4
+- **Product**: TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM para
+- **Title**: TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM para
+
+**Description**:
+TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an o...
