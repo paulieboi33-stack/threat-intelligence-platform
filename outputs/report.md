@@ -1,56 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-04-28 18:02:52
+Generated: 2026-04-29 00:02:44
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 1
-- **High**: 11
+- **Critical**: 2
+- **High**: 7
 
 ## 🚨 Critical Threats
 
-### CVE-2026-4851
+### CVE-2025-15036
+- **Severity**: Critical
+- **CVSS Score**: 10.0
+- **Product**: A path traversal vulnerability exists in the `extract_archive_to_dir` function w
+- **Title**: A path traversal vulnerability exists in the `extract_archive_to_dir` function w
+
+**Description**:
+A path traversal vulnerability exists in the `extract_archive_to_dir` function within the `mlflow/pyfunc/dbconnect_artifact_cache.py` file of the mlflow/mlflow repository. This vulnerability, present ...
+
+### CVE-2025-15379
 - **Severity**: Critical
 - **CVSS Score**: 9.8
-- **Product**: GRID::Machine versions through 0.127 for Perl allows arbitrary code execution vi
-- **Title**: GRID::Machine versions through 0.127 for Perl allows arbitrary code execution vi
+- **Product**: A command injection vulnerability exists in MLflow's model serving container ini
+- **Title**: A command injection vulnerability exists in MLflow's model serving container ini
 
 **Description**:
-GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.
+A command injection vulnerability exists in MLflow's model serving container initialization code, specifically in the `_install_model_dependencies_to_env()` function. When deploying a model with `env_...
 
-GRID::Machine provides Remote Procedure Calls (RPC) over SSH for Perl. The client connects to...
-
-### CVE-2026-5021
+### CVE-2026-2370
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPU
-- **Title**: A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPU
+- **CVSS Score**: 8.1
+- **Product**: GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 
+- **Title**: GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 
 
 **Description**:
-A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserSetting of the component httpd. This manipulation of the argument delno causes st...
+GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 before 18.8.7, 18.9 before 18.9.3, and 18.10 before 18.10.1 affecting Jira Connect installations that could have allowed...
 
-### CVE-2026-5024
+### CVE-2026-4415
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A vulnerability was found in D-Link DIR-513 1.10. This issue affects the functio
-- **Title**: A vulnerability was found in D-Link DIR-513 1.10. This issue affects the functio
+- **CVSS Score**: 8.1
+- **Product**: Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulner
+- **Title**: Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulner
 
 **Description**:
-A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formSetEmail. Performing a manipulation of the argument curTime results in stack-base...
+Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is enabled, unauthenticated remote attackers can write arbitrary files to any location...
 
-### CVE-2026-5036
+### CVE-2026-4416
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects 
-- **Title**: A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects 
+- **CVSS Score**: 7.8
+- **Product**: The Performance Library component of Gigabyte Control Center has an Insecure Des
+- **Title**: The Performance Library component of Gigabyte Control Center has an Insecure Des
 
 **Description**:
-A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the file /goform/DhcpListClient of the component Endpoint. Performing a manipulation ...
-
-### CVE-2026-5042
-- **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A security flaw has been discovered in Belkin F9K1122 1.00.33. The affected elem
-- **Title**: A security flaw has been discovered in Belkin F9K1122 1.00.33. The affected elem
-
-**Description**:
-A security flaw has been discovered in Belkin F9K1122 1.00.33. The affected element is the function formCrossBandSwitch of the file /goform/formCrossBandSwitch of the component Parameter Handler. The ...
+The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticated local attackers can send a malicious serialized payload to the EasyTune Engine...
