@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-04-29 18:02:47
+Generated: 2026-04-30 00:02:57
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 2
-- **High**: 7
+- **Critical**: 6
+- **High**: 9
 
 ## 🚨 Critical Threats
 
-### CVE-2025-15036
-- **Severity**: Critical
-- **CVSS Score**: 10.0
-- **Product**: A path traversal vulnerability exists in the `extract_archive_to_dir` function w
-- **Title**: A path traversal vulnerability exists in the `extract_archive_to_dir` function w
-
-**Description**:
-A path traversal vulnerability exists in the `extract_archive_to_dir` function within the `mlflow/pyfunc/dbconnect_artifact_cache.py` file of the mlflow/mlflow repository. This vulnerability, present ...
-
-### CVE-2025-15379
+### CVE-2026-27697
 - **Severity**: Critical
 - **CVSS Score**: 9.8
-- **Product**: A command injection vulnerability exists in MLflow's model serving container ini
-- **Title**: A command injection vulnerability exists in MLflow's model serving container ini
+- **Product**: baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha
+- **Title**: baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha
 
 **Description**:
-A command injection vulnerability exists in MLflow's model serving container initialization code, specifically in the `_install_model_dependencies_to_env()` function. When deploying a model with `env_...
+baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has a SQL injection vulnerability in blog posts. This issue has been patched in version 5.2.3.
 
-### CVE-2026-2370
-- **Severity**: High
-- **CVSS Score**: 8.1
-- **Product**: GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 
-- **Title**: GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 
-
-**Description**:
-GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 before 18.8.7, 18.9 before 18.9.3, and 18.10 before 18.10.1 affecting Jira Connect installations that could have allowed...
-
-### CVE-2026-4415
-- **Severity**: High
-- **CVSS Score**: 8.1
-- **Product**: Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulner
-- **Title**: Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulner
+### CVE-2026-30880
+- **Severity**: Critical
+- **CVSS Score**: 9.8
+- **Product**: baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha
+- **Title**: baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha
 
 **Description**:
-Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is enabled, unauthenticated remote attackers can write arbitrary files to any location...
+baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has an OS command injection vulnerability in the installer. This issue has been patched in version 5.2.3.
 
-### CVE-2026-4416
-- **Severity**: High
-- **CVSS Score**: 7.8
-- **Product**: The Performance Library component of Gigabyte Control Center has an Insecure Des
-- **Title**: The Performance Library component of Gigabyte Control Center has an Insecure Des
+### CVE-2026-3300
+- **Severity**: Critical
+- **CVSS Score**: 9.8
+- **Product**: The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Executio
+- **Title**: The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Executio
 
 **Description**:
-The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticated local attackers can send a malicious serialized payload to the EasyTune Engine...
+The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon's process_fi...
+
+### CVE-2026-32714
+- **Severity**: Critical
+- **CVSS Score**: 9.8
+- **Product**: SciTokens is a reference library for generating and using SciTokens. Prior to ve
+- **Title**: SciTokens is a reference library for generating and using SciTokens. Prior to ve
+
+**Description**:
+SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the KeyCache class in scitokens was vulnerable to SQL Injection because it used Python's str.format() to co...
+
+### CVE-2026-21861
+- **Severity**: Critical
+- **CVSS Score**: 9.1
+- **Product**: baserCMS is a website development framework. Prior to version 5.2.3, baserCMS co
+- **Title**: baserCMS is a website development framework. Prior to version 5.2.3, baserCMS co
+
+**Description**:
+baserCMS is a website development framework. Prior to version 5.2.3, baserCMS contains an OS command injection vulnerability in the core update functionality. An authenticated administrator can execut...
