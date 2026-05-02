@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-01 18:02:47
+Generated: 2026-05-02 00:02:52
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 1
-- **High**: 7
+- **Critical**: 0
+- **High**: 9
 
 ## 🚨 Critical Threats
 
-### CVE-2025-71279
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: XenForo before 2.3.7 contains a security issue affecting Passkeys that have been
-- **Title**: XenForo before 2.3.7 contains a security issue affecting Passkeys that have been
-
-**Description**:
-XenForo before 2.3.7 contains a security issue affecting Passkeys that have been added to user accounts. An attacker may be able to compromise the security of Passkey-based authentication.
-
-### CVE-2025-71278
+### CVE-2026-21765
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized s
-- **Title**: XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized s
+- **Product**: HCL BigFix Platform is affected by insecure permissions on private cryptographic
+- **Title**: HCL BigFix Platform is affected by insecure permissions on private cryptographic
 
 **Description**:
-XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized scopes. This affects any customer using OAuth2 clients on any version of XenForo 2.3 prior to 2.3.5, potentially allowing...
+HCL BigFix Platform is affected by insecure permissions on private cryptographic keys.  The private cryptographic keys located on a Windows host machine might be subject to overly permissive file syst...
 
-### CVE-2025-71281
+### CVE-2026-4347
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: XenForo before 2.3.7 does not properly restrict methods callable from within tem
-- **Title**: XenForo before 2.3.7 does not properly restrict methods callable from within tem
+- **CVSS Score**: 8.1
+- **Product**: The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due t
+- **Title**: The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due t
 
 **Description**:
-XenForo before 2.3.7 does not properly restrict methods callable from within templates. A loose prefix match was used instead of a stricter first-word match for methods accessible through callbacks an...
+The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation via the 'generate_user_filepath' function and the 'move_temp_file_to_upload_dir' fun...
 
-### CVE-2026-3775
+### CVE-2026-0634
 - **Severity**: High
 - **CVSS Score**: 7.8
-- **Product**: The application's update service, when checking for updates, loads certain syste
-- **Title**: The application's update service, when checking for updates, loads certain syste
+- **Product**: Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows 
+- **Title**: Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows 
 
 **Description**:
-The application's update service, when checking for updates, loads certain system libraries from a search path that includes directories writable by low‑privileged users and is not strictly restricted...
+Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows local apps to execute arbitrary code as system via command injection.
 
-### CVE-2025-13855
+### CVE-2026-5032
 - **Severity**: High
-- **CVSS Score**: 7.6
-- **Product**: IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable t
-- **Title**: IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable t
+- **CVSS Score**: 7.5
+- **Product**: The W3 Total Cache plugin for WordPress is vulnerable to information exposure in
+- **Title**: The W3 Total Cache plugin for WordPress is vulnerable to information exposure in
 
 **Description**:
-IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, ...
+The W3 Total Cache plugin for WordPress is vulnerable to information exposure in all versions up to, and including, 2.9.3. This is due to the plugin bypassing its entire output buffering and processin...
+
+### CVE-2026-5320
+- **Severity**: High
+- **CVSS Score**: 7.3
+- **Product**: A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vul
+- **Title**: A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vul
+
+**Description**:
+A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vulnerability is an unknown functionality of the file /api/vanna/v2/ of the component Chat API Endpoint. Performing a manip...
