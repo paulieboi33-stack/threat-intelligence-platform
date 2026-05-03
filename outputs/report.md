@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-02 18:02:54
+Generated: 2026-05-03 00:02:49
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 0
-- **High**: 9
+- **Critical**: 5
+- **High**: 4
 
 ## 🚨 Critical Threats
 
-### CVE-2026-21765
-- **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: HCL BigFix Platform is affected by insecure permissions on private cryptographic
-- **Title**: HCL BigFix Platform is affected by insecure permissions on private cryptographic
+### CVE-2026-32213
+- **Severity**: Critical
+- **CVSS Score**: 10.0
+- **Product**: Improper authorization in Azure AI Foundry allows an unauthorized attacker to el
+- **Title**: Improper authorization in Azure AI Foundry allows an unauthorized attacker to el
 
 **Description**:
-HCL BigFix Platform is affected by insecure permissions on private cryptographic keys.  The private cryptographic keys located on a Windows host machine might be subject to overly permissive file syst...
+Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.
 
-### CVE-2026-4347
-- **Severity**: High
-- **CVSS Score**: 8.1
-- **Product**: The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due t
-- **Title**: The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due t
-
-**Description**:
-The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation via the 'generate_user_filepath' function and the 'move_temp_file_to_upload_dir' fun...
-
-### CVE-2026-0634
-- **Severity**: High
-- **CVSS Score**: 7.8
-- **Product**: Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows 
-- **Title**: Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows 
+### CVE-2026-33105
+- **Severity**: Critical
+- **CVSS Score**: 10.0
+- **Product**: Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori
+- **Title**: Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori
 
 **Description**:
-Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows local apps to execute arbitrary code as system via command injection.
+Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.
 
-### CVE-2026-5032
-- **Severity**: High
-- **CVSS Score**: 7.5
-- **Product**: The W3 Total Cache plugin for WordPress is vulnerable to information exposure in
-- **Title**: The W3 Total Cache plugin for WordPress is vulnerable to information exposure in
-
-**Description**:
-The W3 Total Cache plugin for WordPress is vulnerable to information exposure in all versions up to, and including, 2.9.3. This is due to the plugin bypassing its entire output buffering and processin...
-
-### CVE-2026-5320
-- **Severity**: High
-- **CVSS Score**: 7.3
-- **Product**: A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vul
-- **Title**: A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vul
+### CVE-2026-33107
+- **Severity**: Critical
+- **CVSS Score**: 10.0
+- **Product**: Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at
+- **Title**: Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at
 
 **Description**:
-A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vulnerability is an unknown functionality of the file /api/vanna/v2/ of the component Chat API Endpoint. Performing a manip...
+Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.
+
+### CVE-2026-26135
+- **Severity**: Critical
+- **CVSS Score**: 9.6
+- **Product**: Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (
+- **Title**: Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (
+
+**Description**:
+Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (RP) allows an authorized attacker to elevate privileges over a network.
+
+### CVE-2026-32211
+- **Severity**: Critical
+- **CVSS Score**: 9.1
+- **Product**: Missing authentication for critical function in Azure MCP Server allows an unaut
+- **Title**: Missing authentication for critical function in Azure MCP Server allows an unaut
+
+**Description**:
+Missing authentication for critical function in Azure MCP Server allows an unauthorized attacker to disclose information over a network.
