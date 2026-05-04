@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-03 18:02:44
+Generated: 2026-05-04 00:02:47
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 5
-- **High**: 4
+- **Critical**: 1
+- **High**: 6
 
 ## 🚨 Critical Threats
 
-### CVE-2026-32213
+### CVE-2026-35616
 - **Severity**: Critical
-- **CVSS Score**: 10.0
-- **Product**: Improper authorization in Azure AI Foundry allows an unauthorized attacker to el
-- **Title**: Improper authorization in Azure AI Foundry allows an unauthorized attacker to el
+- **CVSS Score**: 9.8
+- **Product**: A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through
+- **Title**: A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through
 
 **Description**:
-Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.
+A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.
 
-### CVE-2026-33105
-- **Severity**: Critical
-- **CVSS Score**: 10.0
-- **Product**: Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori
-- **Title**: Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori
-
-**Description**:
-Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.
-
-### CVE-2026-33107
-- **Severity**: Critical
-- **CVSS Score**: 10.0
-- **Product**: Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at
-- **Title**: Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at
+### CVE-2026-34955
+- **Severity**: High
+- **CVSS Score**: 8.8
+- **Product**: PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSand
+- **Title**: PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSand
 
 **Description**:
-Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.
+PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSandbox in all modes (BASIC, STRICT, NETWORK_ISOLATED) calls subprocess.run() with shell=True and relies solely on string-pa...
 
-### CVE-2026-26135
-- **Severity**: Critical
-- **CVSS Score**: 9.6
-- **Product**: Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (
-- **Title**: Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (
-
-**Description**:
-Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (RP) allows an authorized attacker to elevate privileges over a network.
-
-### CVE-2026-32211
-- **Severity**: Critical
-- **CVSS Score**: 9.1
-- **Product**: Missing authentication for critical function in Azure MCP Server allows an unaut
-- **Title**: Missing authentication for critical function in Azure MCP Server allows an unaut
+### CVE-2026-34780
+- **Severity**: High
+- **CVSS Score**: 8.3
+- **Product**: Electron is a framework for writing cross-platform desktop applications using Ja
+- **Title**: Electron is a framework for writing cross-platform desktop applications using Ja
 
 **Description**:
-Missing authentication for critical function in Azure MCP Server allows an unauthorized attacker to disclose information over a network.
+Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. From versions 39.0.0-alpha.1 to before 39.8.0, 40.0.0-alpha.1 to before 40.7.0, and 41.0.0-alpha...
+
+### CVE-2026-34774
+- **Severity**: High
+- **CVSS Score**: 8.1
+- **Product**: Electron is a framework for writing cross-platform desktop applications using Ja
+- **Title**: Electron is a framework for writing cross-platform desktop applications using Ja
+
+**Description**:
+Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 39.8.1, 40.7.0, and 41.0.0, apps that use offscreen rendering and allow child ...
+
+### CVE-2026-34769
+- **Severity**: High
+- **CVSS Score**: 7.7
+- **Product**: Electron is a framework for writing cross-platform desktop applications using Ja
+- **Title**: Electron is a framework for writing cross-platform desktop applications using Ja
+
+**Description**:
+Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.0, 40.7.0, and 41.0.0-beta.8, an undocumented commandLineSwitches...
