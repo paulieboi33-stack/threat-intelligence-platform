@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-04 18:02:54
+Generated: 2026-05-05 00:02:55
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 1
-- **High**: 6
+- **Critical**: 0
+- **High**: 4
 
 ## 🚨 Critical Threats
 
-### CVE-2026-35616
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through
-- **Title**: A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through
-
-**Description**:
-A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.
-
-### CVE-2026-34955
+### CVE-2026-5544
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSand
-- **Title**: PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSand
+- **Product**: A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-18053
+- **Title**: A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-18053
 
 **Description**:
-PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSandbox in all modes (BASIC, STRICT, NETWORK_ISOLATED) calls subprocess.run() with shell=True and relies solely on string-pa...
+A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. The impacted element is an unknown function of the file /goform/formRemoteControl. The manipulation of the argument P...
 
-### CVE-2026-34780
+### CVE-2026-5534
 - **Severity**: High
-- **CVSS Score**: 8.3
-- **Product**: Electron is a framework for writing cross-platform desktop applications using Ja
-- **Title**: Electron is a framework for writing cross-platform desktop applications using Ja
+- **CVSS Score**: 7.3
+- **Product**: A vulnerability was identified in itsourcecode Online Enrollment System 1.0. Thi
+- **Title**: A vulnerability was identified in itsourcecode Online Enrollment System 1.0. Thi
 
 **Description**:
-Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. From versions 39.0.0-alpha.1 to before 39.8.0, 40.0.0-alpha.1 to before 40.7.0, and 41.0.0-alpha...
+A vulnerability was identified in itsourcecode Online Enrollment System 1.0. This affects an unknown function of the file /sms/user/index.php?view=edit&id=10 of the component Parameter Handler. Such m...
 
-### CVE-2026-34774
+### CVE-2026-5536
 - **Severity**: High
-- **CVSS Score**: 8.1
-- **Product**: Electron is a framework for writing cross-platform desktop applications using Ja
-- **Title**: Electron is a framework for writing cross-platform desktop applications using Ja
+- **CVSS Score**: 7.3
+- **Product**: A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the fu
+- **Title**: A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the fu
 
 **Description**:
-Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 39.8.1, 40.7.0, and 41.0.0, apps that use offscreen rendering and allow child ...
+A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the function sendMessage of the file grpc_server.py of the component gRPC server. Executing a manipulation can lead to deseria...
 
-### CVE-2026-34769
+### CVE-2026-5540
 - **Severity**: High
-- **CVSS Score**: 7.7
-- **Product**: Electron is a framework for writing cross-platform desktop applications using Ja
-- **Title**: Electron is a framework for writing cross-platform desktop applications using Ja
+- **CVSS Score**: 7.3
+- **Product**: A vulnerability has been found in code-projects Simple Laundry System 1.0. This 
+- **Title**: A vulnerability has been found in code-projects Simple Laundry System 1.0. This 
 
 **Description**:
-Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.0, 40.7.0, and 41.0.0-beta.8, an undocumented commandLineSwitches...
+A vulnerability has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modifymember.php of the component Parameter Handler. Such manipulation o...
+
+### CVE-2026-5590
+- **Severity**: Medium
+- **CVSS Score**: 6.4
+- **Product**: A race condition during TCP connection teardown can cause tcp_recv() to operate 
+- **Title**: A race condition during TCP connection teardown can cause tcp_recv() to operate 
+
+**Description**:
+A race condition during TCP connection teardown can cause tcp_recv() to operate on a connection that has already been released. If tcp_conn_search() returns NULL while processing a SYN packet, a NULL ...
