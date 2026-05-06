@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-05 18:03:01
+Generated: 2026-05-06 00:03:04
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
 - **Critical**: 0
-- **High**: 4
+- **High**: 9
 
 ## 🚨 Critical Threats
 
-### CVE-2026-5544
+### CVE-2026-5605
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-18053
-- **Title**: A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-18053
+- **Product**: A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function 
+- **Title**: A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function 
 
 **Description**:
-A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. The impacted element is an unknown function of the file /goform/formRemoteControl. The manipulation of the argument P...
+A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function formWrlExtraSet of the file /goform/WrlExtraSet. Executing a manipulation of the argument GO can lead to stack-based buf...
 
-### CVE-2026-5534
+### CVE-2026-5608
 - **Severity**: High
-- **CVSS Score**: 7.3
-- **Product**: A vulnerability was identified in itsourcecode Online Enrollment System 1.0. Thi
-- **Title**: A vulnerability was identified in itsourcecode Online Enrollment System 1.0. Thi
+- **CVSS Score**: 8.8
+- **Product**: A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function
+- **Title**: A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function
 
 **Description**:
-A vulnerability was identified in itsourcecode Online Enrollment System 1.0. This affects an unknown function of the file /sms/user/index.php?view=edit&id=10 of the component Parameter Handler. Such m...
+A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function formWlanSetup of the file /goform/formWlanSetup. The manipulation of the argument webpage results in stack-based buffer...
 
-### CVE-2026-5536
+### CVE-2026-5609
 - **Severity**: High
-- **CVSS Score**: 7.3
-- **Product**: A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the fu
-- **Title**: A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the fu
+- **CVSS Score**: 8.8
+- **Product**: A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerabilit
+- **Title**: A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerabilit
 
 **Description**:
-A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the function sendMessage of the file grpc_server.py of the component gRPC server. Executing a manipulation can lead to deseria...
+A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerability is the function formwrlSSIDset of the file /goform/wifiSSIDset of the component Parameter Handler. This manipulation o...
 
-### CVE-2026-5540
+### CVE-2026-5610
 - **Severity**: High
-- **CVSS Score**: 7.3
-- **Product**: A vulnerability has been found in code-projects Simple Laundry System 1.0. This 
-- **Title**: A vulnerability has been found in code-projects Simple Laundry System 1.0. This 
+- **CVSS Score**: 8.8
+- **Product**: A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue
+- **Title**: A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue
 
 **Description**:
-A vulnerability has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modifymember.php of the component Parameter Handler. Such manipulation o...
+A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue is the function formWISP5G of the file /goform/formWISP5G. Such manipulation of the argument webpage leads to stack-bas...
 
-### CVE-2026-5590
-- **Severity**: Medium
-- **CVSS Score**: 6.4
-- **Product**: A race condition during TCP connection teardown can cause tcp_recv() to operate 
-- **Title**: A race condition during TCP connection teardown can cause tcp_recv() to operate 
+### CVE-2026-5611
+- **Severity**: High
+- **CVSS Score**: 8.8
+- **Product**: A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function f
+- **Title**: A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function f
 
 **Description**:
-A race condition during TCP connection teardown can cause tcp_recv() to operate on a connection that has already been released. If tcp_conn_search() returns NULL while processing a SYN packet, a NULL ...
+A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function formCrossBandSwitch of the file /goform/formCrossBandSwitch. Performing a manipulation of the argument webpage results in...
