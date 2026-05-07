@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-06 18:03:07
+Generated: 2026-05-07 00:03:01
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 0
-- **High**: 9
+- **Critical**: 2
+- **High**: 6
 
 ## 🚨 Critical Threats
 
-### CVE-2026-5605
-- **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function 
-- **Title**: A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function 
+### CVE-2026-0740
+- **Severity**: Critical
+- **CVSS Score**: 9.8
+- **Product**: The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary f
+- **Title**: The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary f
 
 **Description**:
-A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function formWrlExtraSet of the file /goform/WrlExtraSet. Executing a manipulation of the argument GO can lead to stack-based buf...
+The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'NF_FU_AJAX_Controllers_Uploads::handle_upload' function in all v...
 
-### CVE-2026-5608
-- **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function
-- **Title**: A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function
-
-**Description**:
-A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function formWlanSetup of the file /goform/formWlanSetup. The manipulation of the argument webpage results in stack-based buffer...
-
-### CVE-2026-5609
-- **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerabilit
-- **Title**: A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerabilit
+### CVE-2026-1114
+- **Severity**: Critical
+- **CVSS Score**: 9.8
+- **Product**: In parisneo/lollms version 2.1.0, the application's session management is vulner
+- **Title**: In parisneo/lollms version 2.1.0, the application's session management is vulner
 
 **Description**:
-A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerability is the function formwrlSSIDset of the file /goform/wifiSSIDset of the component Parameter Handler. This manipulation o...
+In parisneo/lollms version 2.1.0, the application's session management is vulnerable to improper access control due to the use of a weak secret key for signing JSON Web Tokens (JWT). This vulnerabilit...
 
-### CVE-2026-5610
+### CVE-2026-20433
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue
-- **Title**: A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue
+- **Product**: In Modem, there is a possible out of bounds write due to a missing bounds check.
+- **Title**: In Modem, there is a possible out of bounds write due to a missing bounds check.
 
 **Description**:
-A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue is the function formWISP5G of the file /goform/formWISP5G. Such manipulation of the argument webpage leads to stack-bas...
+In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta...
 
-### CVE-2026-5611
+### CVE-2025-65115
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function f
-- **Title**: A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function f
+- **Product**: Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on 
+- **Title**: Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on 
 
 **Description**:
-A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function formCrossBandSwitch of the file /goform/formCrossBandSwitch. Performing a manipulation of the argument webpage results in...
+Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management 2 - Operations Director on Windows, Job Management Partner 1/IT Desktop Management 2 ...
+
+### CVE-2026-5465
+- **Severity**: High
+- **CVSS Score**: 8.8
+- **Product**: The Booking for Appointments and Events Calendar – Amelia plugin for WordPress i
+- **Title**: The Booking for Appointments and Events Calendar – Amelia plugin for WordPress i
+
+**Description**:
+The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.1.3. This is due to the `Update...
