@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-07 18:03:04
+Generated: 2026-05-08 00:03:11
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
 - **Critical**: 2
-- **High**: 6
+- **High**: 10
 
 ## 🚨 Critical Threats
 
-### CVE-2026-0740
+### CVE-2026-27143
 - **Severity**: Critical
 - **CVSS Score**: 9.8
-- **Product**: The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary f
-- **Title**: The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary f
+- **Product**: Arithmetic over induction variables in loops were not correctly checked for unde
+- **Title**: Arithmetic over induction variables in loops were not correctly checked for unde
 
 **Description**:
-The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'NF_FU_AJAX_Controllers_Uploads::handle_upload' function in all v...
+Arithmetic over induction variables in loops were not correctly checked for underflow or overflow. As a result, the compiler would allow for invalid indexing to occur at runtime, potentially leading t...
 
-### CVE-2026-1114
+### CVE-2026-1346
 - **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: In parisneo/lollms version 2.1.0, the application's session management is vulner
-- **Title**: In parisneo/lollms version 2.1.0, the application's session management is vulner
+- **CVSS Score**: 9.3
+- **Product**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
+- **Title**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
 
 **Description**:
-In parisneo/lollms version 2.1.0, the application's session management is vulnerable to improper access control due to the use of a weak secret key for signing JSON Web Tokens (JWT). This vulnerabilit...
+IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces...
 
-### CVE-2026-20433
+### CVE-2026-3357
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: In Modem, there is a possible out of bounds write due to a missing bounds check.
-- **Title**: In Modem, there is a possible out of bounds write due to a missing bounds check.
+- **Product**: IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated u
+- **Title**: IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated u
 
 **Description**:
-In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta...
+IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the system, caused by an insecure default setting which permits the deserialization of ...
 
-### CVE-2025-65115
+### CVE-2026-27140
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on 
-- **Title**: Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on 
+- **Product**: SWIG file names containing 'cgo' and well-crafted payloads could lead to code sm
+- **Title**: SWIG file names containing 'cgo' and well-crafted payloads could lead to code sm
 
 **Description**:
-Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management 2 - Operations Director on Windows, Job Management Partner 1/IT Desktop Management 2 ...
+SWIG file names containing 'cgo' and well-crafted payloads could lead to code smuggling and arbitrary code execution at build time due to trust layer bypass.
 
-### CVE-2026-5465
+### CVE-2026-1342
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: The Booking for Appointments and Events Calendar – Amelia plugin for WordPress i
-- **Title**: The Booking for Appointments and Events Calendar – Amelia plugin for WordPress i
+- **CVSS Score**: 8.5
+- **Product**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
+- **Title**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
 
 **Description**:
-The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.1.3. This is due to the `Update...
+IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces...
