@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-08 18:03:15
+Generated: 2026-05-09 00:03:16
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 2
-- **High**: 10
+- **Critical**: 0
+- **High**: 9
 
 ## 🚨 Critical Threats
 
-### CVE-2026-27143
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: Arithmetic over induction variables in loops were not correctly checked for unde
-- **Title**: Arithmetic over induction variables in loops were not correctly checked for unde
-
-**Description**:
-Arithmetic over induction variables in loops were not correctly checked for underflow or overflow. As a result, the compiler would allow for invalid indexing to occur at runtime, potentially leading t...
-
-### CVE-2026-1346
-- **Severity**: Critical
-- **CVSS Score**: 9.3
-- **Product**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
-- **Title**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
-
-**Description**:
-IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces...
-
-### CVE-2026-3357
+### CVE-2026-5815
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated u
-- **Title**: IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated u
+- **Product**: A vulnerability was detected in D-Link DIR-645 1.01/1.02/1.03. Impacted is the f
+- **Title**: A vulnerability was detected in D-Link DIR-645 1.01/1.02/1.03. Impacted is the f
 
 **Description**:
-IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the system, caused by an insecure default setting which permits the deserialization of ...
+A vulnerability was detected in D-Link DIR-645 1.01/1.02/1.03. Impacted is the function hedwigcgi_main of the file /cgi-bin/hedwig.cgi. The manipulation results in stack-based buffer overflow. The att...
 
-### CVE-2026-27140
+### CVE-2026-4326
 - **Severity**: High
 - **CVSS Score**: 8.8
-- **Product**: SWIG file names containing 'cgo' and well-crafted payloads could lead to code sm
-- **Title**: SWIG file names containing 'cgo' and well-crafted payloads could lead to code sm
+- **Product**: The Vertex Addons for Elementor plugin for WordPress is vulnerable to Missing Au
+- **Title**: The Vertex Addons for Elementor plugin for WordPress is vulnerable to Missing Au
 
 **Description**:
-SWIG file names containing 'cgo' and well-crafted payloads could lead to code smuggling and arbitrary code execution at build time due to trust layer bypass.
+The Vertex Addons for Elementor plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including 1.6.4. This is due to improper authorization enforcement in the activate...
 
-### CVE-2026-1342
+### CVE-2026-5830
 - **Severity**: High
-- **CVSS Score**: 8.5
-- **Product**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
-- **Title**: IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify
+- **CVSS Score**: 8.8
+- **Product**: A vulnerability was identified in Tenda AC15 15.03.05.18. This affects the funct
+- **Title**: A vulnerability was identified in Tenda AC15 15.03.05.18. This affects the funct
 
 **Description**:
-IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces...
+A vulnerability was identified in Tenda AC15 15.03.05.18. This affects the function websGetVar of the file /goform/SysToolChangePwd. Such manipulation of the argument oldPwd/newPwd/cfmPwd leads to sta...
+
+### CVE-2026-5814
+- **Severity**: High
+- **CVSS Score**: 7.3
+- **Product**: A security vulnerability has been detected in PHPGurukul Online Course Registrat
+- **Title**: A security vulnerability has been detected in PHPGurukul Online Course Registrat
+
+**Description**:
+A security vulnerability has been detected in PHPGurukul Online Course Registration 3.1. This issue affects some unknown processing of the file /admin/check_availability.php. The manipulation of the a...
+
+### CVE-2026-5824
+- **Severity**: High
+- **CVSS Score**: 7.3
+- **Product**: A security vulnerability has been detected in code-projects Simple Laundry Syste
+- **Title**: A security vulnerability has been detected in code-projects Simple Laundry Syste
+
+**Description**:
+A security vulnerability has been detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /userchecklogin.php. Such manipulation of the argument userid leads to s...
