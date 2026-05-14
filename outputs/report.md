@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-13 18:02:47
+Generated: 2026-05-14 00:02:46
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 3
-- **High**: 8
+- **Critical**: 1
+- **High**: 2
 
 ## 🚨 Critical Threats
 
-### CVE-2026-6138
+### CVE-2026-27681
 - **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted ele
-- **Title**: A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted ele
+- **CVSS Score**: 9.9
+- **Product**: Due to insufficient authorization checks in SAP Business Planning and Consolidat
+- **Title**: Due to insufficient authorization checks in SAP Business Planning and Consolidat
 
 **Description**:
-A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted element is the function setAccessDeviceCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation...
+Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete dat...
 
-### CVE-2026-6139
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This af
-- **Title**: A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This af
-
-**Description**:
-A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function UploadOpenVpnCert of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of...
-
-### CVE-2026-6140
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts
-- **Title**: A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts
-
-**Description**:
-A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function UploadFirmwareFile of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulatio...
-
-### CVE-2026-6135
+### CVE-2026-40164
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A weakness has been identified in Tenda F451 1.0.0.7_cn_svn7958. This issue affe
-- **Title**: A weakness has been identified in Tenda F451 1.0.0.7_cn_svn7958. This issue affe
+- **CVSS Score**: 7.5
+- **Product**: jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02
+- **Title**: jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02
 
 **Description**:
-A weakness has been identified in Tenda F451 1.0.0.7_cn_svn7958. This issue affects the function fromSetIpBind of the file /goform/SetIpBind. Executing a manipulation of the argument page can lead to ...
+jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784, jq used MurmurHash3 with a hardcoded, publicly visible seed (0x432A9843) for all JSON object hash table ope...
 
-### CVE-2026-6136
+### CVE-2026-34256
 - **Severity**: High
-- **CVSS Score**: 8.8
-- **Product**: A security vulnerability has been detected in Tenda F451 1.0.0.7_cn_svn7958. Imp
-- **Title**: A security vulnerability has been detected in Tenda F451 1.0.0.7_cn_svn7958. Imp
+- **CVSS Score**: 7.1
+- **Product**: Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud a
+- **Title**: Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud a
 
 **Description**:
-A security vulnerability has been detected in Tenda F451 1.0.0.7_cn_svn7958. Impacted is the function frmL7ImForm of the file /goform/L7Im. The manipulation of the argument page leads to stack-based b...
+Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud and On-Premise), an authenticated attacker could execute a particular ABAP report to overwrite any existing eight?charact...
+
+### CVE-2026-27677
+- **Severity**: Medium
+- **CVSS Score**: 6.5
+- **Product**: Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Ref
+- **Title**: Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Ref
+
+**Description**:
+Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Reference Equipment), an attacker could update and delete child entities via OData services without proper authorization. T...
+
+### CVE-2026-27678
+- **Severity**: Medium
+- **CVSS Score**: 6.5
+- **Product**: Due to missing authorization checks in the SAP S/4HANA backend OData Service (Ma
+- **Title**: Due to missing authorization checks in the SAP S/4HANA backend OData Service (Ma
+
+**Description**:
+Due to missing authorization checks in the SAP S/4HANA backend OData Service (Manage Reference Structures), an attacker could update and delete child entities via exposed OData services without proper...
