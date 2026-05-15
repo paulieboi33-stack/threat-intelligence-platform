@@ -1,54 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-14 18:02:48
+Generated: 2026-05-15 00:00:06
 
 ## 📊 Executive Summary
-- **Total Threats**: 20
-- **Critical**: 1
-- **High**: 2
+- **Total Threats**: 40
+- **Critical**: 22
+- **High**: 8
 
 ## 🚨 Critical Threats
 
-### CVE-2026-27681
+### CVE-2026-39842
 - **Severity**: Critical
 - **CVSS Score**: 9.9
-- **Product**: Due to insufficient authorization checks in SAP Business Planning and Consolidat
-- **Title**: Due to insufficient authorization checks in SAP Business Planning and Consolidat
+- **Product**: OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two
+- **Title**: OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two
 
 **Description**:
-Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete dat...
+OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two interrelated expression injection vulnerabilities in the rules engine that allow arbitrary code execution on the server...
 
-### CVE-2026-40164
-- **Severity**: High
-- **CVSS Score**: 7.5
-- **Product**: jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02
-- **Title**: jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02
-
-**Description**:
-jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784, jq used MurmurHash3 with a hardcoded, publicly visible seed (0x432A9843) for all JSON object hash table ope...
-
-### CVE-2026-34256
-- **Severity**: High
-- **CVSS Score**: 7.1
-- **Product**: Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud a
-- **Title**: Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud a
+### CVE-2026-1555
+- **Severity**: Critical
+- **CVSS Score**: 9.8
+- **Product**: The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to 
+- **Title**: The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to 
 
 **Description**:
-Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud and On-Premise), an authenticated attacker could execute a particular ABAP report to overwrite any existing eight?charact...
+The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the io_img_upload() function in all versions up to, and including, 1.2024. This makes it...
 
-### CVE-2026-27677
-- **Severity**: Medium
-- **CVSS Score**: 6.5
-- **Product**: Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Ref
-- **Title**: Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Ref
-
-**Description**:
-Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Reference Equipment), an attacker could update and delete child entities via OData services without proper authorization. T...
-
-### CVE-2026-27678
-- **Severity**: Medium
-- **CVSS Score**: 6.5
-- **Product**: Due to missing authorization checks in the SAP S/4HANA backend OData Service (Ma
-- **Title**: Due to missing authorization checks in the SAP S/4HANA backend OData Service (Ma
+### CVE-2026-20182
+- **Severity**: Critical
+- **CVSS Score**: 9.0
+- **Product**: Catalyst SD-WAN
+- **Title**: Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability
 
 **Description**:
-Due to missing authorization checks in the SAP S/4HANA backend OData Service (Manage Reference Structures), an attacker could update and delete child entities via exposed OData services without proper...
+Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.
+
+### CVE-2026-42208
+- **Severity**: Critical
+- **CVSS Score**: 9.0
+- **Product**: LiteLLM
+- **Title**: BerriAI LiteLLM SQL Injection Vulnerability
+
+**Description**:
+BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the credentials it manages.
+
+### CVE-2026-6973
+- **Severity**: Critical
+- **CVSS Score**: 9.0
+- **Product**: Endpoint Manager Mobile (EPMM)
+- **Title**: Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability
+
+**Description**:
+Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.
