@@ -1,54 +1,57 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-15 06:00:05
+Generated: 2026-05-16 00:00:15
 
 ## 📊 Executive Summary
-- **Total Threats**: 40
-- **Critical**: 22
-- **High**: 8
+- **Total Threats**: 20
+- **Critical**: 5
+- **High**: 7
 
 ## 🚨 Critical Threats
 
-### CVE-2026-39842
-- **Severity**: Critical
-- **CVSS Score**: 9.9
-- **Product**: OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two
-- **Title**: OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two
-
-**Description**:
-OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two interrelated expression injection vulnerabilities in the rules engine that allow arbitrary code execution on the server...
-
-### CVE-2026-1555
+### CVE-2026-4880
 - **Severity**: Critical
 - **CVSS Score**: 9.8
-- **Product**: The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to 
-- **Title**: The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to 
+- **Product**: The Barcode Scanner (+Mobile App) – Inventory manager, Order fulfillment system,
+- **Title**: The Barcode Scanner (+Mobile App) – Inventory manager, Order fulfillment system,
 
 **Description**:
-The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the io_img_upload() function in all versions up to, and including, 1.2024. This makes it...
+The Barcode Scanner (+Mobile App) – Inventory manager, Order fulfillment system, POS (Point of Sale) plugin for WordPress is vulnerable to privilege escalation via insecure token-based authentication ...
 
-### CVE-2026-20182
+### CVE-2026-40504
 - **Severity**: Critical
-- **CVSS Score**: 9.0
-- **Product**: Catalyst SD-WAN
-- **Title**: Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability
+- **CVSS Score**: 9.8
+- **Product**: Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in t
+- **Title**: Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in t
 
 **Description**:
-Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.
+Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in the gravity_vm_exec function that allows attackers to write out-of-bounds memory by crafting scripts with many string lit...
 
-### CVE-2026-42208
+### CVE-2026-6349
 - **Severity**: Critical
-- **CVSS Score**: 9.0
-- **Product**: LiteLLM
-- **Title**: BerriAI LiteLLM SQL Injection Vulnerability
+- **CVSS Score**: 9.8
+- **Product**: The 
+iSherlock developed by HGiga  has an OS Command Injection vulnerability, al
+- **Title**: The 
+iSherlock developed by HGiga  has an OS Command Injection vulnerability, al
 
 **Description**:
-BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the credentials it manages.
+The 
+iSherlock developed by HGiga  has an OS Command Injection vulnerability, allowing unauthenticated local attackers to inject arbitrary OS commands and execute them on the server.
 
-### CVE-2026-6973
+### CVE-2026-6350
 - **Severity**: Critical
-- **CVSS Score**: 9.0
-- **Product**: Endpoint Manager Mobile (EPMM)
-- **Title**: Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability
+- **CVSS Score**: 9.8
+- **Product**: MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vuln
+- **Title**: MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vuln
 
 **Description**:
-Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.
+MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to control the program's execution flow and execute arbitrary code.
+
+### CVE-2026-40959
+- **Severity**: Critical
+- **CVSS Score**: 9.3
+- **Product**: Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a c
+- **Title**: Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a c
+
+**Description**:
+Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a crafted mod.
