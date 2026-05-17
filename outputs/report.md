@@ -1,57 +1,54 @@
 # 🔒 Threat Intelligence Report
-Generated: 2026-05-16 18:00:07
+Generated: 2026-05-17 00:00:05
 
 ## 📊 Executive Summary
 - **Total Threats**: 20
-- **Critical**: 5
-- **High**: 7
+- **Critical**: 0
+- **High**: 6
 
 ## 🚨 Critical Threats
 
-### CVE-2026-4880
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: The Barcode Scanner (+Mobile App) – Inventory manager, Order fulfillment system,
-- **Title**: The Barcode Scanner (+Mobile App) – Inventory manager, Order fulfillment system,
+### CVE-2026-40262
+- **Severity**: High
+- **CVSS Score**: 8.7
+- **Product**: Note Mark is an open-source note-taking application. In versions 0.19.1 and prio
+- **Title**: Note Mark is an open-source note-taking application. In versions 0.19.1 and prio
 
 **Description**:
-The Barcode Scanner (+Mobile App) – Inventory manager, Order fulfillment system, POS (Point of Sale) plugin for WordPress is vulnerable to privilege escalation via insecure token-based authentication ...
+Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves uploaded files inline and relies on magic-byte detection for content type, which do...
 
-### CVE-2026-40504
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in t
-- **Title**: Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in t
-
-**Description**:
-Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in the gravity_vm_exec function that allows attackers to write out-of-bounds memory by crafting scripts with many string lit...
-
-### CVE-2026-6349
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: The 
-iSherlock developed by HGiga  has an OS Command Injection vulnerability, al
-- **Title**: The 
-iSherlock developed by HGiga  has an OS Command Injection vulnerability, al
+### CVE-2026-22734
+- **Severity**: High
+- **CVSS Score**: 8.6
+- **Product**: Cloud Foundry UUA is vulnerable to a bypass that allows an attacker to obtain a 
+- **Title**: Cloud Foundry UUA is vulnerable to a bypass that allows an attacker to obtain a 
 
 **Description**:
-The 
-iSherlock developed by HGiga  has an OS Command Injection vulnerability, allowing unauthenticated local attackers to inject arbitrary OS commands and execute them on the server.
+Cloud Foundry UUA is vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UAA-protected systems. This vulnerability exists when SAML 2.0 bearer assertions a...
 
-### CVE-2026-6350
-- **Severity**: Critical
-- **CVSS Score**: 9.8
-- **Product**: MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vuln
-- **Title**: MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vuln
-
-**Description**:
-MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to control the program's execution flow and execute arbitrary code.
-
-### CVE-2026-40959
-- **Severity**: Critical
-- **CVSS Score**: 9.3
-- **Product**: Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a c
-- **Title**: Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a c
+### CVE-2026-3605
+- **Severity**: High
+- **CVSS Score**: 8.1
+- **Product**: An authenticated user with access to a kvv2 path through a policy containing a g
+- **Title**: An authenticated user with access to a kvv2 path through a policy containing a g
 
 **Description**:
-Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a crafted mod.
+An authenticated user with access to a kvv2 path through a policy containing a glob may be able to delete secrets they were not authorized to read or write, resulting in denial-of-service. This vulner...
+
+### CVE-2026-4525
+- **Severity**: High
+- **CVSS Score**: 7.5
+- **Product**: If a Vault auth mount is configured to pass through the "Authorization" header, 
+- **Title**: If a Vault auth mount is configured to pass through the "Authorization" header, 
+
+**Description**:
+If a Vault auth mount is configured to pass through the "Authorization" header, and the "Authorization" header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin back...
+
+### CVE-2026-5807
+- **Severity**: High
+- **CVSS Score**: 7.5
+- **Product**: Vault is vulnerable to a denial-of-service condition where an unauthenticated at
+- **Title**: Vault is vulnerable to a denial-of-service condition where an unauthenticated at
+
+**Description**:
+Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel root token generation or rekey operations, occupying the single in-progress ope...
